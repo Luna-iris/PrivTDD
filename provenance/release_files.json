@@ -452,8 +452,8 @@
     },
     {
       "path": "provenance/portable_font_validation.json",
-      "bytes": 3859,
-      "sha256": "ba86382dba2906f6088bfccf49cdde55e49e55740ba3d1c11e748be9f6b89fe3"
+      "bytes": 4725,
+      "sha256": "6df36a53652ad53be8424d65d640344434706c343b59115c54e0d7d56db0af81"
     },
     {
       "path": "provenance/prediction_archive.json",
@@ -1397,8 +1397,8 @@
     },
     {
       "path": "tests/test_plot_fonts.py",
-      "bytes": 2590,
-      "sha256": "a73e284ba55fcac46d8b4c4910d6a4b8996fd6648fafa1b1902be357127fdae8"
+      "bytes": 2765,
+      "sha256": "82b4411ea4f64c7b92b7cb0f369bd54094cebf104a15cee5dfbe6067dab2868b"
     },
     {
       "path": "tests/test_reproduction.py",
@@ -1412,5 +1412,5 @@
     }
   ],
   "file_count_excluding_manifest": 281,
-  "bytes_excluding_manifest": 35009486
+  "bytes_excluding_manifest": 35010527
 }

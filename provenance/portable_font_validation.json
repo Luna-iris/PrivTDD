@@ -11,7 +11,7 @@
     {
       "path": "tests/test_plot_fonts.py",
       "source_sha256": null,
-      "target_sha256": "a73e284ba55fcac46d8b4c4910d6a4b8996fd6648fafa1b1902be357127fdae8"
+      "target_sha256": "82b4411ea4f64c7b92b7cb0f369bd54094cebf104a15cee5dfbe6067dab2868b"
     }
   ],
   "regression_tests": {
@@ -96,5 +96,21 @@
     "resources_and_notices_present": true,
     "portable_font_source_matches": true
   },
-  "full_real_network_matrix_rerun": false
+  "full_real_network_matrix_rerun": false,
+  "test_assertion_followup": {
+    "date": "2026-11-16",
+    "failed_ci_url": "https://github.com/Luna-iris/PrivTDD/actions/runs/43733454263",
+    "failed_ci_commit": "fb14f4991541396d60f07df9725cf23e6675633e",
+    "failed_ci_tests": {
+      "passed": 87,
+      "failed": 1,
+      "subtests_passed": 28
+    },
+    "reason": "The available-font test rejected all captured warnings, including dependency deprecation warnings.",
+    "change": "Check specifically for the Requested font fallback warning; unrelated dependency warnings do not indicate a fallback.",
+    "local_targeted_tests_passed": 2,
+    "log_sha256": "d609b1ecf65dde91f9a1d2ef70ae07c00ac3f7296d62eec984c8b619bb7382fa",
+    "runtime_package_and_wheel_changed": false,
+    "prior_full_local_test_scope": "The 88-test local record above predates this warning-assertion refinement."
+  }
 }

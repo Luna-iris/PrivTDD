@@ -47,12 +47,14 @@ class PlotFontTests(unittest.TestCase):
             finally:
                 plt.close(legend_figure)
 
-    def test_available_requested_font_is_retained_without_warning(self):
+    def test_available_requested_font_is_retained_without_fallback_warning(self):
         with matplotlib.rc_context(), warnings.catch_warnings(record=True) as caught:
             warnings.simplefilter("always")
             e2_plot.configure_font("DejaVu Serif", 8.2)
             self.assertEqual(plt.rcParams["font.sans-serif"], ["DejaVu Serif"])
-            self.assertEqual(caught, [])
+            fallback_warnings = [str(item.message) for item in caught
+                                 if str(item.message).startswith("Requested font ")]
+            self.assertEqual(fallback_warnings, [])
 
 
 if __name__ == "__main__":
