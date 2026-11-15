@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "status": "review candidate; not uploaded",
+  "status": "public release file inventory",
   "date": "2026-11-15",
   "license": "MIT for authors code; retained source-specific exceptions",
-  "manifest_scope": "all candidate files except this self-describing manifest",
+  "manifest_scope": "all public release files except this self-describing manifest",
   "files": [
     {
       "path": ".gitattributes",
@@ -112,8 +112,8 @@
     },
     {
       "path": "docs/reproduction.md",
-      "bytes": 3906,
-      "sha256": "23875d590f90fc2b8a9969ec29b23d62a9720edfa5513a09cb773d1571371c1e"
+      "bytes": 4445,
+      "sha256": "4e27ff79e55c1d5dc9b7b88d483cdd1f29b2ef4aeca03bde4710ebb5f70ffa65"
     },
     {
       "path": "environment/constraints-windows-py312.txt",
@@ -407,8 +407,8 @@
     },
     {
       "path": "provenance/experiment_assets.json",
-      "bytes": 19160,
-      "sha256": "9d09b4bcff6b7e1e90151495527dfc9416d6681609f508689765f11036b23c58"
+      "bytes": 19204,
+      "sha256": "c80c8d124e95240f53195270d336d4bbd136bb1902054781296ad342a213dce6"
     },
     {
       "path": "provenance/experiment_validation.json",
@@ -427,8 +427,8 @@
     },
     {
       "path": "provenance/final_english_validation.json",
-      "bytes": 2191,
-      "sha256": "8ddc3a619422f521e8d36c3159cdaf0ddfd57e3afe1833c5195c3b8feb84a6c2"
+      "bytes": 2375,
+      "sha256": "8e9239ccae80f990ed059e2ad8b7d030248cb624ee6d8b8644d6468a50fefbd8"
     },
     {
       "path": "provenance/integrated_resume_validation.json",
@@ -449,6 +449,11 @@
       "path": "provenance/paper_source_snapshot.json",
       "bytes": 11017,
       "sha256": "fd37de8967c89975c0f93fae01e6afa97fb250f9f4f1e9182f14b6ac067e1fd7"
+    },
+    {
+      "path": "provenance/portable_font_validation.json",
+      "bytes": 3859,
+      "sha256": "ba86382dba2906f6088bfccf49cdde55e49e55740ba3d1c11e748be9f6b89fe3"
     },
     {
       "path": "provenance/prediction_archive.json",
@@ -1072,8 +1077,8 @@
     },
     {
       "path": "src/privtdd/experiments/render/e2_plot.py",
-      "bytes": 10888,
-      "sha256": "36636f9916a5c1ac3249d456f9065ce961a26776a463eb7cf64e921a20142f3a"
+      "bytes": 11649,
+      "sha256": "4672137f338347438c5282f0b76a3f71f71ac9caa1824a90122a1e11d9bffa5e"
     },
     {
       "path": "src/privtdd/experiments/render/e2_statistics.py",
@@ -1391,6 +1396,11 @@
       "sha256": "f8e7f016f12bf9be6f26968245758bfb6eba60c190d3626c2b0ccc3f8aeeaf7d"
     },
     {
+      "path": "tests/test_plot_fonts.py",
+      "bytes": 2590,
+      "sha256": "a73e284ba55fcac46d8b4c4910d6a4b8996fd6648fafa1b1902be357127fdae8"
+    },
+    {
       "path": "tests/test_reproduction.py",
       "bytes": 4185,
       "sha256": "82bf1265845a5e5ea94ea49b020ba370128ea0788e0e97576994b4be46c92a37"
@@ -1401,6 +1411,6 @@
       "sha256": "48394c7b80bb3c207f7ce562574dfc3c5eb40038e3bbd4ea74945d3de1e22fd2"
     }
   ],
-  "file_count_excluding_manifest": 279,
-  "bytes_excluding_manifest": 35001509
+  "file_count_excluding_manifest": 281,
+  "bytes_excluding_manifest": 35009486
 }

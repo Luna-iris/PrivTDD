@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "base_commit": "636a24e67e800384058dbef03d90e1de3c3a7190",
+  "elapsed_seconds": 3.5090622999705374,
+  "modifications": [
+    {
+      "path": "src/privtdd/experiments/render/e2_plot.py",
+      "source_sha256": "36636f9916a5c1ac3249d456f9065ce961a26776a463eb7cf64e921a20142f3a",
+      "target_sha256": "4672137f338347438c5282f0b76a3f71f71ac9caa1824a90122a1e11d9bffa5e"
+    },
+    {
+      "path": "tests/test_plot_fonts.py",
+      "source_sha256": null,
+      "target_sha256": "a73e284ba55fcac46d8b4c4910d6a4b8996fd6648fafa1b1902be357127fdae8"
+    }
+  ],
+  "regression_tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "existing_arial": {
+    "selected_family": [
+      "Arial"
+    ],
+    "warnings": 0,
+    "column_legend_font_size": 8.2,
+    "unchanged": true
+  },
+  "missing_arial": {
+    "simulation": "Removed Arial font entries and cleared the lookup cache; the original Arial lookup fails.",
+    "cli_exit_code": 0,
+    "warnings": [
+      "Requested font 'Arial' is unavailable; using Matplotlib's bundled DejaVu Sans."
+    ]
+  },
+  "frozen_rebuild": {
+    "verified_files": 42,
+    "e1_table_values": 384,
+    "e2_curve_means": 480,
+    "e3_all_network_means": 72,
+    "e4_table_values": 30,
+    "additional_component_summary_rows": 546
+  },
+  "other_entry_points": "E3 already declares Arial followed by DejaVu Sans. No other hard-coded font lookup was found in src/.",
+  "font_image_checks": {
+    "automated": "Fallback test renders PNG and PDF and checks all four legend bounds inside the canvas.",
+    "narrow_legend": "Only a measured overflow triggers font-size reduction; an installed Arial legend remains 8.2 pt.",
+    "visual_review": {
+      "status": "passed",
+      "finding": "All legend labels are visible, and the E2/E3 titles, axes, and numerical annotations are readable without clipping.",
+      "files": [
+        {
+          "path": "rendered_without_arial/figures/gdd_ablation_key.png",
+          "sha256": "9ef9736aeae3e3b55b991de425d96967570c8c3c3f6a2a336d1205bf523a3cbc"
+        },
+        {
+          "path": "rendered_without_arial/figures/gdd_ablation_higgs.png",
+          "sha256": "cc49681c693c16ef824770fb88765b8fc6df6c4b35637e31322edd0685683d4b"
+        },
+        {
+          "path": "rendered_without_arial/figures/e3_sensitivity_means.png",
+          "sha256": "fa7e2dd40b811ee9efacb6ecbe3569dc2e2cf40617e95d96003a43e593aa1227"
+        }
+      ]
+    }
+  },
+  "scope": "Portable E2 rendering and regression tests; frozen evidence and all statistical calculations are unchanged. Local validation logs and rendered checks are retained in the private review workspace.",
+  "logs": [
+    {
+      "path": "tests_stdout.txt",
+      "sha256": "f3cdaddbf49ce8a58a5f630d799a869e867fdbd5e3cf4e3aa46c239b235edc00"
+    },
+    {
+      "path": "figures_stdout.txt",
+      "sha256": "811cf63e55f2aeb12af3b9b590e4849c5ca10503bfd46cf14e2ee70133940fb5"
+    }
+  ],
+  "date": "2026-11-15",
+  "source_digest": "320ff7f48dbb426e8edb88e53ccbc2e07bf31bc52db0189567b68dc25d2a9535",
+  "first_linux_ci": {
+    "url": "https://github.com/Luna-iris/PrivTDD/actions/runs/43730667982",
+    "python": "3.12.16",
+    "clean_dependency_install": "passed",
+    "tests_passed": 86,
+    "subtests_passed": 28,
+    "result": "failed at E2 plotting because Arial was unavailable; smoke was skipped"
+  },
+  "full_local_tests": {
+    "passed": 88,
+    "log_sha256": "ff3628e3b31f6114a252ce09f082d40d4f1a8bd1baf850f1472512f9f4957b7b"
+  },
+  "wheel": {
+    "file": "privtdd-0.1.0-py3-none-any.whl",
+    "sha256": "575ff1b3d0cb07879f431679ce017d33aef7bf05ee283ef4052632a21016f70a",
+    "bytes": 281926,
+    "resources_and_notices_present": true,
+    "portable_font_source_matches": true
+  },
+  "full_real_network_matrix_rerun": false
+}

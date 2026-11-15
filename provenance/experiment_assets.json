@@ -313,8 +313,8 @@
       "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_E2_IEEE\\plot_e2.py",
       "source_sha256": "817acc24315237a961d36e5bb7d7526b8ea29d6e7fdcc3e4f8d8f6129e1b9868",
       "path": "src/privtdd/experiments/render/e2_plot.py",
-      "sha256": "36636f9916a5c1ac3249d456f9065ce961a26776a463eb7cf64e921a20142f3a",
-      "transformation": "portable imports and explicit input/output paths; statistical/plotting logic preserved"
+      "sha256": "4672137f338347438c5282f0b76a3f71f71ac9caa1824a90122a1e11d9bffa5e",
+      "transformation": "portable imports and explicit input/output paths; missing-font fallback and width-aware narrow legend; statistical logic preserved"
     },
     {
       "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\plot_e3.py",

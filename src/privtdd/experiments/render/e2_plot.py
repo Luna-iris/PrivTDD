@@ -1,6 +1,7 @@
 """Plot E2 at IEEE double-column width or as four single-column network strips."""
 import argparse
 from pathlib import Path
+import warnings
 
 import matplotlib
 matplotlib.use("Agg")
@@ -82,7 +83,15 @@ def set_panel_axis(axis, metric, values, limits=None, tick_size=8):
 
 
 def configure_font(font, size):
-    face = font_manager.findfont(font_manager.FontProperties(family=font), fallback_to_default=False)
+    try:
+        face = font_manager.findfont(font_manager.FontProperties(family=font), fallback_to_default=False)
+    except ValueError:
+        face = Path(matplotlib.get_data_path()) / "fonts/ttf/DejaVuSans.ttf"
+        warnings.warn(
+            f"Requested font {font!r} is unavailable; using Matplotlib's bundled DejaVu Sans.",
+            UserWarning,
+            stacklevel=2,
+        )
     plt.rcParams.update({
         "font.family": "sans-serif", "font.sans-serif": [font_manager.FontProperties(fname=face).get_name()],
         "font.size": size, "text.usetex": False, "pdf.fonttype": 42, "svg.fonttype": "none",
@@ -117,10 +126,19 @@ def add_legend(fig, *, narrow=False):
     handles = [Line2D([], [], color=color, marker=marker, ls=pattern, markersize=3.2, lw=1,
                       markerfacecolor=color if name == "PrivTDD" else "white", markeredgewidth=.68)
                for name, (color, marker, pattern) in STYLES.items()]
-    fig.legend(handles, list(STYLES), loc="center" if narrow else "upper center", ncol=5,
-               bbox_to_anchor=(.5, .5 if narrow else .985), frameon=False, borderaxespad=0, borderpad=0,
-               handlelength=1.03 if narrow else 1.85, columnspacing=.48 if narrow else 1.25,
-               handletextpad=.30 if narrow else .42)
+    options = dict(loc="center" if narrow else "upper center", ncol=5,
+                   bbox_to_anchor=(.5, .5 if narrow else .985), frameon=False, borderaxespad=0, borderpad=0,
+                   handlelength=1.03 if narrow else 1.85, columnspacing=.48 if narrow else 1.25,
+                   handletextpad=.30 if narrow else .42)
+    legend = fig.legend(handles, list(STYLES), **options)
+    if narrow:
+        fig.canvas.draw()
+        width = legend.get_window_extent().width
+        if width > fig.bbox.width:
+            # Font metrics vary by platform; keep the complete legend inside the column.
+            size = legend.get_texts()[0].get_fontsize() * .98 * fig.bbox.width / width
+            legend.remove()
+            fig.legend(handles, list(STYLES), fontsize=size, **options)
 
 
 def save(fig, stem, args):

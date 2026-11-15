@@ -63,3 +63,12 @@ python reproduction/checks/verify_prediction_archive.py --root . --output result
 
 This check requires the local-only processed truth and archived predictions;
 the public figure-reproduction command only needs the bundled frozen tables.
+
+
+Figure rendering uses Arial when it is installed. If it is unavailable, E2
+emits an English warning and uses the DejaVu Sans font bundled with Matplotlib;
+E3 already declares the same fallback family. The narrow E2 legend adjusts to
+fit its canvas when necessary. Typography can therefore differ across machines,
+while the input tables, statistics and plotted values remain unchanged.
+Historical validation reports are bound to their recorded source digests;
+`provenance/portable_font_validation.json` records the portability follow-up.

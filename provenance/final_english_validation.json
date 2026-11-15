@@ -67,5 +67,7 @@
     "uploaded": true,
     "public_transfer_tested": true,
     "public_files_verified": 4
-  }
+  },
+  "validation_scope": "Historical local validation before the portable-font fix; bound to source_digest above.",
+  "followup_validation": "provenance/portable_font_validation.json"
 }
