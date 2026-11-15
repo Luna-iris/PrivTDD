@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\caption{TDD estimation error by neighbor-pair sampling rate at $\varepsilon=2$.}
+% TDD estimation error at different neighbor-pair sampling rates.
+\label{tab:gdd:e4:sampling}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lccc@{\hspace{8pt}}ccc@{}}
+\toprule
+\multirow{2}{*}{\shortstack[l]{Sampling rate}} & \multicolumn{3}{c}{Higgs social} & \multicolumn{3}{c}{Orkut} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+ & MSE & EMD & KS & MSE & EMD & KS \\
+\midrule
+0.01\% & 0.62058 & 582.89 & 0.5870 & 0.11288 & 945.85 & 0.3288 \\
+0.1\% & 0.64318 & 537.15 & 0.5512 & 0.01495 & 2932.84 & 0.2963 \\
+1\% & 0.29055 & 661.63 & 0.4008 & 0.13624 & 665.20 & 0.2277 \\
+10\% & 0.02011 & 539.99 & 0.1342 & 0.00092 & 199.24 & 0.0453 \\
+100\% (E1) & 0.02728 & 73.65 & 0.1303 & 0.00179 & 35.58 & 0.0266 \\
+\bottomrule
+\end{tabular*}
+\end{table}

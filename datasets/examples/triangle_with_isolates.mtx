@@ -1,0 +1,7 @@
+%%MatrixMarket matrix coordinate pattern symmetric
+% Self-created example: one triangle, one separate edge, one isolated node.
+6 6 4
+1 2
+1 3
+2 3
+4 5

@@ -1,0 +1,189 @@
+{
+  "root": "D:\\codesandProjects\\PrivTDD",
+  "source_digest_before": "15af7940c23aac3f2bda76b628ac095213035e6036be347c8f08423d09e50873",
+  "generator": "verify_prediction_archive.py",
+  "generator_sha256": "58ef8bd1176b4b24c92988a688b829644bc1d8648e80651348653e073d3e3b6f",
+  "metric_implementation": "src\\privtdd\\evaluation\\metrics.py",
+  "metric_implementation_sha256": "75542417529b6aa09aba433c6d288c7621e27adeb7679c78f8f398c0ee98b012",
+  "tolerance": {
+    "rtol": 1e-10,
+    "atol": 1e-10,
+    "rule": "abs(recomputed - frozen) <= atol + rtol * abs(frozen)"
+  },
+  "method": "Load SHA-verified archived keys/counts and processed per-node triangle degrees; form the exact truth histogram and call privtdd.evaluation.metrics.compare with n and public degree cap n-1. Deduplicate arithmetic by (dataset,prediction SHA); compare every referenced frozen CSV row.",
+  "frozen_snapshot": {
+    "snapshot": "paper-v1",
+    "verified_files": 42,
+    "e1_complete": 1916,
+    "e1_planned": 1920,
+    "e2_matched": 476,
+    "e3_complete": 234,
+    "e3_planned": 240,
+    "e4_sampled": 40,
+    "unresolved": []
+  },
+  "reference_manifest_sha256": "d6d64e42d3e327d60f24dfde4d8d5148c2a0a6c30ec187882d9f63ce998db5aa",
+  "references": 7572,
+  "unique_prediction_files": 5775,
+  "truth_inputs": {
+    "bio-dmela": {
+      "nodes": 7393,
+      "support_points": 66,
+      "public_degree_cap": 7392,
+      "truth_sha256": "70664fa58748307172d2c4747c772b0d10dfeda0f85a04f3f68f8e8409c7b21e",
+      "graph_metadata_sha256": "b334d3ef6ea7e65eca92b6dc2e32aae5cef0d70939545a3939ee8b973e022537",
+      "triangle_degree_sum": 8697
+    },
+    "dblp": {
+      "nodes": 317080,
+      "support_points": 1031,
+      "public_degree_cap": 317079,
+      "truth_sha256": "2e1a73d27fc3ae862df0ffd413dba604f50895f33604eae412128d90837f3c07",
+      "graph_metadata_sha256": "7b59b1dec7ca02b6a2915189e3f2113f4dfe7f84e9d3fe5930a745b090bb0006",
+      "triangle_degree_sum": 6673155
+    },
+    "higgs": {
+      "nodes": 456626,
+      "support_points": 11199,
+      "public_degree_cap": 456625,
+      "truth_sha256": "76d26cf87114e9dbd7f1b9afeb22837baaff82fe287b14388a1d6306c91fc47f",
+      "graph_metadata_sha256": "3cf3fdeab39585d71319b8b834fff93d9a9e0c24bc1f7aadb16db14183cf5de3",
+      "triangle_degree_sum": 249070203
+    },
+    "orkut": {
+      "nodes": 3072441,
+      "support_points": 23315,
+      "public_degree_cap": 3072440,
+      "truth_sha256": "10bf38a6a191e39b01c484599a87a8dc0ff080916dc5b28187dad04bc272dd0b",
+      "graph_metadata_sha256": "21f6b18f778f754857a2b3bfb3ba6b613ef75217a06bf2b76a6cef599f61a24c",
+      "triangle_degree_sum": 1882752543
+    }
+  },
+  "table_coverage": {
+    "e1/releases.csv": {
+      "rows": 1916,
+      "references": 1916,
+      "sha256": "29886acbc443940be3d25892295af0ad8ded5d82057c70a88a6dfad82df90c85"
+    },
+    "e2/additional_ablation_releases.csv": {
+      "rows": 2872,
+      "references": 2872,
+      "sha256": "e9df6ce814e7211a6814d724c151083ea09b1fdba8cf17b7972b1bc0eab164d7"
+    },
+    "e2/releases.csv": {
+      "rows": 2500,
+      "references": 2500,
+      "sha256": "79ce05ed814091c97f21c9d92876104dfcd46eba5230a7468c0da0a5d0e394d2"
+    },
+    "e3/releases.csv": {
+      "rows": 234,
+      "references": 234,
+      "sha256": "ec18df97530d91820f0b41528f77093a2aee96889b5b335ea2767be75c5d8cd6"
+    },
+    "e4/large40_runs.csv": {
+      "rows": 50,
+      "references": 50,
+      "sha256": "faf50032bd871c9847ed0f31f667c8d2776655c1e79d09cb994d29d58bcd35ed"
+    }
+  },
+  "unique_evaluations": 5775,
+  "sha_verified_prediction_files": 5775,
+  "referenced_rows_evaluated": 7572,
+  "metric_comparisons": 22716,
+  "maximum_errors": {
+    "MSE": {
+      "absolute_error": 4.6629367034256575e-14,
+      "relative_error": 8.339228148522123e-13,
+      "absolute_error_reference": {
+        "table": "e1/releases.csv",
+        "csv_line": 1633,
+        "prediction_sha256": "f4786b171d0e16ee6e1da8758dcf2aecd5aff3060d5b5bfcd682653ca3ba9b6b"
+      }
+    },
+    "EMD": {
+      "absolute_error": 3.2741809263825417e-11,
+      "relative_error": 1.8580073855279547e-15,
+      "absolute_error_reference": {
+        "table": "e1/releases.csv",
+        "csv_line": 1605,
+        "prediction_sha256": "d012983d0ceeb214ef77d1bc1fc10db096809c157640ca2d9815e70b2a5dc9c4"
+      }
+    },
+    "KS": {
+      "absolute_error": 9.71445146547012e-17,
+      "relative_error": 2.240703853247891e-14,
+      "absolute_error_reference": {
+        "table": "e2/releases.csv",
+        "csv_line": 340,
+        "prediction_sha256": "4c98d3d8eaa66c20545ac0cf21986868ae370cf8448b57b552737413a879007c"
+      }
+    }
+  },
+  "per_table": {
+    "e1/releases.csv": {
+      "compared_rows": 1916,
+      "failed_entries": 0
+    },
+    "e2/additional_ablation_releases.csv": {
+      "compared_rows": 2872,
+      "failed_entries": 0
+    },
+    "e2/releases.csv": {
+      "compared_rows": 2500,
+      "failed_entries": 0
+    },
+    "e3/releases.csv": {
+      "compared_rows": 234,
+      "failed_entries": 0
+    },
+    "e4/large40_runs.csv": {
+      "compared_rows": 50,
+      "failed_entries": 0
+    }
+  },
+  "e3_diagnostics": {
+    "status": "passed",
+    "manifest_sha256": "a3ef4395261ac5b07a2fb4268281b9d8ab3a0d0b9455822fb590c8bbdb1a9fab",
+    "predictions": 54,
+    "numeric_values_compared": 594,
+    "max_absolute_error": 0.0,
+    "derived_report": {
+      "higgs": {
+        "matched_runs": 8,
+        "top_one_percent_share": 0.47582670497120844,
+        "changes_upper_minus_lower": {
+          "above90_through99": 12.081587166692595,
+          "above999": -37.05953731454775,
+          "EMD": -24.704947323322436
+        },
+        "tail_decreases_every_run": true
+      },
+      "orkut": {
+        "matched_runs": 10,
+        "top_one_percent_share": 0.3203737513156555,
+        "changes_upper_minus_lower": {
+          "above90_through99": 43.845759264226864,
+          "above999": 7.404828610692542,
+          "EMD": 45.04003971937323
+        },
+        "tail_decreases_every_run": false
+      }
+    },
+    "output": "e3_regenerated"
+  },
+  "source_digest_after": "15af7940c23aac3f2bda76b628ac095213035e6036be347c8f08423d09e50873",
+  "elapsed_seconds": 28.34332360001281,
+  "failures": [],
+  "failure_count": 0,
+  "status": "passed",
+  "outputs": {
+    "unique_prediction_metrics.csv": {
+      "sha256": "5eec80d4a6b811f448568bfcd678e3e9e5d138ba507f1c41a4c731c2c4f38ab9",
+      "bytes": 1209368
+    },
+    "row_metric_comparison.csv": {
+      "sha256": "1e648d5151a317dbf058561597d89b34412f88537507871007d734011e730073",
+      "bytes": 2215477
+    }
+  }
+}

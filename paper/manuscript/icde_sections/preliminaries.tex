@@ -1,0 +1,133 @@
+\section{Preliminaries}
+\label{sec:pre}
+\label{sec:preliminaries}
+\subsection{Triangle-Degree Distribution}
+\label{subsec:gdd}
+
+Let $G=(V,E)$ be a simple undirected graph with public node set $V$ and size $n\ge4$. For node $v$, write $N_v$ for its neighborhood, $d_v=|N_v|$ for its private degree, and $\mathbf a_v=(x_{vu})_{u\in V}$ for its adjacency vector, where $x_{uv}=\mathbf1\{\{u,v\}\in E\}$ for $u\ne v$ and $x_{vv}=0$. Here $\mathbf1$ is the indicator function; $d_v\in\{0,\ldots,D_{\max}\}$ with public bound $D_{\max}=n-1$. %
+A graphlet is a small connected induced subgraph of $G$~\cite{LDPGDDPrzulj2007}.
+The triangle degree of node $v$ is:
+\begin{equation}
+t_v=\sum_{\{u,z\}\subseteq N_v}x_{uz}.
+\label{eq:prelim-triangle-degree}
+\end{equation}
+
+\begin{definition}[Triangle-Degree Distribution]
+\label{def:gdd}
+The count-form TDD $H$ records the number of nodes with each value of $t_v$:
+\begin{equation}
+H(t)=\sum_{v\in V}\mathbf1\{t_v=t\},
+\qquad t\in\mathbb Z_{\ge0}.
+\label{eq:gdd-definition}
+\end{equation}
+%and $n$ is the total node count.
+\end{definition}
+
+% \begin{definition}[Triangle Degree Distribution]
+% \label{def:gdd}
+% The count-form TDD is $H_G=(H_G(t))_{t\ge0}$, where
+% \begin{equation}
+% H_G(t)=\sum_{v\in V}\mathbf1\{t_v=t\},\qquad t\in\mathbb Z_{\ge0}.
+% \label{eq:gdd-definition}
+% \end{equation}
+% It includes zero-participation nodes and has total count $n$.
+% \end{definition}
+
+Each unordered pair of distinct neighbors forms a wedge centered at $v$, with count $w_v=w(d_v)$, where $w(d)=\binom d2$. Wedges include both open and closed pairs. We define:
+\begin{equation}
+\rho_v=\begin{cases}t_v/w_v,&w_v>0,\\0,&w_v=0,\end{cases}
+\qquad t_v=w_v\rho_v.
+\label{eq:t-w-rho}
+\end{equation}
+Thus $0\le t_v\le w_v$ and $\rho_v\in[0,1]$. For $d_v\ge2$, $\rho_v$ is the local clustering coefficient of $v$~\cite{watts1998collective}. For $d_v\le1$, both counts vanish and we set $\rho_v=0$ by convention.
+
+For a uniformly sampled node $U$, let $\pi(d)=\Pr(d_U=d)$ be the node-degree distribution.
+For $\pi(d)>0$, let $R(t\mid d)=\Pr(t_U=t\mid d_U=d)$ be the distribution of triangle degrees among nodes of degree $d$ and let $P_\rho(\cdot\mid d)$ be the distribution of $\rho_U$ given $d_U=d$. 
+Then $R(t\mid d)=\Pr(w(d)\rho_U=t\mid d_U=d)$. 
+Degree conditioning preserves dependence between wedge count and closure rate. Conditionals at zero-mass degrees do not affect population aggregates.
+%Conditioning on degree retains dependence between wedge scale and closure rate; conditional laws at zero-mass degrees do not affect population aggregates.
+
+% \subsection{Triangle Degree Distribution}
+% \label{subsec:gdd}
+
+% Let $G=(V,E)$ be a simple undirected graph with public node set $V$ and size $n\ge4$. For node $v$, write $N_v$ for its neighborhood, $d_v=|N_v|$ for its private degree, and $\mathbf a_v=(x_{vu})_{u\in V}$ for its adjacency vector, where $x_{uv}=\mathbf1\{\{u,v\}\in E\}$ for $u\ne v$ and $x_{vv}=0$. Here $\mathbf1$ is the indicator function; $d_v\in\{0,\ldots,D_{\max}\}$ with public bound $D_{\max}=n-1$.
+
+% A graphlet is a small connected induced subgraph; its automorphism orbits group topologically equivalent node positions. Let $d_v^o$ count distinct instances in which $v$ occupies orbit $o$~\cite{LDPGDDPrzulj2007}.
+% \begin{definition}[Graphlet Degree Distribution]
+% \label{def:gdd}
+% The count-form GDD is $H_G^o=(h_G^o(k))_{k\ge0}$, where
+% \begin{equation}
+% h_G^o(k)=\sum_{v\in V}\mathbf1\{d_v^o=k\},\qquad k\in\mathbb Z_{\ge0}.
+% \label{eq:gdd-definition}
+% \end{equation}
+% It includes zero-participation nodes and has total count $n$.
+% \end{definition}
+
+% We study the triangle orbit, whose three positions are equivalent. Its node participation count is
+% \begin{equation}
+% t_v=d_v^\triangle=\sum_{\{u,z\}\subseteq N_v}x_{uz}.
+% \label{eq:prelim-triangle-degree}
+% \end{equation}
+% Each unordered pair of distinct neighbors defines one candidate wedge centered at $v$. Define the wedge scale $w(d)=\binom d2$ and $w_v=w(d_v)$. These candidate wedges include both open and closed wedges, rather than only induced open paths. Define closure rate by
+% \begin{equation}
+% \rho_v=\begin{cases}t_v/w_v,&w_v>0,\\0,&w_v=0,\end{cases}
+% \qquad t_v=w_v\rho_v.
+% \label{eq:t-w-rho}
+% \end{equation}
+% Thus $0\le t_v\le w_v$ and $\rho_v\in[0,1]$; for $d_v\le1$, both counts vanish and $\rho_v=0$ is a convention.
+
+% Let $U$ be sampled uniformly from $V$ and $\pi(d)=\Pr(d_U=d)$. For $\pi(d)>0$, define $R(t\mid d)=\Pr(t_U=t\mid d_U=d)$ and let $P_\rho(\cdot\mid d)$ be the distribution of $\rho_U$ given $d_U=d$. Then $R(t\mid d)=\Pr(w(d)\rho_U=t\mid d_U=d)$. Conditioning on degree retains dependence between wedge scale and closure rate; conditional laws at zero-mass degrees do not affect population aggregates.
+
+\subsection{Local Differential Privacy}
+\label{subsec:ldp}
+
+LDP randomizes data locally without a trusted curator~\cite{LDPGDDDworkRoth2014}. Local inputs $\mathbf a_v\simeq_e\mathbf a'_v$ are edge-neighboring~\cite{imola2021locally} when they differ in one non-self adjacency bit, i.e., $\|\mathbf a_v-\mathbf a'_v\|_1=1$.
+\begin{definition}[$\varepsilon$-Edge-Local Differential Privacy]
+\label{def:edge-ldp}
+A randomizer $\Psi_v$ satisfies $\varepsilon$-edge-LDP if for every edge-neighboring input pair and measurable event $\mathcal O$,
+\begin{equation}
+\Pr[\Psi_v(\mathbf a_v)\in\mathcal O]\le e^{\varepsilon}\Pr[\Psi_v(\mathbf a'_v)\in\mathcal O].
+\label{eq:edge-ldp-definition}
+\end{equation}
+Here $\varepsilon\ge0$, and probability is over private randomness.
+\end{definition}
+
+Since an undirected edge affects both endpoints' local inputs,
+we account for the privacy loss of both endpoints and all
+interactive rounds~\cite{imola2021locally,LDPGDDImola2022Corrected}.
+The complete protocol is required to protect any single
+undirected-edge change under the total budget $\varepsilon$.
+Post-processing of privatized reports incurs no additional
+privacy loss~\cite{LDPGDDDworkRoth2014}.
+
+% An undirected edge affects both endpoints' local inputs. We therefore also protect the complete transcript~\cite{LDPGDDImola2022Corrected}. Write $G\simeq_e G'$ for graphs on the same public $V$ differing by one edge. For an interactive protocol $\Pi$ implemented by local randomizers, $\mathsf{View}_\Pi$ contains the server's randomness, all reports, and interaction messages.
+
+
+
+% \begin{definition}[Undirected-Edge Transcript Privacy]
+% \label{def:edge-transcript-privacy}
+% The protocol has total budget $\varepsilon\ge0$ if, for every $G\simeq_e G'$ and measurable event $\mathcal O$,
+% \begin{equation}
+% \Pr[\mathsf{View}_\Pi(G)\in\mathcal O]\le e^\varepsilon\Pr[\mathsf{View}_\Pi(G')\in\mathcal O].
+% \label{eq:edge-transcript-privacy}
+% \end{equation}
+% \end{definition}
+% Throughout, $\varepsilon$ follows this transcript-privacy definition. Accounting includes both endpoints and successive releases; assigning an adjacency report to one endpoint does not exempt other edge-dependent statistics.
+
+% In an interactive protocol, each local mechanism may depend on previously released messages. Sequential composition requires its conditional privacy bound to hold for every prior transcript. Post-processing using only released reports and public information adds no privacy loss~\cite{LDPGDDDworkRoth2014,LDPGDDImola2022Corrected}.
+
+% % \noindent\textbf{Randomized response (RR).}
+% % For budget $\varepsilon_{\mathrm{rr}}>0$, binary RR~\cite{LDPGDDWarner1965} reports a private bit $b\in\{0,1\}$ as $Z=b$ with probability $p$ and $Z=1-b$ with probability $p_0$, where
+% % \begin{equation}
+% % p=\frac{e^{\varepsilon_{\mathrm{rr}}}}{1+e^{\varepsilon_{\mathrm{rr}}}},\qquad p_0=1-p,\qquad\gamma=p-p_0.
+% % \label{eq:binary-rr}
+% % \end{equation}
+% % It is $\varepsilon_{\mathrm{rr}}$-LDP and satisfies $\mathbb E[Z-p_0\mid b]=\gamma b$~\cite{LDPGDDWarner1965}.
+
+% % \noindent\textbf{Laplace mechanism.}
+% % A real-valued query $f$ has edge sensitivity $\Delta_e f=\max_{\mathbf a\simeq_e\mathbf a'}|f(\mathbf a)-f(\mathbf a')|$. For $\varepsilon_{\mathrm{loc}}>0$ and $\Delta_e f>0$, releasing
+% % \begin{equation}
+% % \widetilde f=f(\mathbf a_v)+\xi,\qquad\xi\sim\operatorname{Lap}(0,\Delta_e f/\varepsilon_{\mathrm{loc}})
+% % \label{eq:prelim-laplace}
+% % \end{equation}
+% % satisfies $\varepsilon_{\mathrm{loc}}$-edge-LDP, where $\operatorname{Lap}(0,b)$ has zero mean and scale $b$. Zero-sensitivity queries need no noise and degree has sensitivity one~\cite{LDPGDDDworkRoth2014}.

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the PrivTDD manuscript."
+type: software
+title: "PrivTDD: Triangle-Degree Distribution Estimation under Edge-Local Differential Privacy"
+version: 0.1.0
+repository-code: "https://github.com/Luna-iris/PrivTDD"
+license: MIT
+authors:
+  - family-names: Cheng
+    given-names: Beibei
+  - family-names: Dong
+    given-names: Kai
+  - family-names: Zhao
+    given-names: Yuanbo
+  - family-names: Sun
+    given-names: Jingbo
+  - family-names: Liu
+    given-names: Guangchi
+  - family-names: Ling
+    given-names: Zhen

@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "release": "paper-v1",
+  "provider": "Google Drive (optional mirror)",
+  "status": "All four public bundles verified by anonymous download",
+  "bundles": {
+    "bio-dmela": {
+      "filename": "privtdd-paper-v1-bio-dmela-prepared.zip",
+      "bytes": 138299,
+      "sha256": "7c75cde6cb29ad7ffb19c3d588d5df598a51095b149015d147b68fa46b3fe5d8",
+      "share_url": "https://drive.google.com/file/d/18NIUJ7ldZTTOpRFy2ZXowQYfxVz90EHb/view",
+      "source_page": "https://networkrepository.com/bio-dmela.php",
+      "source_terms": "redistribution not established; fetch from official source; no dataset license grant by this project",
+      "content": "prepared CSR, node-ID map, exact triangle truth, and portable graph metadata",
+      "files": [
+        {
+          "path": "datasets/processed/bio-dmela/graph.json",
+          "sha256": "b334d3ef6ea7e65eca92b6dc2e32aae5cef0d70939545a3939ee8b973e022537",
+          "bytes": 534
+        },
+        {
+          "path": "datasets/processed/bio-dmela/indices.npy",
+          "sha256": "f7fde670f2cabf84f6b085caf106fb64ae023716b17b9e39e0447adc8329f8aa",
+          "bytes": 409232
+        },
+        {
+          "path": "datasets/processed/bio-dmela/indptr.npy",
+          "sha256": "e13c6eafd0b106ab05bfa72b6c63f4d442dfaf02c51b8d53c904d400844af5e9",
+          "bytes": 59280
+        },
+        {
+          "path": "datasets/processed/bio-dmela/new_to_original.npy",
+          "sha256": "091dc908a81b8b63a8af1fe3c4af24676f2bb772670a9d35185ff04ed88507a9",
+          "bytes": 59272
+        },
+        {
+          "path": "datasets/processed/bio-dmela/triangles.npy",
+          "sha256": "70664fa58748307172d2c4747c772b0d10dfeda0f85a04f3f68f8e8409c7b21e",
+          "bytes": 59272
+        }
+      ],
+      "availability": "anonymous_download_verified",
+      "verified_on": "2026-11-15"
+    },
+    "dblp": {
+      "filename": "privtdd-paper-v1-dblp-prepared.zip",
+      "bytes": 6340341,
+      "sha256": "156c0099ed5ed98606c85a5e2db99091e7519cf4377f8330ede7562c73907e55",
+      "share_url": "https://drive.google.com/file/d/1rxCaAdnn7VrC_dBIPakaO-sptJEdGSKl/view",
+      "source_page": "https://snap.stanford.edu/data/com-DBLP.html",
+      "source_terms": "redistribution not established; fetch from official source; no dataset license grant by this project",
+      "content": "prepared CSR, node-ID map, exact triangle truth, and portable graph metadata",
+      "files": [
+        {
+          "path": "datasets/processed/dblp/graph.json",
+          "sha256": "7b59b1dec7ca02b6a2915189e3f2113f4dfe7f84e9d3fe5930a745b090bb0006",
+          "bytes": 559
+        },
+        {
+          "path": "datasets/processed/dblp/indices.npy",
+          "sha256": "0384be794eb964b199f1277032174ceba5bc405c5862754bc0e59c82a072db06",
+          "bytes": 8399056
+        },
+        {
+          "path": "datasets/processed/dblp/indptr.npy",
+          "sha256": "e1bde6c4a76f439146d2e38aaf0c579418ec3f3fcbfc4f5abaff13f154d1d305",
+          "bytes": 2536776
+        },
+        {
+          "path": "datasets/processed/dblp/new_to_original.npy",
+          "sha256": "a7e5a6b2aa031553d044c01ace60a8a75d32c5eb18ba5d3c42c4c11f096e5b1f",
+          "bytes": 2536768
+        },
+        {
+          "path": "datasets/processed/dblp/triangles.npy",
+          "sha256": "2e1a73d27fc3ae862df0ffd413dba604f50895f33604eae412128d90837f3c07",
+          "bytes": 2536768
+        }
+      ],
+      "availability": "anonymous_download_verified",
+      "verified_on": "2026-11-15"
+    },
+    "higgs": {
+      "filename": "privtdd-paper-v1-higgs-prepared.zip",
+      "bytes": 57564273,
+      "sha256": "efa571bb114b7dccb881a65b41eb584466e4a36f19e3590fdab4acc5305f8388",
+      "share_url": "https://drive.google.com/file/d/1L2k4Kzvca-MxaYMvDre9hdkutVD2qIYe/view",
+      "source_page": "https://snap.stanford.edu/data/higgs-twitter.html",
+      "source_terms": "redistribution not established; fetch from official source; no dataset license grant by this project",
+      "content": "prepared CSR, node-ID map, exact triangle truth, and portable graph metadata",
+      "files": [
+        {
+          "path": "datasets/processed/higgs/graph.json",
+          "sha256": "3cf3fdeab39585d71319b8b834fff93d9a9e0c24bc1f7aadb16db14183cf5de3",
+          "bytes": 544
+        },
+        {
+          "path": "datasets/processed/higgs/indices.npy",
+          "sha256": "3081792ecf9c615f6964e3edeba088b7a7e26dfb0bbd105288c105301411e051",
+          "bytes": 100067432
+        },
+        {
+          "path": "datasets/processed/higgs/indptr.npy",
+          "sha256": "960a8711c429c2f08de3a3d002ba8dfe35f39cf76f0f1300886f8d533405af5c",
+          "bytes": 3653144
+        },
+        {
+          "path": "datasets/processed/higgs/new_to_original.npy",
+          "sha256": "474f260f5a2b8dca0e0607b7f120e86af84b36afeb46b7e7ce4c777369827417",
+          "bytes": 3653136
+        },
+        {
+          "path": "datasets/processed/higgs/triangles.npy",
+          "sha256": "76d26cf87114e9dbd7f1b9afeb22837baaff82fe287b14388a1d6306c91fc47f",
+          "bytes": 3653136
+        }
+      ],
+      "availability": "anonymous_download_verified",
+      "verified_on": "2026-11-15"
+    },
+    "orkut": {
+      "filename": "privtdd-paper-v1-orkut-prepared.zip",
+      "bytes": 634663820,
+      "sha256": "ff68a41045c3593650447311b79c26c03d932733c5a4dd2a77e41962c631c20c",
+      "share_url": "https://drive.google.com/file/d/1QsHv_N1JR1V6v0By2nwhr9JO4MWrm-XW/view",
+      "source_page": "https://snap.stanford.edu/data/com-Orkut.html",
+      "source_terms": "redistribution not established; fetch from official source; no dataset license grant by this project",
+      "content": "prepared CSR, node-ID map, exact triangle truth, and portable graph metadata",
+      "files": [
+        {
+          "path": "datasets/processed/orkut/graph.json",
+          "sha256": "21f6b18f778f754857a2b3bfb3ba6b613ef75217a06bf2b76a6cef599f61a24c",
+          "bytes": 569
+        },
+        {
+          "path": "datasets/processed/orkut/indices.npy",
+          "sha256": "22afb83129fffcb2dc14c934f66770c2ffe465c4341df8253377d4c379c574c4",
+          "bytes": 937480792
+        },
+        {
+          "path": "datasets/processed/orkut/indptr.npy",
+          "sha256": "c88d6f98061a8cd6f693f1797485cc124e10e3af6bcc6c7116f4226543382afa",
+          "bytes": 24579664
+        },
+        {
+          "path": "datasets/processed/orkut/new_to_original.npy",
+          "sha256": "faceeec8be41a9b81e0827e603272e7443c1c7c8679bb6d8d23f57d09183b34a",
+          "bytes": 24579656
+        },
+        {
+          "path": "datasets/processed/orkut/triangles.npy",
+          "sha256": "10bf38a6a191e39b01c484599a87a8dc0ff080916dc5b28187dad04bc272dd0b",
+          "bytes": 24579656
+        }
+      ],
+      "availability": "anonymous_download_verified",
+      "verified_on": "2026-11-15"
+    }
+  },
+  "folder_url": "https://drive.google.com/drive/folders/1xuxagBfpbpQYqq7mOQy0kVtiY15FG-zW?usp=sharing"
+}

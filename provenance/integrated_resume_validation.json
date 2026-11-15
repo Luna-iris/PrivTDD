@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "npz_files": 70,
+  "new_or_removed": [],
+  "changed": [],
+  "run_root": "results\\validation\\integrated_final_v2_smoke",
+  "sampling_root": "results\\validation\\integrated_final_v2_smoke_e4",
+  "source_digest": "f5a092cea7a391b938a391828fd3660410ecbaf72901577da9db048ebe83c587"
+}

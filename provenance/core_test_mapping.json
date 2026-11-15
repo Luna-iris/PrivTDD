@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "source": "reconstruct_overall/joint/joint_tests/test_io.py",
+      "source_sha256": "1e1403825ac4f8a1bf8679dd53638a2bf11a1bad597bd69a10e35d80f091ad5f",
+      "target": "tests/core/test_io.py",
+      "transformation": "Import/API rename; tests preserved",
+      "target_sha256": "82b2a3cb7d7cce8750e6ed35d9810153b998abfed980b0041ef112b683ddfe6d"
+    },
+    {
+      "source": "reconstruct_overall/joint/joint_tests/test_optimizer.py",
+      "source_sha256": "c52baff78dedc30af972e4b6fa7a9ccc88dd5a32b6cfd1cd7a9614362e561a94",
+      "target": "tests/core/test_optimizer.py",
+      "transformation": "Import/API rename; omit one legacy-only optimizer comparison; retain cancellation test against independently solved scalar optimum",
+      "target_sha256": "b7a98b891794799f1e91c0204e325308ac1e1885fb955d0edb474f35f70dfb88"
+    },
+    {
+      "source": "reconstruct_overall/joint/joint_tests/test_engineering.py",
+      "source_sha256": "84d9ba1a15ef9cb957a64fbc521bfb84ca1b2dc16bb8d5a0904a83e5fa007ca7",
+      "target": "tests/core/test_engineering.py",
+      "transformation": "Import/API rename; tests preserved",
+      "target_sha256": "faef487ba53d599e902f3ebeac1f9d2eaeac1f93dd66de9eabbcac991f0c0eaa"
+    },
+    {
+      "source": "reconstruct_overall/joint/joint_tests/test_projection_joint.py",
+      "source_sha256": "d592fad2dedc54fc93ca575f271dc91d30a63081eedc9f7c981a4545905d9441",
+      "target": "tests/core/test_projection.py",
+      "transformation": "Import/API rename; tests preserved",
+      "target_sha256": "bd8028072b3121695b562cc579147d441ad783729e033bba38a8416da38b2c5c"
+    },
+    {
+      "source": "reconstruct_overall/joint/joint_tests/test_quantization.py",
+      "source_sha256": "f11d4a0b78b07707f5b4cdc9bf1a5d48af73c685f062ca91c34a63670c238734",
+      "target": "tests/core/test_quantization.py",
+      "transformation": "Import/API rename; tests preserved",
+      "target_sha256": "456d634e6663b786b07524c0ccc0715fd5bd2ef8ba5fb8cf81f7e6a0342aa058"
+    },
+    {
+      "source": "reconstruct_overall/joint/joint_tests/test_runner.py",
+      "source_sha256": "820559270682052641b0010ccea1d00f1ebf805ea6a925c92eb1247d48fafea7",
+      "target": "tests/core/test_runner.py",
+      "transformation": "Import/API rename; tests preserved",
+      "target_sha256": "04c50a958b24d05954dd3110f627eb9d945a822798714e0f668cb1836652b2b6"
+    },
+    {
+      "source": "reconstruct_overall/joint/joint_tests/test_joint.py",
+      "source_sha256": "f0281aa16d3db8bad68e17e24d622067c5a48fb821cddc6e53e7d85180e7a817",
+      "target": "tests/core/test_pipeline.py",
+      "retained_members": [
+        "setUpClass",
+        "tearDownClass",
+        "test_cli_graph_prediction_then_metrics",
+        "test_full_entry_and_cache_isolation",
+        "test_midpoint_overflow"
+      ],
+      "transformation": "Selected independent pipeline regressions; excluded legacy-repository import tests",
+      "target_sha256": "53025a7c8486b10ed4b4ca4f4aa8dad3323a24b059414131828e90870b8dea1b"
+    }
+  ],
+  "additional_files": [
+    {
+      "target": "tests/core/test_independence.py",
+      "sha256": "c94c87839296ad4ae5f2b12a50f733e23ea6a1cd8d1f4b9f047182ea71bed9ec",
+      "purpose": "standalone dependency closure or final-release invariants"
+    },
+    {
+      "target": "tests/core/test_safeguard.py",
+      "sha256": "cf7de4890ee0d703c7dc2e92a99c25f7581f2169692dd58c62aedfefc1b37874",
+      "purpose": "standalone dependency closure or final-release invariants",
+      "source": "reconstruct_overall/joint/joint_tests/test_safeguard_mainline.py",
+      "source_sha256": "14fe3da1789e5fffe803860e06097da7a317d5aeb60c8024b39f3dca84e3a763",
+      "transformation": "Import/API rename; independent reference helpers extracted into tests"
+    },
+    {
+      "target": "tests/core/reference_safeguard.py",
+      "sha256": "64512a78ff33ff69c44bd891f115f3034b909b05f5fa6d5b92e7840c3cdb989f",
+      "purpose": "standalone dependency closure or final-release invariants",
+      "sources": [
+        {
+          "source": "reconstruct_overall/joint/validate_safeguard.py",
+          "sha256": "ed465b1b1245dc809332059f27c05dc3e162ed16e55c2e9f97eb20918c6e64e7"
+        },
+        {
+          "source": "reconstruct_overall/joint/paper_experiments/metrics.py",
+          "sha256": "75542417529b6aa09aba433c6d288c7621e27adeb7679c78f8f398c0ee98b012"
+        }
+      ],
+      "retained_functions": [
+        "law",
+        "shifted_degree_grid",
+        "probability_cdf",
+        "cdf_at",
+        "w1",
+        "capacity_reference",
+        "safeguard",
+        "load_hist",
+        "synthetic_graph"
+      ]
+    }
+  ]
+}

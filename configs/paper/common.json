@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "paper": "PrivTDD",
+  "profile": "paper",
+  "L": 0,
+  "safeguard_enabled": true,
+  "tau": 1,
+  "closure_components": 65,
+  "region_quantiles": [
+    0.9,
+    0.95
+  ],
+  "degree_grid": 512,
+  "report_bucket_width": 0.0625,
+  "triangle_bucket_width": 0.0625,
+  "geometry_draws": 65536,
+  "geometry_replicates": 4,
+  "posterior_updates": 1,
+  "workers": 8,
+  "blas_threads": 2,
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 731,
+    "confidence": 0.95,
+    "method": "percentile",
+    "pairing": "same report hash for within-protocol contrasts"
+  },
+  "allocation_file": "allocations.json",
+  "public_degree_cap": "n-1"
+}

@@ -1,0 +1,385 @@
+\section{Method Overview}\label{sec:method}
+
+\subsection{Basic Idea}
+A node's triangle degree is its wedge count times its closure rate.
+PrivTDD estimates the wedge-count distribution and closure-rate distributions at each node degree.
+Wedge counts follow from locally known degrees, so privatized degree reports suffice to estimate their distribution without first inferring triangle degrees.
+Closure rates are harder to estimate because nodes generally cannot observe edges between their neighbors.
+Modeling the closure-rate distribution can reduce how much must be inferred from noisy reports.
+%For example, if all nodes with wedges shared the same closure rate, the server would need to estimate only that one parameter to characterize closure.
+
+\
+\subsection{Overview}
+\label{sec:overview}
+As illustrated in Fig.~\ref{fig:privtdd-overview}, PrivTDD consists of four phases.
+In \textbf{Phase 1}, nodes report privatized degrees and randomized adjacency bits in the first round, and the server
+broadcasts these bits.
+ In the second round, nodes use the broadcast bits to generate private relational reports on
+connections among their retained neighbors. The server estimates the node-degree distribution and a base triangle-degree distribution conditional on node degree.
+In \textbf{Phase 2}, the server constructs two complementary
+structural reference distributions from the private reports,
+capturing degree-driven connectivity and local clustering,
+respectively.
+In \textbf{Phase 3}, these references guide corrections to
+the base distribution, while the private reports determine
+how to adjust probability mass across triangle-degree ranges
+and its within-region shape.
+In \textbf{Phase 4}, the server combines the corrected
+distribution with each node's reports to obtain posterior
+probabilities over candidate node degrees and triangle degrees.
+Aggregating these probabilities within each degree and
+weighting by the estimated degree proportions yields
+a candidate TDD estimate. Section~\ref{sec:aggregation} gives the final release rule.
+
+
+\subsection{Challenges}
+\label{sec:method_challenges}
+\label{subsec:idea-challenges}
+\noindent\textbf{Challenge 1. Constructing informative structural references from limited private reports.}
+In Phase 2, the server must use private reports alone to construct reference distributions of triangle degrees at each node degree.
+Degree $d$ fixes the number of neighbor pairs, $w(d)=\binom d2$, but reveals neither which pairs are connected nor how often their closures occur together~\cite{newman2009clustering}.
+Relational reports give noisy evidence about these connections.
+Even an accurate mean closure rate would leave the spread of triangle degrees undetermined.
+
+To illustrate, fix the model parameters and the identities $\mathcal I$ of the central node and its neighbors.
+For each neighbor pair $e$, let $X_e$ indicate whether it is connected and set $p_e=\Pr(X_e=1\mid\mathcal I)$.
+The central node's triangle degree $T=\sum_{e=1}^{w(d)}X_e$ has conditional variance:
+\begin{equation}
+\begin{aligned}
+\operatorname{Var}(T\mid\mathcal I)
+=\sum_e p_e(1-p_e)+2\sum_{e<f}\operatorname{Cov}(X_e,X_f\mid\mathcal I).
+\end{aligned}
+\label{eq:challenge_closure_dependence}
+\end{equation}
+Even with every $p_e$ fixed, dependence among closures can change the variance of $T$.
+Section~\ref{sec:references} constructs two references on the same fitted degree model. One assumes independent edges, and the other captures local clustering.
+
+\noindent\textbf{Challenge 2. Adjusting the base distribution with structural references.}
+In Phase 3, the server must decide how much to adjust the base distribution using the Phase 2 references.
+A reference may fit some triangle-degree ranges better than others, yet the true TDD is unavailable for judging which adjustments to trust.
+Using the Phase 1 reporting model, the server assesses how well each candidate adjustment explains the observed private reports.
+Randomization limits which differences the reports can distinguish.
+A single parameter ties adjustments across all count ranges together.
+At the other extreme, fitting a separate unrestricted distribution at each degree requires $\sum_{d=0}^{D_{\max}}w(d)=\binom{D_{\max}+1}{3}$ free parameters in total.
+Even within one range, two distinct adjustments may be needed.
+For example, a reference may match the relative frequencies of tail counts while assigning too much probability to the tail.
+The server must therefore adjust regional mass and within-region shape separately while keeping the distribution valid.
+Section~\ref{sec:correction} fits a small set of parameters shared across degrees to the observed private reports to determine how much of each adjustment to apply.
+
+\section{PrivTDD Detail}
+
+\subsection{Phase 1: Private Reports and Base Distribution}
+\label{sec:base}
+\label{sec:private_collection}
+\label{sec:distribution_construction}
+Structural references and subsequent distribution correction require private evidence about node degrees and connections among neighbors.
+In this Phase, we collect this evidence through a two-round reporting protocol and construct the base triangle-degree distribution.
+
+\subsubsection{Private report collection}
+The estimator uses degree reports $C_v$ and relational reports $s_v$, collected in two rounds, as $\mathcal Z=\{(C_v,s_v)\}_{v\in V}$, using positive budgets $\varepsilon_{\mathrm{deg}},\varepsilon_{\mathrm{rr}},\varepsilon_{\mathrm{rel}}$ for degree, randomized response (RR)~\cite{LDPGDDWarner1965}, and relational reporting, respectively.
+In Round 1, nodes draw independent degree noise, and node $v$ releases
+\begin{equation}
+C_v=\operatorname{clip}_{[0,D_{\max}]}\!\left(\lfloor d_v+\xi_v\rfloor\right),
+\quad \xi_v\sim\operatorname{Lap}(0,1/\varepsilon_{\mathrm{deg}}).
+\label{eq:private_degree}
+\end{equation}
+For every unordered node pair $\{u,w\}$, one publicly assigned endpoint releases the RR version $\widetilde A_{uw}$ of its adjacency bit $x_{uw}$, independently across pairs. The server broadcasts these reports for reuse without neighborhood-dependent queries~\cite{imola2021locally}. 
+We use $p,p_0$ to denote the probabilities of preserving
+and flipping a bit, and set $\gamma=p-p_0$.
+
+In Round 2, node $v$ applies neighborhood truncation with size cap $C_v$: it retains its first $\min(d_v,C_v)$ neighbors under a fixed, graph-independent public order, forming $N_v^C$. It computes the retained wedge count $\widetilde W_v$ and the count $B_v$ of RR ones, then releases only $s_v$:
+\begin{equation}
+\begin{alignedat}{2}
+&\widetilde W_v=\binom{|N_v^C|}{2}, &\quad& B_v=\sum_{\{u,w\}\subseteq N_v^C}\widetilde A_{uw},\\
+&s_v=\frac{B_v-p_0\widetilde W_v+\zeta_v}{\gamma}, &\quad& b_v=\frac{(C_v-1)_+}{\varepsilon_{\mathrm{rel}}}.
+\end{alignedat}
+\label{eq:private_relational_statistic}
+\end{equation}
+Here $(x)_+=\max\{x,0\}$. For $C_v>1$, $\zeta_v\sim\operatorname{Lap}(0,b_v)$ is independent noise; otherwise $s_v=\zeta_v=0$. The neighborhood, $\widetilde W_v$, and $B_v$ remain local. Averaging over RR and count noise gives $\mathbb E[s_v\mid N_v^C]=t_v^C$, the number of triangles containing $v$ and two nodes in $N_v^C$. It need not equal $t_v$ because $C_v<d_v$ truncates the neighborhood. Given the first-round transcript, the centered count $B_v-p_0\widetilde W_v$ has sensitivity at most $(C_v-1)_+$. Accounting for both endpoints gives
+\begin{equation}
+2\varepsilon_{\mathrm{deg}}+\varepsilon_{\mathrm{rr}}+
+2\varepsilon_{\mathrm{rel}}\le\varepsilon.
+\label{eq:privacy_allocation}
+\end{equation}
+The privacy proof and the budget-selection rule are in Section~\ref{sec:analysis}. Subsequent estimation uses these reports without further privacy expenditure.
+
+\subsubsection{Scale and closure distribution estimation}
+\emph{Wedge-count distribution.} Let $\mathcal K_{\mathrm{deg}}(c\mid d)=\Pr(C_v=c\mid d_v=d)$ be the channel induced by~\eqref{eq:private_degree}, including flooring and clipping, and $\mathcal P_m$ the $m$-coordinate probability simplex. Fit the population degree proportions~\cite{koenker2014convex} and assign probabilities to candidate degrees for each report:
+\begin{equation}
+\begin{aligned}
+&\widehat\pi\in\arg\min_{\pi\in\mathcal P_{D_{\max}+1}}
+-\sum_v\log\sum_{d=0}^{D_{\max}}\pi(d)\mathcal K_{\mathrm{deg}}(C_v\mid d),\\
+&q_v(d)=\frac{\widehat\pi(d)\mathcal K_{\mathrm{deg}}(C_v\mid d)}
+{\sum_{d'}\widehat\pi(d')\mathcal K_{\mathrm{deg}}(C_v\mid d')}.
+\end{aligned}
+\label{eq:degree_distribution}
+% Equation label merged: eq:degree_posterior -> eq:degree_distribution
+\end{equation}
+The wedge-count distribution places each estimated degree probability at $w(d)$, combining degrees $0$ and $1$ at zero. Here $q_v(d)$ is node $v$'s degree posterior based only on $C_v$. Subsequent degree sums use $\mathcal D=\{d:\widehat\pi(d)>0\}$, including $d>C_v$.
+
+\emph{Report likelihood.} We use $\rho\in[0,1]$ as a continuous working representation of closure rate. Define the full and retained wedge capacities $w(d)=\binom d2$ and $W^C_{v,d}=\binom{\min(d,C_v)}2$, the centered report $Q_v=\gamma s_v$, and the integer-count map $\tau_d(\rho)=\operatorname{round}(w(d)\rho)$ with a fixed tie rule. The likelihood $\ell_v(d,\rho)$ models $Q_v$ given $C_v$ and candidate state $(d,\rho)$. If $C_v\le1$, take $\ell_v=1$. Otherwise, for $W^C_{v,d}\le64$, assume that, conditional on $(d,t)$, all placements of the $t=\tau_d(\rho)$ closing pairs among the $w(d)$ candidate pairs are equally likely. This working assumption gives:
+\begin{equation}
+\begin{aligned}
+&J_v\mid d,t,C_v\sim\operatorname{Hypergeom}(w(d),t,W^C_{v,d}),\\
+&B_v\mid J_v=j\overset{\mathrm d}{=}
+\operatorname{Bin}(j,p)+\operatorname{Bin}(W^C_{v,d}-j,p_0),\\
+&\ell_v(d,\rho)=\mathbb E_{J_v,B_v}\!\left[
+\frac{e^{-|Q_v-B_v+p_0W^C_{v,d}|/b_v}}{2b_v}\right].
+\end{aligned}
+\label{eq:projected_closing_count}
+\end{equation}
+Here $J_v$ is the retained true closing-edge count; 
+the hypergeometric parameters are total, closing, and retained pair counts, respectively. 
+Marginalizing $J_v$ and $B_v$ propagates both relational randomization and count noise into inference. 
+The binomials are independent; $J_v=t$ without truncation and $J_v=t=0$ when $w(d)=0$. 
+For larger retained capacities:
+\begin{equation}
+\ell_v(d,\rho)\approx
+f_{\mathrm{NL}}\!\left(Q_v-\gamma W^C_{v,d}\rho;
+\sqrt{W^C_{v,d}pp_0},b_v\right),
+\label{eq:closure_likelihood}
+\end{equation}
+where $f_{\mathrm{NL}}(\cdot;\sigma,b)$ is the density of independent $\mathcal N(0,\sigma^2)$ plus $\operatorname{Lap}(0,b)$ noise. This approximation replaces the retained count by $W^C_{v,d}\rho$ and omits its truncation-induced variation.
+
+\emph{Shared fit and conditional base.} To pool closure evidence, fix $K\ge4$ components: $\nu_0=\delta_0$, $\nu_{K-1}=\delta_1$, and $\nu_k=\operatorname{Unif}[e_{k-1},e_k]$ for $1\le k\le K-2$, with fixed interval boundaries $0=e_0<\cdots<e_{K-2}=1$. Here $\delta_a$ is the point mass at $a$. With mixture weights $\theta\in\mathcal P_K$, set $\mathcal G_\theta=\sum_k\theta_k\nu_k$. Let $\overline\Lambda_{vk}$ be report $v$'s likelihood under component $k$, averaged over candidate degrees, and fit:
+\begin{equation}
+\begin{aligned}
+&\overline\Lambda_{vk}=\sum_d q_v(d)
+\int_{[0,1]}\ell_v(d,\rho)\nu_k(\mathrm d\rho),\\
+&\widehat\theta\in\arg\min_{\theta\in\mathcal P_K}
+-\frac1n\sum_v\log\sum_k\theta_k\overline\Lambda_{vk}.
+\end{aligned}
+\label{eq:shared_closure_fit}
+% Equation label merged: eq:closure_grid -> eq:shared_closure_fit
+\end{equation}
+Shared RR makes reports dependent, so this is a composite likelihood~\cite{varin2011overview}, convex in the weights. The shared weights pool information without forcing the final conditional distributions to coincide. Combine the fitted distribution with each node's evidence:
+\begin{equation}
+\begin{aligned}
+&r_{v,d}(\mathrm d\rho)=
+\frac{q_v(d)\ell_v(d,\rho)\mathcal G_{\widehat\theta}(\mathrm d\rho)}
+{\sum_k\widehat\theta_k\overline\Lambda_{vk}},\\
+&\widehat P_F(\mathrm d\rho\mid d)=
+\frac{\sum_v r_{v,d}(\mathrm d\rho)}{\sum_v r_{v,d}([0,1])},\\
+&R_F(t\mid d)=\int_{[0,1]}\mathbf1\{t=\tau_d(\rho)\}
+\widehat P_F(\mathrm d\rho\mid d).
+\end{aligned}
+\label{eq:joint_latent_posterior}
+% Equation label merged: eq:conditional_closure -> eq:joint_latent_posterior
+% Equation label merged: eq:conditional_participation -> eq:joint_latent_posterior
+\end{equation}
+$r_{v,d}$ is the working joint degree--closure posterior, with total mass $r_{v,d}([0,1])$ equal to the updated degree probability. Normalizing within $d$ gives the conditional closure-rate distribution $\widehat P_F$ and the conditional triangle-degree distribution $R_F$. The mapping to integer counts collects probability over closure values, rather than assigning each node to a single bin. For $d\le1$, set $\widehat P_F=\delta_0$ and $R_F(0\mid d)=1$. Relational evidence updates these conditional distributions, not the population weights $\widehat\pi$. The outputs are $\widehat\pi$, $\{q_v\}$, the report likelihood $\ell_v$, and $R_F$; $n\sum_d\widehat\pi(d)R_F(t\mid d)$ is already a base TDD estimate.
+
+
+\subsection{Phase 2: Complementary Structural References}
+\label{sec:references}
+\label{sec:gdd_reconstruction}
+To address Challenge 1, both references use a shared edge-probability model fitted from privatized degree reports. The $\beta$ reference assumes conditional edge independence; the geometric reference introduces local clustering while preserving type-pair marginal edge probabilities. Their differences therefore reflect closure assumptions rather than different degree fits.
+
+\subsubsection{Shared edge-probability model}
+Compute the posterior mean degree $\bar d_v=\sum_d d q_v(d)$. For a preset maximum of $M_{\max}$ types, partition $[0,\max_v\log(1+\bar d_v)]$ into $M_{\max}$ equal-width cells and group nodes by $\log(1+\bar d_v)$, retaining nonempty types; if all means are zero, use one type. For type $a$, define its node set $V_a$, size $n_a=|V_a|$, target mean degree $\mu_a=n_a^{-1}\sum_{v\in V_a}\bar d_v$, and edge-probability parameter $\beta_a$. With $\boldsymbol\beta=(\beta_a)_a$, $\bar\beta=n^{-1}\sum_a n_a\beta_a$, and fixed parameter bound $B_\beta>0$, fit the $\beta$ model~\cite{chatterjee2011random}:
+\begin{equation}
+\begin{aligned}
+&\widehat{\boldsymbol\beta}\in\arg\min_{|\beta_a|\le B_\beta}\frac1n
+\Bigl\{\frac12\sum_{a,b}n_a(n_b-\mathbf1\{a=b\})\\
+&\quad \cdot\log(1+e^{\beta_a+\beta_b})-\sum_a n_a\mu_a\beta_a\\
+&\quad +\frac12\sum_a n_a(\beta_a-\bar\beta)^2\Bigr\}.
+\end{aligned}
+\label{eq:structural_beta_fit}
+\end{equation}
+The resulting edge probability is $P_{ab}=(1+e^{-\widehat\beta_a-\widehat\beta_b})^{-1}$. The penalty and bound control parameter variation and magnitude.
+
+\subsubsection{Independent-edge reference}
+A fitted $\beta_a$ does not fix realized degree, so condition on a type-$a$ central node having exactly $d$ neighbors. Let $\mathbf z=(z_h)_h$ count neighbors by type, with $z_h$ type-$h$ neighbors drawn from $N_h^{(a)}=n_h-\mathbf1\{h=a\}$ available nodes. Both references use:
+\begin{equation}
+\Pr(\mathbf z\mid a,d)\propto
+\mathbf1\!\left\{\sum_hz_h=d\right\}
+\prod_h\binom{N_h^{(a)}}{z_h}e^{\widehat\beta_hz_h},
+\label{eq:fixed_degree_composition}
+\end{equation}
+with $0\le z_h\le N_h^{(a)}$; the factor $e^{\widehat\beta_a d}$ cancels upon normalization. Given these neighbor-type counts, the triangle degree $T_\beta$ under independent closing edges satisfies:
+\begin{equation}
+\begin{aligned}
+&T_\beta\mid\mathbf z\overset{\mathrm d}{=}
+\sum_{h<j}\operatorname{Bin}(z_hz_j,P_{hj})\\
+&\quad +\sum_h\operatorname{Bin}\!\left(\binom{z_h}{2},P_{hh}\right).
+\end{aligned}
+\label{eq:beta_conditional_count}
+\end{equation}
+Averaging this count distribution with posterior weights $\eta_a(d)$ for central types at degree $d$ yields the reference $R_\beta$:
+\begin{equation}
+\begin{aligned}
+&\eta_a(d)=\frac{\sum_{v\in V_a}q_v(d)}{\sum_vq_v(d)},\\
+&R_\beta(t\mid d)=\sum_a\eta_a(d)
+\mathbb E_{\mathbf z\mid a,d}[\Pr(T_\beta=t\mid\mathbf z)].
+\end{aligned}
+\label{eq:beta_conditional_reference}
+\end{equation}
+
+\subsubsection{Clustering reference on the same edge model}
+Independent edges do not account for the extra tendency of two neighbors to connect due to latent proximity. Inspired by hidden geometric models~\cite{serrano2008selfsimilarity}, place nodes independently and uniformly on a circle of circumference one. For shortest circular distance $\delta\in[0,1/2]$ and locality parameter $0<\kappa<1$, define the connection probability:
+\begin{equation}
+\begin{aligned}
+&a_{ab}=\kappa P_{ab},\qquad b_{ab}=\min(P_{ab}/\kappa,1),\\
+&\omega_{ab}=(b_{ab}-P_{ab})/(b_{ab}-a_{ab}),\\
+&g_{ab}^{(\kappa)}(\delta)=\omega_{ab}\mathbf1\{\delta\le a_{ab}/2\}\\
+&\quad+(1-\omega_{ab})\mathbf1\{\delta\le b_{ab}/2\}.
+\end{aligned}
+\label{eq:geometry_connection_kernel}
+\end{equation}
+The quantities $a_{ab},b_{ab}$ are full arc lengths, mixed with weight $\omega_{ab}$. Averaging over positions gives $\omega_{ab}a_{ab}+(1-\omega_{ab})b_{ab}=P_{ab}$. Set $g_{ab}^{(0)}=P_{ab}$ and $g_{ab}^{(1)}(\delta)=\mathbf1\{\delta\le P_{ab}/2\}$ at the endpoints. Edges incident to the central node remain independent after integrating over candidate positions, so~\eqref{eq:fixed_degree_composition} still applies. Conditional on connection to a type-$a$ central node at zero, draw neighbor positions independently, with each type-$h$ neighbor having density:
+\begin{equation}
+f_{ah}^{(\kappa)}(x\mid\mathrm{edge})=
+\frac{g_{ah}^{(\kappa)}(\delta_{\mathrm{circ}}(x,0))}{P_{ah}},
+\quad x\in[-1/2,1/2).
+\label{eq:geometry_conditional_position}
+\end{equation}
+Here $\delta_{\mathrm{circ}}$ denotes shortest circular distance. For neighbor types $h_r$ and positions $\mathbf X=(X_r)_{r=1}^d$, sum conditionally independent closures into triangle degree $T_G$ and integrate to obtain the geometric reference $R_G$:
+\begin{equation}
+\begin{aligned}
+&T_G\mid\mathbf z,\mathbf X
+\overset{\mathrm d}{=}\sum_{r<s}\operatorname{Bernoulli}
+\!\left(g_{h_rh_s}^{(\kappa)}(\delta_{\mathrm{circ}}(X_r,X_s))\right),\\
+&R_G(t\mid d;\kappa)=\sum_a\eta_a(d)
+\mathbb E_{\mathbf z,\mathbf X\mid a,d;\kappa}
+[\Pr(T_G=t\mid\mathbf z,\mathbf X)].
+\end{aligned}
+\label{eq:geometry_conditional_reference}
+\end{equation}
+Shared positions induce dependence among closures after integration, without estimating actual node locations. At $\kappa=0$, this reduces to $R_\beta$.
+
+\emph{Selecting $\kappa$.} Using the same truncation working model as Section~\ref{sec:base}, match the predicted report mean $\mu_G^{\mathrm{rep}}(\kappa)$ to the observed mean $\bar s$:
+\begin{equation}
+\begin{aligned}
+&\mu_G^{\mathrm{rep}}(\kappa)=\frac1n\sum_v\sum_d
+q_v(d)\frac{W^C_{v,d}}{w(d)}\mathbb E[T_G\mid d;\kappa],\\
+&\widetilde\mu_G^{\mathrm{rep}}(\widehat\kappa)
+=\operatorname{clip}_{I_G^{\mathrm{rep}}}(\bar s),
+\qquad \bar s=\frac1n\sum_vs_v.
+\end{aligned}
+\label{eq:geometry_calibration}
+% Equation label merged: eq:geometry_population_mean -> eq:geometry_calibration
+\end{equation}
+Solve for $\widehat\kappa\in[0,1]$. Zero-capacity terms are zero. Here $\widetilde\mu_G^{\mathrm{rep}}$ is the numerical approximation, and $I_G^{\mathrm{rep}}$ is the interval between its endpoint predictions at $0$ and $1$. Use a matching endpoint when the target equals its prediction, and $\widehat\kappa=0$ when the endpoint predictions coincide. Fix $R_G(t\mid d)=R_G(t\mid d;\widehat\kappa)$. Both references are computed analytically for $d\le2$ and by Monte Carlo integration otherwise. Neither is assumed correct across all triangle-degree ranges.
+
+
+\subsection{Phase 3: Report-Driven Distribution Correction}
+\label{sec:correction}
+To address Challenge 2, we use the two structural references
+to correct the data-driven base $R_F$ without treating
+either as ground truth.
+A reference may capture the relative frequencies within
+a count range but misestimate its total probability,
+so we adjust regional mass and within-region shape separately.
+Since randomized reports provide limited evidence,
+we fit a small set of correction strengths shared across
+degrees using the report likelihood.
+
+\subsubsection{Regional mass and shape}
+Using shared boundaries $b_1\le b_2$, define four degree-specific regions $I_r(d)$, separating zero from positive counts:
+\begin{equation}
+\begin{aligned}
+&I_0(d)=\{0\},\\
+&I_1(d)=(0,b_1]\cap\{1,\ldots,w(d)\},\\
+&I_2(d)=(b_1,b_2]\cap\{1,\ldots,w(d)\},\\
+&I_3(d)=(b_2,w(d)]\cap\mathbb Z.
+\end{aligned}
+\label{eq:participation_regions}
+\end{equation}
+These are zero, body, transition, and tail. Choose $b_1,b_2$ at two prespecified quantile levels of the base population distribution $p_F(t)=\sum_d\widehat\pi(d)R_F(t\mid d)$ conditional on $t>0$, and keep them fixed during fitting. If positive mass is absent, set both to zero; empty regions are allowed. Different regions can then change without forcing the same adjustment elsewhere.
+
+Within a region, a reference can have a useful relative shape but an inaccurate total probability. For source $s\in\{F,G,\beta\}$ and region $r$, define regional mass $m_{sr}(d)$ and normalized shape $h_{sr}(t\mid d)$:
+\begin{equation}
+\begin{aligned}
+&m_{sr}(d)=\sum_{t\in I_r(d)}R_s(t\mid d),\\
+&h_{sr}(t\mid d)=\frac{R_s(t\mid d)\mathbf1\{t\in I_r(d)\}}{m_{sr}(d)}.
+\end{aligned}
+\label{eq:regional_mass_shape}
+\end{equation}
+Set $h_{sr}=0$ when $m_{sr}=0$. For each positive region, choose initial within-region shape $h_{0r}$ as the first nonempty shape in the order $F,G,\beta$, or zero if none exists. Set $h_{00}(t\mid d)=\mathbf1\{t=0\}$. Transferring mass along $h_{0r}$ avoids changing shape. %at the same time.
+
+\subsubsection{Shared correction parameters}
+Suppressing $(d,t)$, define total positive mass $m_s^+=\sum_{r=1}^3m_{sr}$ and its regional proportions $\phi_{sr}=m_{sr}/m_s^+$. Set $\phi_{Fr}=0$ if $m_F^+=0$; a reference with no positive mass uses $\phi_{Fr}$. Three changes $\Delta_j(t\mid d)$ to count probabilities transfer mass between zero and positive counts and redistribute it across positive regions:
+\begin{equation}
+\begin{aligned}
+&\Delta_1=(m_G^+-m_F^+)\left(\sum_{r=1}^3\phi_{Gr}h_{0r}-h_{00}\right),\\
+&\Delta_2=m_F^+\sum_{r=1}^3(\phi_{Gr}-\phi_{Fr})h_{0r},\\
+&\Delta_3=m_F^+\sum_{r=1}^3(\phi_{\beta r}-\phi_{Fr})h_{0r}.
+\end{aligned}
+\label{eq:structural_directions}
+\end{equation}
+Only $\Delta_1$ changes total positive mass. For the four within-region shape directions, we fix the assignment: geometric in the body, both in the transition, and $\beta$ in the tail.
+\begin{equation}
+\begin{alignedat}{2}
+&\Delta_4=m_{G1}(h_{G1}-h_{01}), &\quad& \Delta_5=m_{G2}(h_{G2}-h_{02}),\\
+&\Delta_6=m_{\beta2}(h_{\beta2}-h_{02}), &\quad& \Delta_7=m_{\beta3}(h_{\beta3}-h_{03}).
+\end{alignedat}
+\label{eq:structural_shape_directions}
+\end{equation}
+Each direction sums to zero; shape directions also conserve regional mass. The fixed shape allocation does not restrict the mass directions. Set $R_{\mathbf x}=R_F+\sum_{j=1}^7x_j\Delta_j$, where $\mathbf x=(x_1,\ldots,x_7)$ contains seven strengths shared across degrees. They scale changes, not mixture components, and need not sum to one.
+
+Bounds $0\le x_j\le1$ alone do not ensure nonnegativity. For each $r=0,\ldots,3$, order the three fixed shapes as $(h_{0r},h_{Gr},h_{\beta r})$ to form $\{h_{d\ell}\}_{\ell=1}^{12}$. Expanding the displayed directions in this order gives the following representation and feasible set $\mathcal C$:
+\begin{equation}
+\begin{aligned}
+&R_{\mathbf x}(t\mid d)=\sum_{\ell=1}^{12}
+[\mathbf c_d+\mathbf B_d\mathbf x]_\ell h_{d\ell}(t),\\
+&\mathcal C=\{\mathbf x\in[0,1]^7:
+\mathbf c_d+\mathbf B_d\mathbf x\ge0\ \forall d\in\mathcal D\}.
+\end{aligned}
+\label{eq:joint_feasible_domain}
+\end{equation}
+Here $\mathbf c_d\in\mathbb R^{12}$ has regional blocks $(m_{Fr},0,0)$, and column $j$ of $\mathbf B_d\in\mathbb R^{12\times7}$ contains the coefficients of $\Delta_j$ in these fixed shapes. These twelve coefficients express constraints; only seven parameters are learned. The constraints and zero-sum directions preserve nonnegativity, normalization, and the degree-specific count range; $\mathbf x=0$ retains the base.
+
+\subsubsection{Learning from the observed reports}
+For $w(d)>0$, define the report likelihood $\mathcal K_v(Q_v\mid d,t)=\ell_v(d,t/w(d))$; for $w(d)=0$, set $\mathcal K_v(Q_v\mid d,0)=\ell_v(d,0)$. Keep the base fit's truncation model and degree support. With report likelihood $f_v(\mathbf x)$, fit:
+\begin{equation}
+\begin{aligned}
+&f_v(\mathbf x)=\sum_dq_v(d)\sum_{t=0}^{w(d)}
+R_{\mathbf x}(t\mid d)\mathcal K_v(Q_v\mid d,t),\\
+&\mathbf x^\star\in\arg\min_{\mathbf x\in\mathcal C}
+\left\{-\sum_v\log f_v(\mathbf x)+\frac12\|\mathbf x\|_2^2\right\}.
+\end{aligned}
+\label{eq:fusion_optimization}
+\end{equation}
+This composite likelihood selects corrections from reports; the penalty shrinks them toward the base. The base, references, boundaries, degree probabilities, and report likelihoods are fixed during fitting. Affine report densities and linear constraints give a convex objective on positive densities. The corrected conditional distribution is $R_J=R_{\mathbf x^\star}$.
+
+
+\subsection{Phase 4: Posterior Aggregation and Final Release}
+Although $R_J$ provides a shared degree-conditioned distribution, individual reports may favor different triangle-degree values. 
+Phase 4 uses these reports for posterior refinement and aggregation to produce the final TDD.
+
+\label{sec:aggregation}
+Using $\pi(d)$ and $R(t\mid d)$ defined in Section~\ref{sec:pre}, the population histogram satisfies:
+\begin{equation}
+H(t)=n\sum_{d=0}^{D_{\max}}\pi(d)R(t\mid d).
+\label{eq:problem-conditional-factorization}
+\end{equation}
+Conditioning on degree preserves the dependence between wedge count and closure rate. The factor $n$ returns node counts rather than normalized probabilities.
+
+Regional correction links count probabilities through seven directions, but each report can favor individual counts differently. Freeze $R_J$ and compute joint node-degree and triangle-degree probabilities $r_v^J(d,t)$ by one posterior reweighting~\cite{efron2014two}:
+\begin{equation}
+r_v^J(d,t)=\frac{q_v(d)R_J(t\mid d)\mathcal K_v(Q_v\mid d,t)}
+{f_v(\mathbf x^\star)}.
+\label{eq:frozen_joint_posterior}
+\end{equation}
+To preserve the estimated degree proportions $\widehat\pi$, normalize within each degree to obtain $R^\star(t\mid d)$, then aggregate:
+\begin{equation}
+\begin{aligned}
+&R^\star(t\mid d)=\frac{\sum_vr_v^J(d,t)}
+{\sum_v\sum_{t'=0}^{w(d)}r_v^J(d,t')},\\
+&\widehat H_{\mathrm{raw}}(t)=n\sum_d\widehat\pi(d)R^\star(t\mid d).
+\end{aligned}
+\label{eq:final_gdd}
+\end{equation}
+If the within-degree normalization denominator for $R^\star(t\mid d)$ is zero, set $R^\star(t\mid d)=R_J(t\mid d)$. This single update can move beyond the finite correction family, but cannot add mass where $R_J=0$. The candidate estimate $\widehat H_{\mathrm{raw}}$ has total count $n$.
+
+For the transport safeguard, let $F_{\mathrm{dir}}$ be the empirical cumulative distribution function (CDF) of $\mathsf b_{W_{\max}}(s_v)$ over the original relational reports $s_v$, using the clipping and rounding rule in Eq.~\eqref{eq:direct-gdd}. The estimated wedge-count CDF is $F_{\mathrm{cap}}(t)=\sum_d\widehat\pi(d)\mathbf1\{w(d)\le t\}$. The reference histogram has counts $H_A(t)=n[F_A(t)-F_A(t-1)]$, where $F_A(-1)=0$ and
+\begin{equation}
+F_A(t)=\max\{F_{\mathrm{dir}}(t),F_{\mathrm{cap}}(t)\}.
+\label{eq:pg-reference-cdf}
+\end{equation}
+Let $\Delta=W_1(\widehat H_{\mathrm{raw}}/n,H_A/n)$, where $W_1$ is the first Wasserstein distance with ground cost $|t-u|$ between triangle degrees. For public $\tau>0$, set $\alpha=1$ if $\Delta\le\tau D_{\max}$ and $\alpha=\tau D_{\max}/\Delta$ otherwise. PrivTDD releases:
+\begin{equation}
+\widehat H=\alpha\widehat H_{\mathrm{raw}}+(1-\alpha)H_A.
+\label{eq:pg-guard}
+\end{equation}
+This post-processing uses only released reports and public parameters, so it incurs no additional privacy loss.

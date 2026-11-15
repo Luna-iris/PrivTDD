@@ -1,0 +1,75 @@
+{
+  "validation_date": "2026-11-15",
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "mode": "from local official raw inputs; no network download; independent standalone preprocessing and exact truth",
+  "datasets": [
+    {
+      "dataset": "bio-dmela",
+      "ok": true,
+      "issues": [],
+      "checked_files": [
+        "indptr.npy",
+        "indices.npy",
+        "triangles.npy",
+        "new_to_original.npy"
+      ],
+      "full_hash": true,
+      "public_degree_cap": 7392
+    },
+    {
+      "dataset": "dblp",
+      "ok": true,
+      "issues": [],
+      "checked_files": [
+        "indptr.npy",
+        "indices.npy",
+        "triangles.npy",
+        "new_to_original.npy"
+      ],
+      "full_hash": true,
+      "public_degree_cap": 317079
+    },
+    {
+      "dataset": "higgs",
+      "ok": true,
+      "issues": [],
+      "checked_files": [
+        "indptr.npy",
+        "indices.npy",
+        "triangles.npy",
+        "new_to_original.npy"
+      ],
+      "full_hash": true,
+      "public_degree_cap": 456625
+    },
+    {
+      "dataset": "orkut",
+      "ok": true,
+      "issues": [],
+      "checked_files": [
+        "indptr.npy",
+        "indices.npy",
+        "triangles.npy",
+        "new_to_original.npy"
+      ],
+      "full_hash": true,
+      "public_degree_cap": 3072440
+    }
+  ],
+  "tests": {
+    "dataset_semantics": 4,
+    "sampling_channel_recovery_summary": 13,
+    "tiny_baselines": [
+      "TriTR-Hist",
+      "LDPGraph-T",
+      "LDPGraph-S"
+    ],
+    "synthesis_backend": "compact_edge_set_v1"
+  },
+  "limitations": [
+    "No full paper experiment rerun in this validation",
+    "Official download retrieval not exercised; local raw content digests verified",
+    "Cross-platform library version equivalence not established"
+  ]
+}

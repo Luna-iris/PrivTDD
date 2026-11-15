@@ -1,0 +1,46 @@
+% \section{Related Work}
+% \noindent\textbf{Private Subgraph Statistics and Distribution Release.}
+% Private subgraph analysis studies counts and distributions under different data-access assumptions.
+% Centralized methods release triangle-count distributions and common-neighbor histograms over node pairs, assuming a trusted curator with access to the graph~\cite{dingDifferentiallyPrivateTriangle2022,lvPublishingTriangleCounting2021,lvPublishingCommonNeighbors2024a}.
+% Day et al.~\cite{day2016degree} use graph projection to publish the degree distribution under central node-DP.
+% Local methods use randomized adjacency reports and interaction for subgraph counting and communication reduction~\cite{imola2021locally,LDPGDDImola2022Corrected,guo2026tritr}.
+% Related research develops counting error bounds, exploits graph sparsity, and refines per-vertex triangle estimates~\cite{LDPGDDEden2023,mundra2025practical,he2025robust}.
+% Wei et al.~\cite{wei2025directed} count cycle and flow triangles in directed graphs under central and local edge-DP.
+% Liu et al.~\cite{liu2024relationship} estimate triangle counts from correlated edge observations under $(\varepsilon,\delta)$-edge relationship local differential privacy.
+% Other edge-LDP protocols estimate per-edge triangle support for truss decomposition~\cite{zhang2025truss} or count occurrences of acyclic patterns~\cite{hu2026acyclic}.
+% PrivTDD targets the TDD from local reports, addressing how count uncertainty propagates through distributional aggregation.
+
+% \noindent\textbf{Frequency and Distribution Estimation under LDP.}
+% LDP distribution estimation uses the known randomization mechanism to estimate population frequencies or probability distributions from reports.
+% Existing approaches design efficient frequency-estimation protocols~\cite{LDPGDDWang2017,bassily2015succinct} or fit distributions through likelihood models, using smoothing or mixture-component merging to mitigate instability and overfitting~\cite{li2020estimating,ye2025revisiting}.
+% These approaches typically start from locally known values, whereas triangle participation depends on edges among neighbors that users cannot directly observe.
+% PrivTDD therefore combines private degree and relational reports through an observation model that accounts for neighborhood truncation.
+
+% \noindent\textbf{Structure-Assisted Private Graph Analysis.}
+% Structural information assists the estimation of graph metrics and reconstruction of topology from noisy reports.
+% Combining private degrees and adjacency information supports graph-metric calibration and Bayesian topology inference~\cite{Ye2022,LDPGDDZhu2023Blink}.
+% Structural constraints also enable joint refinement of degree and local triangle targets before graph synthesis~\cite{dong2026ldpgraph}.
+% PrivTDD turns models of degree heterogeneity and local clustering into complementary structural references for the degree-conditioned triangle participation distribution, learns regional mass and within-region shape corrections from private reports, and estimates the TDD directly.
+\section{Related Work}
+\noindent\textbf{Private Subgraph Statistics and Distribution Release.}
+Private subgraph analysis studies counts and distributions under different data-access assumptions.
+Centralized methods release triangle-count distributions and common-neighbor histograms over node pairs, assuming a trusted curator with access to the graph~\cite{dingDifferentiallyPrivateTriangle2022,lvPublishingTriangleCounting2021,lvPublishingCommonNeighbors2024a}.
+Day et al.~\cite{day2016degree} use graph projection to publish the degree distribution under central node-DP.
+Local methods use randomized adjacency reports and interaction for subgraph counting and communication reduction~\cite{imola2021locally,LDPGDDImola2022Corrected,guo2026tritr}.
+Related research develops counting error bounds, exploits graph sparsity, and refines per-vertex triangle-degree estimates~\cite{LDPGDDEden2023,mundra2025practical,he2025robust}.
+Wei et al.~\cite{wei2025directed} count cycle and flow triangles in directed graphs under central and local edge-DP.
+Liu et al.~\cite{liu2024relationship} estimate triangle counts from correlated edge observations under $(\varepsilon,\delta)$-edge relationship local differential privacy.
+Other edge-LDP protocols estimate the number of triangles containing each edge for truss decomposition~\cite{zhang2025truss} or count occurrences of acyclic patterns~\cite{hu2026acyclic}.
+% PrivTDD targets the TDD from local reports, addressing how count uncertainty propagates through distributional aggregation.
+
+\noindent\textbf{Frequency and Distribution Estimation under LDP.}
+LDP distribution estimation uses the known randomization mechanism to estimate population frequencies or probability distributions from reports.
+Existing approaches design efficient frequency-estimation protocols~\cite{LDPGDDWang2017,bassily2015succinct} or fit distributions through likelihood models, using smoothing or mixture-component merging to mitigate instability and overfitting~\cite{li2020estimating,ye2025revisiting}.
+These approaches typically start from locally known values, whereas triangle degrees depend on edges among neighbors that users cannot directly observe.
+% PrivTDD therefore combines private degree and relational reports through an observation model that accounts for neighborhood truncation.
+
+\noindent\textbf{Structure-Assisted Private Graph Analysis.}
+Structural information assists the estimation of graph metrics and reconstruction of topology from noisy reports.
+Combining privatized degree and adjacency reports supports graph-metric calibration and Bayesian topology inference~\cite{Ye2022,LDPGDDZhu2023Blink}.
+Structural constraints also enable joint refinement of degree and local triangle-count estimates before graph synthesis~\cite{dong2026ldpgraph}.
+% PrivTDD turns models of degree heterogeneity and local clustering into complementary structural references for triangle degrees conditional on node degree, learns regional mass and within-region shape corrections from private reports, and estimates the TDD directly.

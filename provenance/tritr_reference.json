@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-15",
+  "paper_url": "https://arxiv.org/html/2507.06508v2",
+  "repository_url": "https://anonymous.4open.science/r/Locally_Private_Subgraph_Counting_via_NAM_DPRD-A421/",
+  "citation_evidence": "Paper Open Science section and reference [1]",
+  "remote_version": "observed file bytes pinned by SHA-256; immutable remote commit not claimed",
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://anonymous.4open.science/api/repo/Locally_Private_Subgraph_Counting_via_NAM_DPRD-A421/file/LICENSE",
+      "bytes": 1114,
+      "sha256": "4f5e157834a3f590b00df05d99a3a3bc22dd629be9aa4befe334325f7080ab90",
+      "matches_local_reference_exactly": true
+    },
+    {
+      "path": "BasicTools/Init.py",
+      "url": "https://anonymous.4open.science/api/repo/Locally_Private_Subgraph_Counting_via_NAM_DPRD-A421/file/BasicTools/Init.py",
+      "bytes": 5740,
+      "sha256": "b31f66721f6016a194718040451b8add57509f58e9320cd92498a4db96f6aa92",
+      "matches_local_reference_exactly": true
+    },
+    {
+      "path": "Algorithm-Comparison-FB/Codes/OURS-TriTR.py",
+      "url": "https://anonymous.4open.science/api/repo/Locally_Private_Subgraph_Counting_via_NAM_DPRD-A421/file/Algorithm-Comparison-FB/Codes/OURS-TriTR.py",
+      "bytes": 4911,
+      "sha256": "d383441af21238e9879d23b90ac3b55e06f055864a3abb3b45189dc6650564c8",
+      "matches_local_reference_exactly": true
+    },
+    {
+      "path": "Algorithm-Comparison-FB/Codes/OURS-TriTR-Star.py",
+      "url": "https://anonymous.4open.science/api/repo/Locally_Private_Subgraph_Counting_via_NAM_DPRD-A421/file/Algorithm-Comparison-FB/Codes/OURS-TriTR-Star.py",
+      "bytes": 6116,
+      "sha256": "50ba8aa4e100ac91cf96c19c0833f82aed763c70b05bc38f91abd2b004b358c0",
+      "matches_local_reference_exactly": true
+    }
+  ],
+  "redistribution": "Full upstream implementation is referenced, not bundled; local adapter and retained MIT notice remain in the artifact."
+}

@@ -1,0 +1,48 @@
+{
+  "higgs": {
+    "nodes": 456626,
+    "positive_nodes": 401187,
+    "top_one_percent_nodes": 4567,
+    "top_one_percent_triangle_degree_share": 0.47582670497120844,
+    "quantile_method": "linear",
+    "quantile_levels": [
+      0.9,
+      0.99,
+      0.999
+    ],
+    "quantile_values": [
+      924.0,
+      9390.140000000014,
+      48894.14000000013
+    ],
+    "integer_range_starts": [
+      925,
+      9391,
+      48895
+    ],
+    "truth_sha256": "76d26cf87114e9dbd7f1b9afeb22837baaff82fe287b14388a1d6306c91fc47f"
+  },
+  "orkut": {
+    "nodes": 3072441,
+    "positive_nodes": 2936613,
+    "top_one_percent_nodes": 30725,
+    "top_one_percent_triangle_degree_share": 0.3203737513156555,
+    "quantile_method": "linear",
+    "quantile_levels": [
+      0.9,
+      0.99,
+      0.999
+    ],
+    "quantile_values": [
+      1265.0,
+      8080.879999999888,
+      29496.327999998815
+    ],
+    "integer_range_starts": [
+      1266,
+      8081,
+      29497
+    ],
+    "truth_sha256": "10bf38a6a191e39b01c484599a87a8dc0ff080916dc5b28187dad04bc272dd0b"
+  }
+}

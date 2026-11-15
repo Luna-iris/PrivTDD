@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-15",
+  "source_digest": "97a10b3dcba8d714881186761031ee8b48fb114023fc321d26b75ba728bd0ce5",
+  "tests": {
+    "passed": 86,
+    "log_sha256": "99374158af56bb01766659864070d30a6eb244a6833624e9a57a7c3f80fd919d"
+  },
+  "target_smoke": {
+    "exit_code": 0,
+    "E1_E3_jobs": 3,
+    "E1_E3_outputs": 9,
+    "E4_jobs": 3
+  },
+  "target_resume": {
+    "exit_code": 0,
+    "npz_files": 70,
+    "all_hashes_and_mtimes_unchanged": true
+  },
+  "figure_and_supplement_command": {
+    "exit_code": 0,
+    "supplement_pdf_pages": 28,
+    "new_pages_visually_checked": [
+      27,
+      28
+    ]
+  },
+  "current_manuscript_pdf": {
+    "compiled": true,
+    "pages": 14
+  },
+  "wheel": {
+    "file": "privtdd-0.1.0-py3-none-any.whl",
+    "bytes": 281509,
+    "sha256": "26e831c6714b4c8fb773175b65592b45868f11ff454bf61d1b9a40b1ae8cae80",
+    "entries": 128,
+    "resources_and_notices_present": true,
+    "noneditable_isolated_import": true,
+    "snapshot_verified_files": 42,
+    "source_digest": "97a10b3dcba8d714881186761031ee8b48fb114023fc321d26b75ba728bd0ce5"
+  },
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "numba": "0.60.0",
+      "threadpoolctl": "3.5.0",
+      "pandas": "2.2.2",
+      "matplotlib": "3.9.2",
+      "psutil": "5.9.0",
+      "filelock": "3.13.1",
+      "networkx": "3.3"
+    },
+    "local_venv": "system-site-packages, installed offline with --no-deps",
+    "fresh_dependency_download_tested": false,
+    "hosted_linux_ci_run": false
+  },
+  "full_real_network_matrix_rerun": false,
+  "english_text_check": "reproduction/check_english.py passed; no Chinese in public text or decoded JSON",
+  "pdf_text_unchanged_after_comment_cleanup": true,
+  "triTR_reference_files_verified": 4,
+  "cloud_bundles": {
+    "count": 4,
+    "total_bytes": 698706733,
+    "archive_and_member_hashes_verified": true,
+    "bio_dmela_install_checked": true,
+    "uploaded": true,
+    "public_transfer_tested": true,
+    "public_files_verified": 4
+  }
+}

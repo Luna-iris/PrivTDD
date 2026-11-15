@@ -1,0 +1,208 @@
+{
+  "scope": "Original active TeX source hashes and current public destinations; English-only comment cleanup preserves active content",
+  "files": [
+    {
+      "source_relative": "icdever.tex",
+      "destination": "paper/manuscript/icdever.tex",
+      "source_sha256": "546530b29e66e9f0ac50ff2a696fd0527116c4e518234c4a6a2b00fc3c31dec3",
+      "target_sha256": "51986147e15d76fd3792bae7273ab8ca228387608b726084051d99683ff4e06e",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/authors.tex",
+      "destination": "paper/manuscript/icde_sections/authors.tex",
+      "source_sha256": "e286951c065e62cf74158e566c94b27702799fc0580626929fc9b16f71dc60a9",
+      "target_sha256": "a477fc40e3c032735d5ba1f6e9994640c76e3e60dd697dc13c944fb5b09e7047",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/introduction.tex",
+      "destination": "paper/manuscript/icde_sections/introduction.tex",
+      "source_sha256": "4ef7780a15536108f670e76e260c1203fe7984ab03d1c46fe2359b74edde3cfd",
+      "target_sha256": "a7d570277f9eb7fdca684ffb26f9b63d934ed8f9794bb211074c01737b380c78",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/limitation.png",
+      "destination": "paper/manuscript/icde_sections/limitation.png",
+      "source_sha256": "0485b0e75aa1eadcf253e438c3e34460ec093a6530715e90c4ed5f0c2f6df40e",
+      "target_sha256": "0485b0e75aa1eadcf253e438c3e34460ec093a6530715e90c4ed5f0c2f6df40e",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/basic idea.png",
+      "destination": "paper/manuscript/icde_sections/basic idea.png",
+      "source_sha256": "5a98dbc7df2fc2c398c8864a7cffeed4ffcc58156e04ee8bdecec03aedc6b5f9",
+      "target_sha256": "5a98dbc7df2fc2c398c8864a7cffeed4ffcc58156e04ee8bdecec03aedc6b5f9",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/preliminaries.tex",
+      "destination": "paper/manuscript/icde_sections/preliminaries.tex",
+      "source_sha256": "d449238b3648f707a24dc73853bb61ad950b5bb5be161d0a71b107c2b44c41d0",
+      "target_sha256": "412614c5aa49827c5a0d5d053f7f32a798e2effd32a68c29664af3fd7bdf8825",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/figures/privtdd_overview.tex",
+      "destination": "paper/manuscript/icde_sections/figures/privtdd_overview.tex",
+      "source_sha256": "06d6a9ff66d54a3815b4ead103fbd9f4d8c547d8c25a50ae863e268cfcf50afa",
+      "target_sha256": "57afae6de5f33d69e2fe8a4df5096b68f11c06ad0c3dbda5aab9508d6f8d8ab4",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/figures/overview.png",
+      "destination": "paper/manuscript/icde_sections/figures/overview.png",
+      "source_sha256": "8ad1c8a4cab67c8d5d62ecec9e3bbc1d4c294b55103ea2198d5caba21b016ef7",
+      "target_sha256": "8ad1c8a4cab67c8d5d62ecec9e3bbc1d4c294b55103ea2198d5caba21b016ef7",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/problem.tex",
+      "destination": "paper/manuscript/icde_sections/problem.tex",
+      "source_sha256": "3280acba2b4c5831703e9979ae5dccf80f85cb2154c8de5f70b05346c8e79985",
+      "target_sha256": "244ec9355b7defef8c34d915f5f53cd0c11f4d9a0c5ff5a53c90ea9185e837c7",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/method_devide.tex",
+      "destination": "paper/manuscript/icde_sections/method_devide.tex",
+      "source_sha256": "d2df2ca0709acf5e2605b5abb8050bd15ba67b572f765ddb56e017a58505e252",
+      "target_sha256": "81c26023e9022bf5715edbb206eab9ad76eae77c5cde262c9d7915ed763447e8",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/analysis_budget.tex",
+      "destination": "paper/manuscript/icde_sections/analysis_budget.tex",
+      "source_sha256": "1ed7e8f5afa8c16b62e12333b42fecdb739f7b0998821006a358bbf60a7a87ad",
+      "target_sha256": "06f39cc49d23456e3515f41e1448b8a022c20cfd231ff5804d4fb67c68640aaa",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/experiments.tex",
+      "destination": "paper/manuscript/icde_sections/experiments.tex",
+      "source_sha256": "490e57c8b640e11f122a147122c7755c3bee44087c13ac576b725f0977514f1d",
+      "target_sha256": "83e61cd963a3347a9f18528e45b76ca68247a0a6265573cc4b78ce5602cfdbcb",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/tables/e1_wide.tex",
+      "destination": "paper/manuscript/icde_sections/tables/e1_wide.tex",
+      "source_sha256": "87718e97b60c24e0d3938b8e2cf18c1b0444ac072aa7341eaee31d35ba17a8ba",
+      "target_sha256": "87718e97b60c24e0d3938b8e2cf18c1b0444ac072aa7341eaee31d35ba17a8ba",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/figures/e2_column.tex",
+      "destination": "paper/manuscript/icde_sections/figures/e2_column.tex",
+      "source_sha256": "1b3112f94fc66fb1db084f3cb392164b6746b4f02cedd8cbce5fd58820043bd0",
+      "target_sha256": "1b3112f94fc66fb1db084f3cb392164b6746b4f02cedd8cbce5fd58820043bd0",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/figures/gdd_ablation_key.pdf",
+      "destination": "paper/manuscript/icde_sections/figures/gdd_ablation_key.pdf",
+      "source_sha256": "a1e86d9aca0e3ebd1085858af7e64d03fd113ed9a4bd385804be76a939d2e0d7",
+      "target_sha256": "a1e86d9aca0e3ebd1085858af7e64d03fd113ed9a4bd385804be76a939d2e0d7",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/figures/gdd_ablation_bio_dmela.pdf",
+      "destination": "paper/manuscript/icde_sections/figures/gdd_ablation_bio_dmela.pdf",
+      "source_sha256": "092759661110d8012f5933b8d79e7a30442b8a4366b6737d63d37258a9a79a22",
+      "target_sha256": "092759661110d8012f5933b8d79e7a30442b8a4366b6737d63d37258a9a79a22",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/figures/gdd_ablation_dblp.pdf",
+      "destination": "paper/manuscript/icde_sections/figures/gdd_ablation_dblp.pdf",
+      "source_sha256": "ce38f3727113cd5d7cf6f64f51917556296cf9aad72fc919f58576eeb63d3200",
+      "target_sha256": "ce38f3727113cd5d7cf6f64f51917556296cf9aad72fc919f58576eeb63d3200",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/figures/gdd_ablation_higgs.pdf",
+      "destination": "paper/manuscript/icde_sections/figures/gdd_ablation_higgs.pdf",
+      "source_sha256": "7259f6a3406e2928b6c58c9bf8b1ce30162926f4c5bebd66b81fce338d1a368e",
+      "target_sha256": "7259f6a3406e2928b6c58c9bf8b1ce30162926f4c5bebd66b81fce338d1a368e",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/figures/gdd_ablation_orkut.pdf",
+      "destination": "paper/manuscript/icde_sections/figures/gdd_ablation_orkut.pdf",
+      "source_sha256": "faef55fed423848d7bc3335d8219938cc96fbaf65cd2048d83a1ad26125b8970",
+      "target_sha256": "faef55fed423848d7bc3335d8219938cc96fbaf65cd2048d83a1ad26125b8970",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/e3_results.tex",
+      "destination": "paper/manuscript/icde_sections/e3_results.tex",
+      "source_sha256": "2cebd8b952dabae17c9c34eee1d1dc5c6a9c6322cb05b34ca9e477d0ef8ed6c3",
+      "target_sha256": "ceea1a7ea3fe92ccc2ef4bdfa6df74f9216f870efbf663a14d5bcb9b9d2fe5ff",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/figures/e3_sensitivity_means.tex",
+      "destination": "paper/manuscript/icde_sections/figures/e3_sensitivity_means.tex",
+      "source_sha256": "767c0fe89b1e8303eb3d4fea39d6f4611b84976d5eaed74ef4465a847eb19081",
+      "target_sha256": "767c0fe89b1e8303eb3d4fea39d6f4611b84976d5eaed74ef4465a847eb19081",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/figures/e3_sensitivity_means.pdf",
+      "destination": "paper/manuscript/icde_sections/figures/e3_sensitivity_means.pdf",
+      "source_sha256": "eb0cf72b14455ca30b74e589ad1fb2ebf39693098901c76334f9f61b20a9717e",
+      "target_sha256": "eb0cf72b14455ca30b74e589ad1fb2ebf39693098901c76334f9f61b20a9717e",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/tables/e4_sampling.tex",
+      "destination": "paper/manuscript/icde_sections/tables/e4_sampling.tex",
+      "source_sha256": "18cb81caca7134274a5aa9247cffb5dd57f7377b58044d4beeef0d68f05ce96e",
+      "target_sha256": "917478e0acfaf822eadc3158cb17f8909ab4931e0060d81354fa8d64777b53f4",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/related_work.tex",
+      "destination": "paper/manuscript/icde_sections/related_work.tex",
+      "source_sha256": "41d21872014387917eb4bf058538d16f0951a743b1eda3ecb90298a64adbfc60",
+      "target_sha256": "bc765a45ef4221c99c4bcd56c5180aa596b24b175d2159b60f4c333f4dfdd465",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/conclusion.tex",
+      "destination": "paper/manuscript/icde_sections/conclusion.tex",
+      "source_sha256": "aaf648b0e36a7c2b9c81b301b7e31c70ff146271e062f6227699cefa9b2db020",
+      "target_sha256": "809b3ca99d9966b606846ad8ac0c910c78bccb1b7ac2937200fdb090272961af",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/references.bib",
+      "destination": "paper/manuscript/icde_sections/references.bib",
+      "source_sha256": "3d264f66a67150524bca915ed92ee9280cfcc9c4aa0b9b7789fc952caa9fa3a9",
+      "target_sha256": "25a184bbf225c11ef790c1f8e86f31d1c3cc99fae94c44c14e9b93d79bebed77",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "icde_sections/IEEEtran.bst",
+      "destination": "paper/manuscript/icde_sections/IEEEtran.bst",
+      "source_sha256": "d83aa3c9b47fc120bb3d9d8e476216cb889c738f72ec950beeac3661c45ded24",
+      "target_sha256": "d83aa3c9b47fc120bb3d9d8e476216cb889c738f72ec950beeac3661c45ded24",
+      "presentation_cleanup": false
+    },
+    {
+      "source_relative": "icde_sections/experiment_values.tex",
+      "destination": "paper/manuscript/icde_sections/experiment_values.tex",
+      "source_sha256": "d1d16d599eca283de4aa888bc90ab0b3abb32f8f9155b066c19a0e34cf6b89cf",
+      "target_sha256": "3a318efb3ce5960a0abafce3d88af0c6748c04f47d1df6cc68109bff6c1dbe55",
+      "presentation_cleanup": true
+    },
+    {
+      "source_relative": "supplementary.tex",
+      "destination": "paper/supplement/published_e1_e3.tex",
+      "source_sha256": "7bfb7b526e7af3e52722b83b487b5dc786a9a7c99a3dfb78d6137f098241d611",
+      "target_sha256": "ddee675e49600a912c4e53fd5f9bcfb9721269863626610bd26f1f669f29b5fb",
+      "presentation_cleanup": true
+    }
+  ]
+}

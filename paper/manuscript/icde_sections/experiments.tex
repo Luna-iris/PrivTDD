@@ -1,0 +1,143 @@
+\providecommand{\gddset}[2]{\expandafter\gdef\csname gddvalue@#1\endcsname{#2}}
+\providecommand{\gddmissing}{\textcolor{blue}{\ensuremath{[\,\cdots\,]}}}
+\providecommand{\gddresult}[1]{%
+  \ifcsname gddvalue@#1\endcsname
+    \expandafter\ifx\csname gddvalue@#1\endcsname\empty
+      \gddmissing
+    \else\csname gddvalue@#1\endcsname\fi
+  \else\gddmissing\fi}
+\providecommand{\gddci}[3]{\shortstack{\ensuremath{#1}\\[-1pt]{\scriptsize\ensuremath{[#2,#3]}}}}
+\providecommand{\gddvaluesfile}{experiment_values.tex}
+\InputIfFileExists{\gddvaluesfile}{}{}
+\providecommand{\gddfigdir}{icde_sections/figures}
+\providecommand{\gddimage}[3]{%
+  \IfFileExists{\gddfigdir/#1.pdf}{%
+    \includegraphics[width=\linewidth]{\gddfigdir/#1.pdf}%
+  }{\IfFileExists{\gddfigdir/#1.png}{%
+    \includegraphics[width=\linewidth]{\gddfigdir/#1.png}%
+  }{%
+    \fbox{\begin{minipage}[c][#2][c]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+      \centering\small\sffamily #3\par\medskip
+      \texttt{\detokenize{#1.pdf}}
+    \end{minipage}}%
+  }}%
+}
+
+% Reviewed experiment revision: RQ1--RQ4 and E1--E4 are retained.
+% Enter dataset statistics, numerical results, and interpretation fields in icde_sections/experiment_values.tex.
+% Figure filenames and cross-reference labels are defined in icde_sections/figures/.
+% Empty result fields render as blue xxx; no empirical conclusion is prefilled.
+\section{Experiments}\label{sec:gdd:en}
+We evaluate PrivTDD's estimation accuracy, the contributions of its designs, sensitivity to the choice of regions, and the effect of sampling on TDD estimation error.
+% We evaluate PrivTDD's estimation of the triangle-participation distribution through four research questions:
+% \textbf{RQ1:} How accurately does PrivTDD estimate the distribution compared with existing methods?
+% \textbf{RQ2:} How do structural modeling and learning correction strengths from private reports affect estimation?
+% \textbf{RQ3:} How sensitive is PrivTDD to the choice of regions?
+% \textbf{RQ4:} How does neighbor-pair sampling affect TDD estimation error on large networks?
+
+\subsection{Experimental Setup}\label{sec:gdd:en:setup}
+
+\noindent\textbf{Datasets.}
+We use four real networks from SNAP and Network Repository~\cite{snapnets,rossi2015networkrepository}: the protein interaction network Bio-DMELA~\cite{singh2008alignment} with \gddresult{data.biodmela.n} nodes and \gddresult{data.biodmela.m} edges; 
+the scientific collaboration network DBLP~\cite{yang2012communities} with \gddresult{data.dblp.n} nodes and \gddresult{data.dblp.m} edges; 
+the social network Higgs social~\cite{dedomenico2013rumor} with \gddresult{data.higgs.n} nodes and \gddresult{data.higgs.m} edges; 
+and Orkut~\cite{mislove2007measurement} with \gddresult{data.orkut.n} nodes and \gddresult{data.orkut.m} edges.
+These networks cover different sizes, clustering levels, and TDDs.
+We convert all inputs to simple undirected graphs, remove self-loops and duplicate edges, and retain all explicitly declared nodes and connected components; sizes refer to preprocessed graphs.
+
+\noindent\textbf{Baselines.}
+We compare PrivTDD with methods based on node-level counting and graph synthesis.
+\textbf{TriTR-Hist} adapts TriTR~\cite{guo2026tritr}, 
+a two-round triangle-counting estimator that Guo et al.\ identify as equivalent to TDP-VC~\cite{he2025robust}.
+We adjust each node's estimate to count each incident triangle once, then clip, round, and bin the estimates.
+%\textbf{TriTR-Hist}~\cite{guo2026tritr,he2025robust} converts TriTR's node triangle-participation estimates into a histogram, correcting counting multiplicities and applying clipping and rounding before binning~\cite{guo2026tritr}.
+For LDPGraph~\cite{dong2026ldpgraph}, \textbf{LDPGraph-T} bins consistency-corrected node triangle-degree estimates, whereas \textbf{LDPGraph-S} recomputes the histogram on the final synthetic graph.
+The outputs share private reports, isolating the effect of graph synthesis on TDD estimation.
+Baselines follow their original parameter settings, adapted to the privacy-accounting convention used in this paper.
+
+\input{icde_sections/tables/e1_wide.tex}
+
+\noindent\textbf{Metrics.}
+We report mean squared error (MSE), earth mover's distance (EMD), and Kolmogorov--Smirnov distance (KS); lower is better.
+Let $H$ and $\widehat H$ be the true and estimated node-count histograms, and let $F(t)=n^{-1}\sum_{u=0}^{t}H(u)$ be the true cumulative distribution, with $\widehat F$ defined analogously.
+The metrics are
+\begin{equation}
+\begin{aligned}
+&\mathrm{MSE}=\frac{\|\widehat H-H\|_2^2}{W_{\max}+1},\mathrm{EMD}=\|\widehat F-F\|_1,\\
+&\mathrm{KS}=\|\widehat F-F\|_\infty,
+\end{aligned}
+\label{eq:gdd:en:metrics}
+\end{equation}
+where $W_{\max}=\binom{n-1}{2}$ and norms are evaluated on the integer triangle-degree domain $0,\ldots,W_{\max}$.
+MSE compares node frequencies at each count; EMD accounts for both the probability mass displaced and its distance~\cite{rubner2000emd}; KS captures the largest cumulative-proportion discrepancy.
+For PrivTDD, $\widehat H$ in these metrics is the released TDD in Eq.~\eqref{eq:pg-guard}.
+
+\noindent\textbf{Implementation.}
+We ran PrivTDD with \gddresult{hardware.software} on an \gddresult{hardware.processor} with \gddresult{hardware.memory.gib} GiB of memory.
+For each network and privacy budget, we used the allocation in Eq.~\eqref{eq:pg-allocation} and set $\tau=1$.
+By default, we use $K=\gddresult{settings.closure_components}$ closure-mixture components.
+Following Section~\ref{sec:correction}, we define the body, transition, and tail regions using quantile levels $(\gddresult{settings.region_quantiles})$ of the base population distribution conditional on positive triangle degrees.
+Complete parameters, baseline adaptations, and reproduction scripts are provided in the accompanying artifact.
+%\footnote{Artifact: \gddresult{artifact.link}\label{fn:gdd:artifact}}
+%todo in abstract+intro
+% Budget optimality refers to the theoretical bound for the final safeguarded release.
+% Budget optimality concerns the theoretical bound for the final release; the artifact supplies detailed implementation settings.
+For E1 and E2, we scheduled \gddresult{runs.main.small_graphs} independent runs per setting on Bio-DMELA and DBLP and \gddresult{runs.main.large_graphs} on Higgs social and Orkut. We report means over completed runs and pointwise 95\% bootstrap confidence intervals.
+Ablation variants share the private reports from each run.
+For E4, we sampled candidate neighbor pairs after projection on Higgs social and Orkut at $\varepsilon=2$, using the same five seeds at each of the four sampling rates. Each run estimated the TDD of the full network.
+% E4 fixes epsilon=2 on Higgs social and Orkut and samples projected candidate neighbor pairs. All four rates use the same five seeds and estimate the original graph TDD.
+More details and results are available in the Supplementary Material. %give the full E1 intervals and paired E2 comparisons.
+% E1/E2 plan 20 repetitions on each small graph and 10 on each large graph. Means and pointwise 95% bootstrap intervals use completed runs; E2 pairs the same private reports.
+
+\subsection{Overall Estimation Accuracy (E1)}\label{sec:gdd:en:accuracy}
+Table~\ref{tab:gdd:e1:accuracy} compares PrivTDD (shaded in gray) with TriTR-Hist, LDPGraph-T, and LDPGraph-S at eight total privacy budgets from $\varepsilon=0.5$ to $4$. %The means use 1,916 of 1,920 planned releases.
+Across the four networks, PrivTDD had the lowest mean EMD in 30 of 32 network--budget settings, the lowest mean KS in 29, and the lowest mean MSE in 23.
+Mean EMD decreased at every successive budget for PrivTDD on all four networks. MSE and KS varied less regularly. On Orkut, their minima occurred at $\varepsilon=1$ and $1.5$, respectively.
+On DBLP at $\varepsilon=2$, the mean EMD of PrivTDD was 2.65 (95\% CI $[2.59,2.71]$), 90.6\% lower than the best baseline, LDPGraph-T (28.24).
+
+PrivTDD ranked first on all three metrics at every budget on DBLP and Orkut. On Bio-DMELA, the single exception was MSE at $\varepsilon=0.5$, where LDPGraph-T had the lowest mean.
+LDPGraph-S attained the lowest MSE at all eight budgets on Higgs social and the lowest KS at $\varepsilon\in\{1.5,2,2.5\}$. LDPGraph-T had the lowest EMD there at $\varepsilon\in\{3.5,4\}$.
+Using only run indices completed by all four methods gave the same rankings in both settings with convergence failures.
+To isolate the effect of synthesis, we compared the LDPGraph-T histogram with the histogram of the synthetic graph from the same private reports.
+On the original metric scales, synthesis on Higgs social at $\varepsilon=2$ reduced MSE by 0.1662 and KS by 0.1544, while EMD rose by 979.4 (paired 95\% CI $[969.5,990.3]$).
+On this network, synthesis reduced the bin-frequency error and the maximum CDF discrepancy but increased how far probability mass was displaced.
+
+
+\subsection{Effects of the Core Designs (E2)}\label{sec:gdd:en:ablation}
+PrivTDD, SCRec, and the three fixed-strength variants share the private reports, base fit, posterior reweighting, aggregation, and transport safeguard.
+%Of 480 planned releases, 476 yielded all five outputs.
+Two PrivTDD fits failed to converge on Higgs social at $\varepsilon=0.5$ and two on Orkut at $\varepsilon=4$, leaving eight matched runs in each setting.
+% All five outputs share reports, base recovery, the final posterior update, aggregation, and transport safeguard. Of 480 planned conditions, 476 have complete five-method pairs; Higgs at 0.5 and Orkut at 4 each have two unconverged Full runs.
+
+% Select one E2 figure layout.
+\input{icde_sections/figures/e2_column.tex}
+% \input{icde_sections/figures/e2_wide.tex}  % Compact 3 x 4 double-column plot.
+% \input{icde_sections/figures/e2_split.tex} % Two independently floating single-column blocks.
+
+\noindent\textbf{Structural modeling and correction.}
+SCRec (without structural correction) sets all seven correction strengths to zero.
+On DBLP, enabling correction reduced mean MSE, EMD, and KS at all eight budgets (Fig.~\ref{fig:gdd:en:ablation}).
+At $\varepsilon=2$, MSE fell from 0.1272 to 0.01414, EMD from 6.21 to 2.65 (mean paired reduction 3.56, 95\% CI $[3.49,3.63]$), and KS from 0.2755 to 0.0565.
+On Orkut, correction reduced EMD and KS at every budget, but increased MSE at $\varepsilon=3.5$ and $4$.
+On Bio-DMELA, mean EMD increased at every budget. On Higgs social at $\varepsilon=2$, correction increased MSE from 0.01272 to 0.02728 while reducing KS from 0.1334 to 0.1303.
+%Separate reference ablations were available for 411 matched releases. 
+On DBLP at $\varepsilon=2$, mean EMD was 2.65 with both references, 4.27 without the $\beta$ reference, and 5.83 without the geometric reference. On Bio-DMELA at the same budget, the corresponding means were 2.03, 2.02, and 1.90. Each of these comparisons used 20 matched runs.
+% Removing either reference requires refitting. The independently verified reference-ablation coverage is 411 conditions; contributions vary by network.
+ 
+\noindent\textbf{Learning correction strengths from reports.}
+Fixed-0.25, Fixed-0.50, and Fixed-0.75 set each of the seven strengths to the specified value before projection onto the common feasible set in Eq.~\eqref{eq:joint_feasible_domain}.
+PrivTDD learns these strengths from the reports using the same references, regions, and correction directions.
+Across 32 network--budget settings, its mean error was lower than that of all three presets in 20 settings for EMD, 14 for KS, and seven for MSE.
+On Orkut at $\varepsilon=2$, PrivTDD achieved an EMD of 35.58, compared with 57.66 for the best preset on this metric (Fixed-0.25).
+On the same reports, Fixed-0.75 attained an MSE of 0.000287 versus 0.001788 for PrivTDD.
+%On Bio-DMELA, a preset attained the lowest mean error for each metric at every budget.
+
+\input{icde_sections/e3_results.tex}
+\input{icde_sections/tables/e4_sampling.tex}
+\subsection{Estimation Accuracy under Neighbor-Pair Sampling (E4)}\label{sec:gdd:en:cost}
+
+
+On both networks, mean KS decreased at each successive sampling rate, and 10\% sampling gave the lowest mean MSE among the five settings (Table~\ref{tab:gdd:e4:sampling}).
+On Higgs social, KS at 10\% sampling was close to that under full enumeration (0.1342 versus 0.1303), although mean EMD remained much higher (539.99 versus 73.65).
+On Orkut, mean EMD was 199.24 at 10\% sampling and 35.58 under full enumeration.
+

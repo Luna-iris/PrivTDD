@@ -1,0 +1,12 @@
+# Observed migration/verification environment, 2026-11-15.
+# This is NOT a recovered lockfile from the historical paper runs.
+numpy==1.26.4
+scipy==1.13.1
+numba==0.60.0
+llvmlite==0.43.0
+threadpoolctl==3.5.0
+psutil==5.9.0
+filelock==3.13.1
+networkx==3.3
+pandas==2.2.2
+matplotlib==3.9.2

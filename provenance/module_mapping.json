@@ -1,0 +1,857 @@
+{
+  "schema_version": 1,
+  "source_root_label": "graph-analysis-main",
+  "symbol_renames": {
+    "JointConfig": "PrivTDDConfig",
+    "reconstruct_gdd_joint": "estimate_tdd",
+    "reconstruct_from_reports_joint": "estimate_tdd_from_reports"
+  },
+  "modules": {
+    "reconstruct_overall.joint.config_joint": "privtdd.config",
+    "reconstruct_overall.joint.aggregate_joint": "privtdd.release.pipeline",
+    "reconstruct_overall.joint.safeguard_joint": "privtdd.release.transport_guard",
+    "reconstruct_overall.joint.private_report_joint": "privtdd.reporting.collection",
+    "reconstruct_overall.joint.report_primitives_joint": "privtdd.reporting.primitives",
+    "reconstruct_overall.joint.degree_canonical_joint": "privtdd.degree.canonical",
+    "reconstruct_overall.joint.degree_channel_joint": "privtdd.degree.channel",
+    "reconstruct_overall.joint.degree_fit_joint": "privtdd.degree.fit",
+    "reconstruct_overall.joint.degree_groups_joint": "privtdd.degree.groups",
+    "reconstruct_overall.joint.degree_newton_joint": "privtdd.degree.newton",
+    "reconstruct_overall.joint.degree_operator_joint": "privtdd.degree.operator",
+    "reconstruct_overall.joint.degree_phases_joint": "privtdd.degree.phases",
+    "reconstruct_overall.joint.degree_reduced_joint": "privtdd.degree.reduced",
+    "reconstruct_overall.joint.degree_working_set_joint": "privtdd.degree.working_set",
+    "reconstruct_overall.joint.closure_cells_joint": "privtdd.base_distribution.cells",
+    "reconstruct_overall.joint.closure_optimizer_joint": "privtdd.base_distribution.optimizer",
+    "reconstruct_overall.joint.data_driven_construction_joint": "privtdd.base_distribution.construction",
+    "reconstruct_overall.joint.f1_channel_joint": "privtdd.base_distribution.channel",
+    "reconstruct_overall.joint.f1_integral_joint": "privtdd.base_distribution.integral",
+    "reconstruct_overall.joint.f1_integrated_joint": "privtdd.base_distribution.integrated",
+    "reconstruct_overall.joint.f1_posterior_joint": "privtdd.base_distribution.degree_posterior",
+    "reconstruct_overall.joint.f1_weights_joint": "privtdd.base_distribution.weights",
+    "reconstruct_overall.joint.count_channel_joint": "privtdd.base_distribution.count_channel",
+    "reconstruct_overall.joint.projected_count_channel_joint": "privtdd.base_distribution.projected_count_channel",
+    "reconstruct_overall.joint.projected_degree_posterior_joint": "privtdd.base_distribution.projected_posterior",
+    "reconstruct_overall.joint.projected_large_count_joint": "privtdd.base_distribution.large_count",
+    "reconstruct_overall.joint.geometry_generator_joint": "privtdd.references.clustering",
+    "reconstruct_overall.joint.geometry_model_joint": "privtdd.references.geometry_model",
+    "reconstruct_overall.joint.structural_constrain_adaptation_joint": "privtdd.references.construction",
+    "reconstruct_overall.joint.structural_context_joint": "privtdd.references.context",
+    "reconstruct_overall.joint.structural_endpoints_joint": "privtdd.references.independent_edge",
+    "reconstruct_overall.joint.structural_kernels_joint": "privtdd.references.kernels",
+    "reconstruct_overall.joint.structural_primitives_joint": "privtdd.references.primitives",
+    "reconstruct_overall.joint.projected_geometry_calibration_joint": "privtdd.references.calibration",
+    "reconstruct_overall.joint.coefficient_domain_joint": "privtdd.correction.feasible_domain",
+    "reconstruct_overall.joint.forward_channel_joint": "privtdd.correction.forward",
+    "reconstruct_overall.joint.joint_optimizer_bridge_joint": "privtdd.correction.optimizer_bridge",
+    "reconstruct_overall.joint.optimizer_joint": "privtdd.correction.optimizer",
+    "reconstruct_overall.joint.optimizer_roundoff_joint": "privtdd.correction.roundoff",
+    "reconstruct_overall.joint.optimizer_stopping_joint": "privtdd.correction.stopping",
+    "reconstruct_overall.joint.regional_basis_joint": "privtdd.correction.regions",
+    "reconstruct_overall.joint.source_mapping_joint": "privtdd.correction.source_mapping",
+    "reconstruct_overall.joint.stable_basis_joint": "privtdd.correction.basis",
+    "reconstruct_overall.joint.sparse_channel_joint": "privtdd.correction.sparse_channel",
+    "reconstruct_overall.joint.projected_sparse_density_joint": "privtdd.correction.projected_sparse_channel",
+    "reconstruct_overall.joint.posterior_joint": "privtdd.posterior.update",
+    "reconstruct_overall.joint.posterior_rows_joint": "privtdd.posterior.rows",
+    "reconstruct_overall.joint.likelihood_primitives_joint": "privtdd.numerics.likelihood",
+    "reconstruct_overall.joint.probability_joint": "privtdd.numerics.probability",
+    "reconstruct_overall.joint.quantization_joint": "privtdd.numerics.quantization",
+    "reconstruct_overall.joint.memory_joint": "privtdd.io.memory",
+    "reconstruct_overall.joint.storage_joint": "privtdd.io.storage",
+    "reconstruct_overall.joint.run_joint": "privtdd.io.runner",
+    "reconstruct_overall.conditional_distribution_distribute": "privtdd.distributions.conditional",
+    "reconstruct_overall.beta_numerics": "privtdd.numerics.beta_refinement",
+    "reconstruct_overall.joint.Ablation": "privtdd.experiments.ablation"
+  },
+  "files": [
+    {
+      "old_module": "reconstruct_overall.joint.config_joint",
+      "new_module": "privtdd.config",
+      "source": "reconstruct_overall/joint/config_joint.py",
+      "target": "src/privtdd/config.py",
+      "source_sha256": "0ae21eac5194ba71e949fde86364701fc1ec95c1277d5c7dd7a35b2305059357",
+      "owner": "code_dependencies",
+      "target_sha256": "e27c28b779a2005fbd0bf5a1161d8329ee6281322725802b8c7d05401a400fae",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.aggregate_joint",
+      "new_module": "privtdd.release.pipeline",
+      "source": "reconstruct_overall/joint/aggregate_joint.py",
+      "target": "src/privtdd/release/pipeline.py",
+      "source_sha256": "85cd909d02613e7f2bee816a91e3f6ea2c92e0099f161e6b77b0edfca01241ca",
+      "owner": "code_dependencies",
+      "target_sha256": "df8ed59003752121ee45407d3b6d619a15ade0ba27d5e38096285e2ffcc73626",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.safeguard_joint",
+      "new_module": "privtdd.release.transport_guard",
+      "source": "reconstruct_overall/joint/safeguard_joint.py",
+      "target": "src/privtdd/release/transport_guard.py",
+      "source_sha256": "8f84badebfe5b654100c3c84f1319ae3e3a4242bd2886d779deb8f032ddfd94a",
+      "owner": "code_dependencies",
+      "target_sha256": "8f84badebfe5b654100c3c84f1319ae3e3a4242bd2886d779deb8f032ddfd94a",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.private_report_joint",
+      "new_module": "privtdd.reporting.collection",
+      "source": "reconstruct_overall/joint/private_report_joint.py",
+      "target": "src/privtdd/reporting/collection.py",
+      "source_sha256": "45f7028ce60c93b98540ae22253772a8c48a8c670e43a43b640f5cc1503a27c0",
+      "owner": "code_dependencies",
+      "target_sha256": "a3cd6649312c0d54b6050e203883b3034f970b69f357ed944b0051098ed7e173",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.report_primitives_joint",
+      "new_module": "privtdd.reporting.primitives",
+      "source": "reconstruct_overall/joint/report_primitives_joint.py",
+      "target": "src/privtdd/reporting/primitives.py",
+      "source_sha256": "fe9ae6dd022a21c8cf0a8da495055ed28ceaf68d3d6aa3bcefdba829f5e2b970",
+      "owner": "code_dependencies",
+      "target_sha256": "ca7d85941dfe10a2cc72ad343e9a84c20484e317c200b330239ad0ba953fb74f",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.degree_canonical_joint",
+      "new_module": "privtdd.degree.canonical",
+      "source": "reconstruct_overall/joint/degree_canonical_joint.py",
+      "target": "src/privtdd/degree/canonical.py",
+      "source_sha256": "eb8bb2e954393f59f234d14d5e69bd20945b1289e8fed00bd660f3549954d389",
+      "owner": "code_dependencies",
+      "target_sha256": "f5ce0c6429278a6a8f346a3c0d03506e182dc18fab72b0043d80e8900f03e841",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.degree_channel_joint",
+      "new_module": "privtdd.degree.channel",
+      "source": "reconstruct_overall/joint/degree_channel_joint.py",
+      "target": "src/privtdd/degree/channel.py",
+      "source_sha256": "833a73651a894140c650145a60cddb61289caab58fa5e0e0a0209de90b565907",
+      "owner": "code_dependencies",
+      "target_sha256": "db6607c9ed58840ad3928e3605a5edd682490538d77ffb3eacdb2faec168698a",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.degree_fit_joint",
+      "new_module": "privtdd.degree.fit",
+      "source": "reconstruct_overall/joint/degree_fit_joint.py",
+      "target": "src/privtdd/degree/fit.py",
+      "source_sha256": "7c47b24069b7002ac97a2e578091b698ce1fb1da2577d92cd7a21ad76c67cda3",
+      "owner": "code_dependencies",
+      "target_sha256": "42168a7a619f68dfc3fbd27f3312350283c743cfb5e8c338eeae261057a9a563",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.degree_groups_joint",
+      "new_module": "privtdd.degree.groups",
+      "source": "reconstruct_overall/joint/degree_groups_joint.py",
+      "target": "src/privtdd/degree/groups.py",
+      "source_sha256": "55c58ec41e1e853ac4b10cb8a71444cda208ee7a706eb7752de5273e57de8d62",
+      "owner": "code_dependencies",
+      "target_sha256": "13f76e82174f7d77ea1b48128ef24b0de851682aa87595afe534db033abebb7a",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.degree_newton_joint",
+      "new_module": "privtdd.degree.newton",
+      "source": "reconstruct_overall/joint/degree_newton_joint.py",
+      "target": "src/privtdd/degree/newton.py",
+      "source_sha256": "96859b3087f4c8e8b6a3adf422d57dadca260ad6088fd45617658b4d9932af8f",
+      "owner": "code_dependencies",
+      "target_sha256": "9120589f0fdaa9f697f78dcf02192eeb80d92d98b48741b7e84c5fd1dbecf54e",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.degree_operator_joint",
+      "new_module": "privtdd.degree.operator",
+      "source": "reconstruct_overall/joint/degree_operator_joint.py",
+      "target": "src/privtdd/degree/operator.py",
+      "source_sha256": "58083efd63445d57a74baee3eaaf407b866253f0bdf1ec56b64107e9f64cf54a",
+      "owner": "code_dependencies",
+      "target_sha256": "65be8b6ea6377acdc8a1feeca534fc8e5abb314a0312e7e186b3a76eeb4baf29",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.degree_phases_joint",
+      "new_module": "privtdd.degree.phases",
+      "source": "reconstruct_overall/joint/degree_phases_joint.py",
+      "target": "src/privtdd/degree/phases.py",
+      "source_sha256": "9f878fb7f2ade06238ad4bc2d8603d132848b99a15bf0c772758273cb5ad24af",
+      "owner": "code_dependencies",
+      "target_sha256": "4eed9203cc4d920cd12477f437d686fd1eb689a1f870253cfd3bf807236a6e7d",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.degree_reduced_joint",
+      "new_module": "privtdd.degree.reduced",
+      "source": "reconstruct_overall/joint/degree_reduced_joint.py",
+      "target": "src/privtdd/degree/reduced.py",
+      "source_sha256": "768ac9d5e74a025148244895e4cef19f1d648496e7b9cbdf115667d9c0395781",
+      "owner": "code_dependencies",
+      "target_sha256": "6519e215eb140f4151f4bf5c4865f9633a2e6fb2b5142b35c168a518794713d5",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.degree_working_set_joint",
+      "new_module": "privtdd.degree.working_set",
+      "source": "reconstruct_overall/joint/degree_working_set_joint.py",
+      "target": "src/privtdd/degree/working_set.py",
+      "source_sha256": "ceacf9c3875f299d0d6fb7959a877c9d0851f7bcd4fda9b312fbd3380e439be5",
+      "owner": "code_dependencies",
+      "target_sha256": "3cc211c6eea6de7b67a9bac142b0e837214cd5b8e40bd76ee50e82d5d41368d1",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.closure_cells_joint",
+      "new_module": "privtdd.base_distribution.cells",
+      "source": "reconstruct_overall/joint/closure_cells_joint.py",
+      "target": "src/privtdd/base_distribution/cells.py",
+      "source_sha256": "662c16d44b068754aabba902746d6214845fd0fa7b07d56c6602d6c9752c6c13",
+      "owner": "code_dependencies",
+      "target_sha256": "9d912ae0cea00fb2b5abd9243b7753b9298baa7ce4d7b97712d75c572bfba2ca",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.closure_optimizer_joint",
+      "new_module": "privtdd.base_distribution.optimizer",
+      "source": "reconstruct_overall/joint/closure_optimizer_joint.py",
+      "target": "src/privtdd/base_distribution/optimizer.py",
+      "source_sha256": "08815707aaa93482c054568a1a5f519257117f685cea7a29e9a9982a8e832d4a",
+      "owner": "code_dependencies",
+      "target_sha256": "f16b900d761438b94ccdd5981db758f5a8b756b034486b905faa7aa6008b57b2",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.data_driven_construction_joint",
+      "new_module": "privtdd.base_distribution.construction",
+      "source": "reconstruct_overall/joint/data_driven_construction_joint.py",
+      "target": "src/privtdd/base_distribution/construction.py",
+      "source_sha256": "013c098a67fb4f5ea206ae8a4626e78ae7241b988afe0d4cb3bbfad90a7a2fca",
+      "owner": "code_dependencies",
+      "target_sha256": "69079d93984bf1f2f65efdd9487534f8c397e4995b5b147700c20c108f38332a",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.f1_channel_joint",
+      "new_module": "privtdd.base_distribution.channel",
+      "source": "reconstruct_overall/joint/f1_channel_joint.py",
+      "target": "src/privtdd/base_distribution/channel.py",
+      "source_sha256": "9ffc8850a1cc3a86f848f21e1a826fccef78451ad8962a047fc9d7ddee62a186",
+      "owner": "code_dependencies",
+      "target_sha256": "c964db8c330c635c1de8234a6257a6cab0967239b0d4a4275574c740eae749da",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.f1_integral_joint",
+      "new_module": "privtdd.base_distribution.integral",
+      "source": "reconstruct_overall/joint/f1_integral_joint.py",
+      "target": "src/privtdd/base_distribution/integral.py",
+      "source_sha256": "60208229b56bf86a66b7cd074dd50d35a6b2e76ee8e8b78c536d76357e6e2ceb",
+      "owner": "code_dependencies",
+      "target_sha256": "3f2ec4c5977539fc3afb5985e6893b151e9291405b32b60c0154759dbc1334a3",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.f1_integrated_joint",
+      "new_module": "privtdd.base_distribution.integrated",
+      "source": "reconstruct_overall/joint/f1_integrated_joint.py",
+      "target": "src/privtdd/base_distribution/integrated.py",
+      "source_sha256": "e4d034f47c029335b7e2d9133cd781343a73f3296375a2a9a36ab63c28c2588f",
+      "owner": "code_dependencies",
+      "target_sha256": "ff4a3cb1532e72902bb5cec2b332dbadf50c458b8cdd0753dd675f646e35cfb1",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.f1_posterior_joint",
+      "new_module": "privtdd.base_distribution.degree_posterior",
+      "source": "reconstruct_overall/joint/f1_posterior_joint.py",
+      "target": "src/privtdd/base_distribution/degree_posterior.py",
+      "source_sha256": "9bf5c7ae98318df81b496d57ac4b4adcfa3652350798c1c551ea2f8db67385e9",
+      "owner": "code_dependencies",
+      "target_sha256": "6a01755a6bd54c9ea0839da10bd69aef5d283224bc51c96771abe6eb0115f3dd",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.f1_weights_joint",
+      "new_module": "privtdd.base_distribution.weights",
+      "source": "reconstruct_overall/joint/f1_weights_joint.py",
+      "target": "src/privtdd/base_distribution/weights.py",
+      "source_sha256": "2576acf6cd0bc20b5ee6baeb29570da9aadc30f0fd878593af5b6a12916bac5d",
+      "owner": "code_dependencies",
+      "target_sha256": "91e3865d0c6cc635bd290023d844e9faede713a4e07bf74c3592823b47489135",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.count_channel_joint",
+      "new_module": "privtdd.base_distribution.count_channel",
+      "source": "reconstruct_overall/joint/count_channel_joint.py",
+      "target": "src/privtdd/base_distribution/count_channel.py",
+      "source_sha256": "903ff9f740e007ba2b2a923ffedae4e69332d6fe2048857d5683dc4fd36da701",
+      "owner": "code_dependencies",
+      "target_sha256": "24a842327f07aaed061f8f42aefd0d8132003c09e0fd274527d456eaee4fa238",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.projected_count_channel_joint",
+      "new_module": "privtdd.base_distribution.projected_count_channel",
+      "source": "reconstruct_overall/joint/projected_count_channel_joint.py",
+      "target": "src/privtdd/base_distribution/projected_count_channel.py",
+      "source_sha256": "2cce54b3466b09fe627d78051a6d0ced5be930df607cc3eb0d98a5b5556fdea2",
+      "owner": "code_dependencies",
+      "target_sha256": "080165f635ebe7b4075b57b445bb91b3272939268937dd104d3ebecdfda66e09",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.projected_degree_posterior_joint",
+      "new_module": "privtdd.base_distribution.projected_posterior",
+      "source": "reconstruct_overall/joint/projected_degree_posterior_joint.py",
+      "target": "src/privtdd/base_distribution/projected_posterior.py",
+      "source_sha256": "e134f09140bb041e36e8fe8f88aa8097ef6ffdf0025c3a04f4c2e1251f330d45",
+      "owner": "code_dependencies",
+      "target_sha256": "dcec58d2fc6b58b518d10e7cce4753ac34be4dd616ba628d4c117cef34265edd",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.projected_large_count_joint",
+      "new_module": "privtdd.base_distribution.large_count",
+      "source": "reconstruct_overall/joint/projected_large_count_joint.py",
+      "target": "src/privtdd/base_distribution/large_count.py",
+      "source_sha256": "baedecd5cad8e8597b35aa0468a490e91fff3d081b046a294e1e476cc7e2868e",
+      "owner": "code_dependencies",
+      "target_sha256": "bf538885861698a42a02c360c9da7376880d444543f496f85e565ecdd6ef7364",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.geometry_generator_joint",
+      "new_module": "privtdd.references.clustering",
+      "source": "reconstruct_overall/joint/geometry_generator_joint.py",
+      "target": "src/privtdd/references/clustering.py",
+      "source_sha256": "4ab46c21d0a8029464217dbf0a2aaa702be921457a7a4dc20812b17ef5a98564",
+      "owner": "code_dependencies",
+      "target_sha256": "41903fd55761f65fff66f30d147bfc9099eeac7ea06bf067f40c0b402b0cd2d5",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.geometry_model_joint",
+      "new_module": "privtdd.references.geometry_model",
+      "source": "reconstruct_overall/joint/geometry_model_joint.py",
+      "target": "src/privtdd/references/geometry_model.py",
+      "source_sha256": "b3ca2abe1e36ff77fea833f324af3670c2a9549cbf10646171f40e68bf78eafa",
+      "owner": "code_dependencies",
+      "target_sha256": "25b129e61e4217dc251e8c22908b7c1f4bd49fd4393aba6ff0805a4cd92220c7",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.structural_constrain_adaptation_joint",
+      "new_module": "privtdd.references.construction",
+      "source": "reconstruct_overall/joint/structural_constrain_adaptation_joint.py",
+      "target": "src/privtdd/references/construction.py",
+      "source_sha256": "f17263b8c5447da45476c3c605470150bc950371dbf5048330eb07b7f668337e",
+      "owner": "code_dependencies",
+      "target_sha256": "c071c66ca596fa98fd876f6fd2b1cdd700d9bbf4c6e33ebb1bcebc658eb60fce",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.structural_context_joint",
+      "new_module": "privtdd.references.context",
+      "source": "reconstruct_overall/joint/structural_context_joint.py",
+      "target": "src/privtdd/references/context.py",
+      "source_sha256": "1b42af865b37832c15474e1f1e19fde519fec583f0d26b944bbc995ec724dccc",
+      "owner": "code_dependencies",
+      "target_sha256": "500899786c86e0957172e155ef590293855d932e68971e755ccb6a053ab04a51",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.structural_endpoints_joint",
+      "new_module": "privtdd.references.independent_edge",
+      "source": "reconstruct_overall/joint/structural_endpoints_joint.py",
+      "target": "src/privtdd/references/independent_edge.py",
+      "source_sha256": "1cbfe6e672e59ff641c5757f3f346f2274771e9d4d6d757cbaf7400d128bc06c",
+      "owner": "code_dependencies",
+      "target_sha256": "75ac2959cc2ff20da47ac8798209ff0c7f75812dc9bff1c7cc65ecdf2155a950",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.structural_kernels_joint",
+      "new_module": "privtdd.references.kernels",
+      "source": "reconstruct_overall/joint/structural_kernels_joint.py",
+      "target": "src/privtdd/references/kernels.py",
+      "source_sha256": "d3aa5cdd270197e591508dd033ce7b2efd8232092708d2d768db1eebba6a55ad",
+      "owner": "code_dependencies",
+      "target_sha256": "5b4505dba5a57e6e8199518d0d453a6bb2f4de6ef1791881b45e5293184a254f",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.structural_primitives_joint",
+      "new_module": "privtdd.references.primitives",
+      "source": "reconstruct_overall/joint/structural_primitives_joint.py",
+      "target": "src/privtdd/references/primitives.py",
+      "source_sha256": "4f82ff2b67027fb64104fe70d1da3b6b10bd53f71657d9d47ee608bab0f063f0",
+      "owner": "code_dependencies",
+      "target_sha256": "9d7dae771d3a84926ce0081e91858d88a21bc9aae9e17611f3945448054ad61d",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.projected_geometry_calibration_joint",
+      "new_module": "privtdd.references.calibration",
+      "source": "reconstruct_overall/joint/projected_geometry_calibration_joint.py",
+      "target": "src/privtdd/references/calibration.py",
+      "source_sha256": "5ee5307a89b5498d2b8419d35a460bc2b98e60162695c35a886c98e1aeac51c1",
+      "owner": "code_dependencies",
+      "target_sha256": "36447402a97639670f4ea10f9f754da712967820f3942ff29583c24afe72ddac",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.coefficient_domain_joint",
+      "new_module": "privtdd.correction.feasible_domain",
+      "source": "reconstruct_overall/joint/coefficient_domain_joint.py",
+      "target": "src/privtdd/correction/feasible_domain.py",
+      "source_sha256": "081e0117aa808efa517888dd602f6f3936755b22ac9b637a26e620d218e14166",
+      "owner": "code_dependencies",
+      "target_sha256": "81fcf82f6907855dd0200e3121212492296b6ca95e01e1fef8fac5223be5409f",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.forward_channel_joint",
+      "new_module": "privtdd.correction.forward",
+      "source": "reconstruct_overall/joint/forward_channel_joint.py",
+      "target": "src/privtdd/correction/forward.py",
+      "source_sha256": "b79d45ff6b5ad4e6dbd79b570ec3d5ad2e34d7ce065c9672b29e69396994d917",
+      "owner": "code_dependencies",
+      "target_sha256": "b1076bd71fe5397cb437b3c3f12a3281cdc13e4017779e79351e17b55d2afe1f",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.joint_optimizer_bridge_joint",
+      "new_module": "privtdd.correction.optimizer_bridge",
+      "source": "reconstruct_overall/joint/joint_optimizer_bridge_joint.py",
+      "target": "src/privtdd/correction/optimizer_bridge.py",
+      "source_sha256": "bb83c699535933b60f87e66077a2a6da0a2c4baac662cceeed84ea70b78701ec",
+      "owner": "code_dependencies",
+      "target_sha256": "f514f87624da5d7ecf0057def04d34f4a077bae32dd7b29c2aa55c1a23fcfb79",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.optimizer_joint",
+      "new_module": "privtdd.correction.optimizer",
+      "source": "reconstruct_overall/joint/optimizer_joint.py",
+      "target": "src/privtdd/correction/optimizer.py",
+      "source_sha256": "b8995c08021516eabe8e3297f44c35b8100543b56d31a684d47e06fff43c01a3",
+      "owner": "code_dependencies",
+      "target_sha256": "20ead4be26f9a565cd80e653be4bb4cc9d9012c93661ed6ba76217c721610319",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.optimizer_roundoff_joint",
+      "new_module": "privtdd.correction.roundoff",
+      "source": "reconstruct_overall/joint/optimizer_roundoff_joint.py",
+      "target": "src/privtdd/correction/roundoff.py",
+      "source_sha256": "b8619ea629938fdafafb56fc2df008965d73d98ff38533634809e3e2ebab082f",
+      "owner": "code_dependencies",
+      "target_sha256": "3ffaaa1e5e8728661ecd8eb5deab4fd995f969381debef7c9f18354c09bbdb19",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.optimizer_stopping_joint",
+      "new_module": "privtdd.correction.stopping",
+      "source": "reconstruct_overall/joint/optimizer_stopping_joint.py",
+      "target": "src/privtdd/correction/stopping.py",
+      "source_sha256": "4303137f4cc52ebd0e56c067cee12e62259b3a9e2e2c7457b11d0786ed995b8f",
+      "owner": "code_dependencies",
+      "target_sha256": "a0ae4513f7ea7547bf7c5890939551acf0e315e20e7c89f6938d4cd6594abc82",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.regional_basis_joint",
+      "new_module": "privtdd.correction.regions",
+      "source": "reconstruct_overall/joint/regional_basis_joint.py",
+      "target": "src/privtdd/correction/regions.py",
+      "source_sha256": "e064def212458c44b5c9baff4004c9dc1f88a8f2becedf94c8fa1739a8c42730",
+      "owner": "code_dependencies",
+      "target_sha256": "3ec3dce52a36f00dac6f400dd5d1c532989f44e212af7b388b545bd4208facc2",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.source_mapping_joint",
+      "new_module": "privtdd.correction.source_mapping",
+      "source": "reconstruct_overall/joint/source_mapping_joint.py",
+      "target": "src/privtdd/correction/source_mapping.py",
+      "source_sha256": "49f23d289fd4e6b8615d43419d8b4f3dcc3ea8655760097437452aa2e76133d3",
+      "owner": "code_dependencies",
+      "target_sha256": "51f3b84d0ac38404885d7742c3e763ce14e6bf6b337d5d8aecd720dd89ca5aa7",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.stable_basis_joint",
+      "new_module": "privtdd.correction.basis",
+      "source": "reconstruct_overall/joint/stable_basis_joint.py",
+      "target": "src/privtdd/correction/basis.py",
+      "source_sha256": "8e5af504db08ab3b28f02c4479324d878453313c5716d289c3042ae5fb365ea9",
+      "owner": "code_dependencies",
+      "target_sha256": "b3df0280cb7634323f95b034cfd554536e4df516ab20b88f93c12ab8c0f40ede",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.sparse_channel_joint",
+      "new_module": "privtdd.correction.sparse_channel",
+      "source": "reconstruct_overall/joint/sparse_channel_joint.py",
+      "target": "src/privtdd/correction/sparse_channel.py",
+      "source_sha256": "8bc738a07703bfafa90b64799e9926fbda0572e65f3d1e4ca3117a8222a2d540",
+      "owner": "code_dependencies",
+      "target_sha256": "059cc05275274d716e1316a0078eb555244519c44bc92c32a7a516e3824541c8",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.projected_sparse_density_joint",
+      "new_module": "privtdd.correction.projected_sparse_channel",
+      "source": "reconstruct_overall/joint/projected_sparse_density_joint.py",
+      "target": "src/privtdd/correction/projected_sparse_channel.py",
+      "source_sha256": "d26340b3fb91c8fc908aed12b25fc2b666b32f5c4516ec7f6f862048ce46cf27",
+      "owner": "code_dependencies",
+      "target_sha256": "2cd24ba72e82d2c03538612067871415ae53569ae21c9d8a303e060521721137",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.posterior_joint",
+      "new_module": "privtdd.posterior.update",
+      "source": "reconstruct_overall/joint/posterior_joint.py",
+      "target": "src/privtdd/posterior/update.py",
+      "source_sha256": "7fd0b061486942055b10c67b3e05eab5a2f69e4df00aae964177047377bef074",
+      "owner": "code_dependencies",
+      "target_sha256": "99ae49df15d548101ea023301f985bd39b337ae97d9a8a1fd8ac52464c6ddb50",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.posterior_rows_joint",
+      "new_module": "privtdd.posterior.rows",
+      "source": "reconstruct_overall/joint/posterior_rows_joint.py",
+      "target": "src/privtdd/posterior/rows.py",
+      "source_sha256": "39d86c0546b6b81091526b4332275820ecc07cd13690b4d4a08d669110fa229c",
+      "owner": "code_dependencies",
+      "target_sha256": "6f7aece10e34fd79dffd331695ab9d96f5abe0e19d69b3ea7b5c8b6284776964",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.likelihood_primitives_joint",
+      "new_module": "privtdd.numerics.likelihood",
+      "source": "reconstruct_overall/joint/likelihood_primitives_joint.py",
+      "target": "src/privtdd/numerics/likelihood.py",
+      "source_sha256": "15eae992dfa846b4f74c3165dba7b88abcb8896129194dc067b44dc8d9430cfe",
+      "owner": "code_dependencies",
+      "target_sha256": "01597e308efd915782c200a357f33bad19904987f7f962d4b46fb8657b3050a5",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.probability_joint",
+      "new_module": "privtdd.numerics.probability",
+      "source": "reconstruct_overall/joint/probability_joint.py",
+      "target": "src/privtdd/numerics/probability.py",
+      "source_sha256": "1bd3385924662520740c4197d38fd5f9cc0adc8a3421e5fa47237f656faab72e",
+      "owner": "code_dependencies",
+      "target_sha256": "ac97532a913b88b70e979a0f237564ee3aa39abc5f27a4a51e06ebe74206c2af",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.quantization_joint",
+      "new_module": "privtdd.numerics.quantization",
+      "source": "reconstruct_overall/joint/quantization_joint.py",
+      "target": "src/privtdd/numerics/quantization.py",
+      "source_sha256": "b231b7b362ae2e7688d39ec72e16746d4b6a6535e431ac13b9cf6c2d08674e0c",
+      "owner": "code_dependencies",
+      "target_sha256": "da2c0ca0d24c81d4c069d35d99859dc1f5dcbcbd10e5ae3b25faf52ee3427b39",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.memory_joint",
+      "new_module": "privtdd.io.memory",
+      "source": "reconstruct_overall/joint/memory_joint.py",
+      "target": "src/privtdd/io/memory.py",
+      "source_sha256": "8220e9188ef82570bfa710ece51a7c8ec29c90d7c9ab8706dc778887f887f2a2",
+      "owner": "code_dependencies",
+      "target_sha256": "4c71bb225d0686d75fd773f1e79de9edd19417a1192114d4107f296cb0d3c9d3",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.storage_joint",
+      "new_module": "privtdd.io.storage",
+      "source": "reconstruct_overall/joint/storage_joint.py",
+      "target": "src/privtdd/io/storage.py",
+      "source_sha256": "5c4a068654620dee4a043e12feaeca68746f3ab7f6fdffffcccd27128d1eb761",
+      "owner": "code_dependencies",
+      "target_sha256": "6bbfb13a0e81e7f7655191abc1df033291334de9b2e5572fd0d93cbb6e53a360",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance",
+        "new standalone cache/source identity; historical identities remain untouched"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.run_joint",
+      "new_module": "privtdd.io.runner",
+      "source": "reconstruct_overall/joint/run_joint.py",
+      "target": "src/privtdd/io/runner.py",
+      "source_sha256": "3f6ccc1b0b0141dca41bcd29ac513804328cce30b7863eb4460e072dbcdbeb5e",
+      "owner": "code_dependencies",
+      "target_sha256": "e88134369b750a89cb9e086a3a6060346af54325f685cd309f2f1064417452f3",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance",
+        "new standalone cache/source identity; historical identities remain untouched"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.conditional_distribution_distribute",
+      "new_module": "privtdd.distributions.conditional",
+      "source": "reconstruct_overall/conditional_distribution_distribute.py",
+      "target": "src/privtdd/distributions/conditional.py",
+      "source_sha256": "589191d9983f806fc9eb9a1ef6319d781b7f541b8262a16b3baf6ae58e59f5eb",
+      "owner": "code_dependencies",
+      "target_sha256": "b84bc86d65d083761651259a63c02207519f3b9e21efe65747cc2e1f62329022",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.beta_numerics",
+      "new_module": "privtdd.numerics.beta_refinement",
+      "source": "reconstruct_overall/beta_numerics.py",
+      "target": "src/privtdd/numerics/beta_refinement.py",
+      "source_sha256": "05d08613a097027b6506e84961e4286376ccbb76b32bf2c8caab2c40df955cf9",
+      "owner": "code_dependencies",
+      "target_sha256": "b3aaa4969b31bf9dc386f83f284beaad4323d669a412db57197d2d631d2fb5cb",
+      "transformations": [
+        "semantic module path",
+        "import and public API rename",
+        "legacy source navigation moved to provenance"
+      ]
+    },
+    {
+      "old_module": "reconstruct_overall.joint.Ablation",
+      "new_module": "privtdd.experiments.ablation",
+      "source": "reconstruct_overall/joint/Ablation.py",
+      "target": "src/privtdd/experiments/ablation.py",
+      "source_sha256": "1375fb7252053bee553b0ecea402e9b9e3673dddb231ddc5a8f6f90bfa24d600",
+      "owner": "experiment_mapping",
+      "target_sha256": "55b44584f38eef9e3abbb935c5e1c30461624c7c04fc644ed5a02347a23cfdb0"
+    }
+  ],
+  "generated_files": [
+    {
+      "target": "src/privtdd/io/identity.py",
+      "target_sha256": "e8fef262ee9303432b664f75786fed435be89f4d7d194bfde506cf68b8379c91",
+      "purpose": "Versioned standalone source manifest; invalidates old cache identity without altering historical records"
+    }
+  ]
+}

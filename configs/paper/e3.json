@@ -1,0 +1,44 @@
+{
+  "datasets": [
+    "bio-dmela",
+    "dblp",
+    "higgs",
+    "orkut"
+  ],
+  "epsilons": [
+    0.5,
+    2
+  ],
+  "region_quantiles": [
+    [
+      0.8,
+      0.9
+    ],
+    [
+      0.9,
+      0.95
+    ],
+    [
+      0.95,
+      0.99
+    ]
+  ],
+  "seeds": [
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037
+  ],
+  "planned_outputs": 240,
+  "published_outputs": 234,
+  "plot_datasets": [
+    "higgs",
+    "orkut"
+  ]
+}

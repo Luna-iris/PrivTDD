@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "kind": "bounded synthetic migration regression",
+  "graph": "8-node ring with +/-1,+/-2 neighbors",
+  "epsilon": 2.0,
+  "seed": 20261028,
+  "timestamp": "2026-11-15T21:45:17",
+  "old_source_root_label": "graph-analysis-main",
+  "new_core_digest": "e6c20c9874e9f747654204dd0cab23889a1d246b55af4d36659bde8ac79c00b8",
+  "scope": "original and migrated implementations on the same machine; no full paper experiment rerun",
+  "identity_policy": "new cache identity; historical run manifests not modified",
+  "cases": [
+    {
+      "configuration": "exact",
+      "config": {
+        "workers": 1,
+        "blas_threads": 1,
+        "geometry_draws": 64,
+        "geometry_replicates": 1
+      },
+      "histogram_equal": true,
+      "coordinates_equal": true,
+      "report_arrays_equal": true,
+      "checked_stage_arrays": [
+        "degree.npz",
+        "prediction_raw.npz",
+        "prediction.npz"
+      ],
+      "histogram": {
+        "0": 4.017682359489069,
+        "1": 4.429802633507537e-16,
+        "2": 7.462192175038399e-17,
+        "3": 4.177128115691509e-18,
+        "7": 3.9823176405109266,
+        "8": 4.420042848237763e-15
+      }
+    },
+    {
+      "configuration": "paper_fast_small_geometry",
+      "config": {
+        "workers": 1,
+        "blas_threads": 1,
+        "geometry_draws": 64,
+        "geometry_replicates": 1,
+        "degree_grid_size": 512,
+        "report_bin_width": 0.0625,
+        "triangle_bin_width": 0.0625,
+        "structural_lazy_endpoints": true,
+        "batch_small_groups": true,
+        "batch_f1": true,
+        "compiled_structure": true
+      },
+      "histogram_equal": true,
+      "coordinates_equal": true,
+      "report_arrays_equal": true,
+      "checked_stage_arrays": [
+        "degree.npz",
+        "prediction_raw.npz",
+        "prediction.npz"
+      ],
+      "histogram": {
+        "0": 4.017682406467791,
+        "1": 4.697253714978012e-16,
+        "2": 1.5434398770291502e-16,
+        "3": 1.4087274763531194e-31,
+        "4": 5.781384745546234e-17,
+        "5": 1.6414664325171363e-15,
+        "6": 5.482990595690177e-15,
+        "7": 3.9823175935321817,
+        "8": 1.5028145506820235e-14,
+        "9": 3.532056405059578e-15,
+        "10": 8.969135718398284e-33,
+        "11": 2.1959715776050606e-32,
+        "12": 3.480231797243799e-32,
+        "13": 6.55212711526203e-32,
+        "14": 2.964135357783849e-17,
+        "15": 4.3453529640419334e-17,
+        "16": 7.732388740536089e-18,
+        "17": 1.7049896685795624e-31,
+        "18": 5.384177900777565e-32,
+        "19": 4.486814917314638e-32,
+        "20": 1.7947259669258551e-32
+      }
+    }
+  ]
+}

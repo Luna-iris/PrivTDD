@@ -1,0 +1,31 @@
+\clearpage
+\section{Neighbor-pair sampling (E4)}
+On Higgs social and Orkut, the total privacy budget is $\varepsilon=2$.
+The four requested sampling rates are $0.01\%,0.1\%,1\%,10\%$.
+Each rate uses seeds 20261028--20261032 and estimates the TDD of the full network.
+The rate concerns candidate neighbor pairs after projection, not a node subsample.
+The frontend retains its matching/rotation construction and corresponding sampled likelihood.
+The metadata record the realized rate, design parameter, candidates, visits, and random streams.
+Shared seed indices across rates do not imply identical private reports.
+The $100\%$ row in the main paper comes from the ten E1 runs (seeds 20261028--20261037).
+The five matched full-enumeration controls retained with E4 are separate auxiliary records.
+The table below uses the main-paper control convention, and gives pointwise 95\% percentile
+bootstrap intervals from 2,000 resamples with seed 731.
+\begingroup\fontsize{8.3}{10}\selectfont\setlength{\tabcolsep}{3pt}
+\begin{longtable}{llrrrr}
+\caption{E4 errors in original units. The full-enumeration control uses ten runs; each sampled setting uses five.}\label{tab:e4:full}\\
+\toprule Network & Rate & Runs & MSE & EMD & KS \\ \midrule\endfirsthead
+\toprule Network & Rate & Runs & MSE & EMD & KS \\ \midrule\endhead
+\bottomrule\endlastfoot
+Higgs social & 0.01\% & 5 & \compactCI{0.62058}{0.4511}{0.8995} & \compactCI{582.89}{416.8}{762.3} & \compactCI{0.58702}{0.5295}{0.6755} \\
+Higgs social & 0.1\% & 5 & \compactCI{0.64318}{0.3443}{0.9409} & \compactCI{537.15}{444.8}{659.2} & \compactCI{0.55124}{0.3913}{0.6862} \\
+Higgs social & 1\% & 5 & \compactCI{0.29055}{0.09719}{0.5407} & \compactCI{661.63}{451.3}{933.4} & \compactCI{0.40077}{0.3105}{0.516} \\
+Higgs social & 10\% & 5 & \compactCI{0.020109}{0.00914}{0.02801} & \compactCI{539.99}{486.1}{602.6} & \compactCI{0.1342}{0.08826}{0.1637} \\
+Higgs social & 100\% & 10 & \compactCI{0.027275}{0.02707}{0.02747} & \compactCI{73.649}{69.5}{77.74} & \compactCI{0.13032}{0.1298}{0.1309} \\
+Orkut & 0.01\% & 5 & \compactCI{0.11288}{0.02315}{0.2693} & \compactCI{945.85}{577}{1509} & \compactCI{0.3288}{0.2444}{0.4786} \\
+Orkut & 0.1\% & 5 & \compactCI{0.014954}{0.003088}{0.03653} & \compactCI{2932.8}{2117}{3749} & \compactCI{0.29633}{0.2353}{0.3536} \\
+Orkut & 1\% & 5 & \compactCI{0.13624}{0.0007691}{0.3831} & \compactCI{665.2}{631.9}{698.5} & \compactCI{0.22769}{0.1123}{0.4233} \\
+Orkut & 10\% & 5 & \compactCI{0.000923}{0.0007114}{0.001179} & \compactCI{199.24}{194.6}{203.5} & \compactCI{0.045321}{0.04218}{0.04846} \\
+Orkut & 100\% & 10 & \compactCI{0.0017885}{0.001678}{0.001909} & \compactCI{35.576}{35.1}{36.08} & \compactCI{0.026632}{0.02621}{0.02702} \\
+\end{longtable}
+\endgroup

@@ -1,0 +1,330 @@
+{
+  "source": "User-supplied corrected L=0 allocation table, 2026-11-03",
+  "source_sha256": "d1d4a7e8529c8ff8932e9220cc4a22b03ca05e69a05e5b317f5872da93ed0109",
+  "applied_L": 0,
+  "safeguard_tau": 1.0,
+  "user_confirmed": "Use corrected L0 allocation with L0+safeguard",
+  "objective": "B_A upper-bound minimum, fixed guard radius; not true GDD risk",
+  "rows": [
+    {
+      "dataset": "bio-dmela",
+      "epsilon": 0.5,
+      "n": 7393,
+      "D": 7392,
+      "eps_deg": 0.056024742073802966,
+      "eps_rr": 0.19659329343508594,
+      "eps_rel": 0.09567861120865405,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "bio-dmela",
+      "epsilon": 1.0,
+      "n": 7393,
+      "D": 7392,
+      "eps_deg": 0.1403607409126215,
+      "eps_rr": 0.36667816179877144,
+      "eps_rel": 0.17630017818799276,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "bio-dmela",
+      "epsilon": 1.5,
+      "n": 7393,
+      "D": 7392,
+      "eps_deg": 0.2371745308353708,
+      "eps_rr": 0.5237261315693843,
+      "eps_rel": 0.2509624033799371,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "bio-dmela",
+      "epsilon": 2.0,
+      "n": 7393,
+      "D": 7392,
+      "eps_deg": 0.34195600433316753,
+      "eps_rr": 0.6711373920300279,
+      "eps_rel": 0.32247529965181854,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "bio-dmela",
+      "epsilon": 2.5,
+      "n": 7393,
+      "D": 7392,
+      "eps_deg": 0.45234920232981096,
+      "eps_rr": 0.8107110541947762,
+      "eps_rel": 0.3922952705728009,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "bio-dmela",
+      "epsilon": 3.0,
+      "n": 7393,
+      "D": 7392,
+      "eps_deg": 0.5668482871644185,
+      "eps_rr": 0.943702678351127,
+      "eps_rel": 0.461300373660018,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "bio-dmela",
+      "epsilon": 3.5,
+      "n": 7393,
+      "D": 7392,
+      "eps_deg": 0.6843770653613965,
+      "eps_rr": 1.0711145199189815,
+      "eps_rel": 0.5300656746791127,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "bio-dmela",
+      "epsilon": 4.0,
+      "n": 7393,
+      "D": 7392,
+      "eps_deg": 0.8041116961803327,
+      "eps_rr": 1.19379590123693,
+      "eps_rel": 0.5989903532012023,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "dblp",
+      "epsilon": 0.5,
+      "n": 317080,
+      "D": 317079,
+      "eps_deg": 0.05602476383084799,
+      "eps_rr": 0.19659306525444475,
+      "eps_rel": 0.09567870354192964,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "dblp",
+      "epsilon": 1.0,
+      "n": 317080,
+      "D": 317079,
+      "eps_deg": 0.14036083076673636,
+      "eps_rr": 0.36667739605117583,
+      "eps_rel": 0.17630047120767575,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "dblp",
+      "epsilon": 1.5,
+      "n": 317080,
+      "D": 317079,
+      "eps_deg": 0.23717473022737293,
+      "eps_rr": 0.5237246147712801,
+      "eps_rel": 0.25096296238698707,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "dblp",
+      "epsilon": 2.0,
+      "n": 317080,
+      "D": 317079,
+      "eps_deg": 0.34195634997923363,
+      "eps_rr": 0.6711349583100068,
+      "eps_rel": 0.32247617086576297,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "dblp",
+      "epsilon": 2.5,
+      "n": 317080,
+      "D": 317079,
+      "eps_deg": 0.4523497273082178,
+      "eps_rr": 0.8107075667126709,
+      "eps_rel": 0.3922964893354468,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "dblp",
+      "epsilon": 3.0,
+      "n": 317080,
+      "D": 317079,
+      "eps_deg": 0.5668490218171266,
+      "eps_rr": 0.9436980192045578,
+      "eps_rel": 0.4613019685805945,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "dblp",
+      "epsilon": 3.5,
+      "n": 317080,
+      "D": 317079,
+      "eps_deg": 0.6843780379808442,
+      "eps_rr": 1.0711085839076038,
+      "eps_rel": 0.5300676700653539,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "dblp",
+      "epsilon": 4.0,
+      "n": 317080,
+      "D": 317079,
+      "eps_deg": 0.8041129335138449,
+      "eps_rr": 1.1937885917779558,
+      "eps_rel": 0.5989927705971773,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "higgs",
+      "epsilon": 0.5,
+      "n": 456626,
+      "D": 456625,
+      "eps_deg": 0.05602476398953944,
+      "eps_rr": 0.19659306359013975,
+      "eps_rel": 0.0956787042153907,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "higgs",
+      "epsilon": 1.0,
+      "n": 456626,
+      "D": 456625,
+      "eps_deg": 0.1403608314221142,
+      "eps_rr": 0.36667739046595565,
+      "eps_rel": 0.17630047334490798,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "higgs",
+      "epsilon": 1.5,
+      "n": 456626,
+      "D": 456625,
+      "eps_deg": 0.2371747316816986,
+      "eps_rr": 0.5237246037080266,
+      "eps_rel": 0.2509629664642881,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "higgs",
+      "epsilon": 2.0,
+      "n": 456626,
+      "D": 456625,
+      "eps_deg": 0.3419563525003081,
+      "eps_rr": 0.6711349405588747,
+      "eps_rel": 0.32247617722025457,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "higgs",
+      "epsilon": 2.5,
+      "n": 456626,
+      "D": 456625,
+      "eps_deg": 0.4523497311373079,
+      "eps_rr": 0.8107075412755631,
+      "eps_rel": 0.39229649822491053,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "higgs",
+      "epsilon": 3.0,
+      "n": 456626,
+      "D": 456625,
+      "eps_deg": 0.5668490271755411,
+      "eps_rr": 0.9436979852215057,
+      "eps_rel": 0.46130198021370605,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "higgs",
+      "epsilon": 3.5,
+      "n": 456626,
+      "D": 456625,
+      "eps_deg": 0.6843780450749429,
+      "eps_rr": 1.0711085406112855,
+      "eps_rel": 0.5300676846194142,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "higgs",
+      "epsilon": 4.0,
+      "n": 456626,
+      "D": 456625,
+      "eps_deg": 0.8041129425387182,
+      "eps_rr": 1.1937885384639046,
+      "eps_rel": 0.5989927882293296,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "orkut",
+      "epsilon": 0.5,
+      "n": 3072441,
+      "D": 3072440,
+      "eps_deg": 0.0560247642965309,
+      "eps_rr": 0.1965930603705116,
+      "eps_rel": 0.09567870551821328,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "orkut",
+      "epsilon": 1.0,
+      "n": 3072441,
+      "D": 3072440,
+      "eps_deg": 0.14036083268995447,
+      "eps_rr": 0.3666773796612458,
+      "eps_rel": 0.17630047747942262,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "orkut",
+      "epsilon": 1.5,
+      "n": 3072441,
+      "D": 3072440,
+      "eps_deg": 0.23717473449511786,
+      "eps_rr": 0.5237245823059615,
+      "eps_rel": 0.2509629743519014,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "orkut",
+      "epsilon": 2.0,
+      "n": 3072441,
+      "D": 3072440,
+      "eps_deg": 0.3419563573773722,
+      "eps_rr": 0.6711349062189863,
+      "eps_rel": 0.32247618951313467,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "orkut",
+      "epsilon": 2.5,
+      "n": 3072441,
+      "D": 3072440,
+      "eps_deg": 0.452349738544752,
+      "eps_rr": 0.8107074920670135,
+      "eps_rel": 0.3922965154217412,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "orkut",
+      "epsilon": 3.0,
+      "n": 3072441,
+      "D": 3072440,
+      "eps_deg": 0.566849037541491,
+      "eps_rr": 0.9436979194806703,
+      "eps_rel": 0.4613020027181739,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "orkut",
+      "epsilon": 3.5,
+      "n": 3072441,
+      "D": 3072440,
+      "eps_deg": 0.6843780587986056,
+      "eps_rr": 1.0711084568537657,
+      "eps_rel": 0.5300677127745115,
+      "L_for_allocation": 0
+    },
+    {
+      "dataset": "orkut",
+      "epsilon": 4.0,
+      "n": 3072441,
+      "D": 3072440,
+      "eps_deg": 0.804112959997499,
+      "eps_rr": 1.1937884353268957,
+      "eps_rel": 0.5989928223390532,
+      "L_for_allocation": 0
+    }
+  ]
+}

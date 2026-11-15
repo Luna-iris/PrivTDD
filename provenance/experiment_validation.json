@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "package_digest_at_integrated_validation": "f5a092cea7a391b938a391828fd3660410ecbaf72901577da9db048ebe83c587",
+  "isolated_reproduction_tests": {"passed": 6, "failed": 0},
+  "frozen_rebuild": {
+    "command": "python -m privtdd reproduce --mode figures --compile-supplement",
+    "exit_code": 0,
+    "report": "results/reproduced/paper-v1/verification.json",
+    "immutable_inputs_verified": 42,
+    "e1_table_values": 384,
+    "e2_curve_means": 480,
+    "e3_all_network_means": 72,
+    "e4_table_values": 30,
+    "additional_e2_summary_rows": 546,
+    "e3_prose_diagnostics": "Verified using the disclosed reconstructed diagnostic generator, not a recovered historical script",
+    "supplement_pdf": "results/reproduced/paper-v1/supplement/supplementary.pdf"
+  },
+  "fresh_smoke": {
+    "run_root": "results/validation/integrated_final_v2_smoke",
+    "e1_e2_e3_jobs_planned": 3,
+    "e1_e2_e3_jobs_completed": 3,
+    "method_outputs": 9,
+    "sampling_root": "results/validation/integrated_final_v2_smoke_e4",
+    "e4_jobs_completed": 3,
+    "e4_jobs_failed": 0,
+    "exit_code": 0,
+    "description": "Tiny synthetic data and reduced geometry; E1 tests PrivTDD only. This is executable integration evidence, not a reproduction of paper accuracy."
+  },
+  "resume": {
+    "report": "provenance/integrated_resume_validation.json",
+    "exit_code": 0,
+    "npz_files": 70,
+    "changed_content_hashes_or_mtimes": 0
+  },
+  "additional_components_smoke": {
+    "report": "results/validation/fresh_extra_v1/extra_smoke.json",
+    "method_outputs": 8,
+    "description": "Full plus all seven supplementary E2 variants on a tiny synthetic input; passed before final reporting-only source changes."
+  },
+  "full_production_execution": "Not run. The exact plan contains 2,891 E1-E3 jobs (1,920 E1; 480 E2; 411 additional E2; 80 E3) and a separate 40-job E4 run. Large dataset and optional pinned upstream baseline setup are explicit prerequisites."
+}

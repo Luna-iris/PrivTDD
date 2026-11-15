@@ -1,0 +1,181 @@
+{
+  "files": [
+    {
+      "source": "c9_mu.py",
+      "target": "src/privtdd/data/triangles.py",
+      "source_sha256": "a76e7bf3986d4f4fe6947aa4193014fc4995810886af64036fe55ae6114e6f00",
+      "extracted": [
+        "contains",
+        "validate_and_triangles"
+      ],
+      "target_sha256": "a8297d6a6bd2586de958f54e499f5fcaff1f0ef86fc1244f329c6a28d4af0278"
+    },
+    {
+      "source": "reconstruct_overall/private_report.py",
+      "target": "src/privtdd/sampling/design.py",
+      "source_sha256": "f378a70d5f52f711fcd5d2ba123892b14506e5a4c2ab54b47f645d9aab5bcfbe",
+      "extracted": [
+        "_derive_seed",
+        "_c9_splitmix64",
+        "_build_rotated_design"
+      ],
+      "target_sha256": "1052b5117472d39920a4113568241a70ebb0d6b18d99419d6f27e8121b7450e5"
+    },
+    {
+      "source": "reconstruct_overall/aggregate.py",
+      "target": "src/privtdd/sampling/moments.py",
+      "source_sha256": "2418addf5237f118212a4f5dd82fa8124583eb7f2ee1a486f761e0786bf6b138",
+      "extracted": [
+        "_sampled_exposure_moments"
+      ],
+      "target_sha256": "5c1b6f1587afadb3bef11cd9c58e33596eb8d95373671f2643106de8dad9bfdb"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/__init__.py",
+      "target": "src/privtdd/sampling/__init__.py",
+      "source_sha256": "43a9b64f960fd64ad961b2e88b1a01dceec2f0b4d658faacea99b77e9138ff8b",
+      "extracted": null,
+      "target_sha256": "68a1fd855c7d58ff602116117673fc28c5337b635b1f33fcd8a7398e1852b4ea"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/collect_rotate.py",
+      "target": "src/privtdd/sampling/collect_rotate.py",
+      "source_sha256": "82470862d0705e3d4cd17f73b62506630a7ffbe64160e0741af967e23b2af66f",
+      "extracted": null,
+      "target_sha256": "575127f7d67d474dc0e0035a2741b8b80747e7857b9ac05f41442ae9b116bcb3"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/historical.py",
+      "target": "src/privtdd/sampling/historical.py",
+      "source_sha256": "ab4deb812fa9784899d62cf35685ab3dac362ec72f87fb6ad5103a31f18f1b0b",
+      "extracted": null,
+      "target_sha256": "5d702643c0054d38d4f19bbfa41cb4f2822f5b08a219b7c0a7f4a6c054b196b2"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/recover.py",
+      "target": "src/privtdd/sampling/recover.py",
+      "source_sha256": "1b375d9a617d72f5742f934d422fa2b50f23c476e5c0b287ed7e5b316be21397",
+      "extracted": null,
+      "target_sha256": "94029999554d555218a58b59dc00f3a43d230a0f84a144226d87b49ed82c4f7a"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/run.py",
+      "target": "src/privtdd/sampling/run.py",
+      "source_sha256": "6acc117d8479930ea5ed232a5e69896c3932223f6eedde1e1bb52dd4fc23f0ef",
+      "extracted": null,
+      "target_sha256": "d8e7bff0d66aadb9854bba231026822615db0310517bc8eebcc87b6948151a07"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/sampled_channel.py",
+      "target": "src/privtdd/sampling/sampled_channel.py",
+      "source_sha256": "e60c2857d79d6872ed94e76172605b55c036bd0a2994e84260c664dcfb24b4d1",
+      "extracted": null,
+      "target_sha256": "580e670080bf537094ac3a419485adfdc7f87bb907f2801b9ecd1eb742018e27"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/summarize.py",
+      "target": "src/privtdd/sampling/summarize.py",
+      "source_sha256": "fecf8a23d039d15d196cc96743bf9f48d9886e4581df4717b0322a58908325e6",
+      "extracted": null,
+      "target_sha256": "2a86ed939cd9c7030dd5ff6b6be1de252a578413c4bde493f4013b66204d34a8"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/test_channel.py",
+      "target": "src/privtdd/sampling/test_channel.py",
+      "source_sha256": "b72053b357eee34f6964c6f3b5253325c5b9bf7e28a9d57cbfee221db6573d2b",
+      "extracted": null,
+      "target_sha256": "a863dc72934a8f61ea140dffef8b646faee2724a58da2df31197155843cb13bb"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/test_collect_rotate.py",
+      "target": "src/privtdd/sampling/test_collect_rotate.py",
+      "source_sha256": "26bc1d2f479df72aa0a3249f77199aa1f09de07926a1e4df7a0a04e520328152",
+      "extracted": null,
+      "target_sha256": "745e73e98427b5950e3fffd2648d75ef4d13fa30955c4a35c04e1b6ed4754b75"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/test_recover.py",
+      "target": "src/privtdd/sampling/test_recover.py",
+      "source_sha256": "503f84b8d6c8e7c1c686dd609b1e99c219455a325e8cf1f0005f3fb6b7d5ec1a",
+      "extracted": null,
+      "target_sha256": "d864ba5779c9cc37ac56778a65ac73573a668c9964c65c5dd53f12735c605269"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/frontend_scalability/test_summary.py",
+      "target": "src/privtdd/sampling/test_summary.py",
+      "source_sha256": "246ec9d1146fe67648693162af9adcb929c5b5dcb4adbc4ec14b40e48e5bb98a",
+      "extracted": null,
+      "target_sha256": "5ae9dfc171feaf2c051ddbcdffb66da4b8674db84879761f0891b04cdefb6492"
+    },
+    {
+      "source": "reconstruct_overall/baselines/fast_gnam.py",
+      "target": "src/privtdd/baselines/shared_rr.py",
+      "source_sha256": "eadbe06640ac2b11a959410be2370c19520beb087edaeec74239c6508483deb8",
+      "extracted": null,
+      "target_sha256": "eadbe06640ac2b11a959410be2370c19520beb087edaeec74239c6508483deb8"
+    },
+    {
+      "source": "reconstruct_overall/baselines/external_gdd.py",
+      "target": "src/privtdd/baselines/histogram.py",
+      "source_sha256": "26f8b26ac02f059a3bfddc82632a43dc3ffb8f0dd9c46c22fae3917fbc10b1df",
+      "extracted": [
+        "_split_budget",
+        "_noisy_hist"
+      ],
+      "target_sha256": "2f10c0dd9d42c9b0275861832c76bfda07c7946ba8710228d3514f0c45e563f0"
+    },
+    {
+      "source": "reconstruct_overall/baselines/run_dataset_grid.py",
+      "target": "src/privtdd/baselines/tritr_hist.py",
+      "source_sha256": "96cd914de24bdae6d6732dc4dba34e7504f47d0fcb9635f900412890ef8099c4",
+      "extracted": [
+        "log",
+        "project_csr",
+        "run_csr"
+      ],
+      "target_sha256": "14f96feb52687605d8f4d57e0203e511ad2a6c4b15e25216424966fdf0a7f00c"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/resume/compact_graph.py",
+      "target": "src/privtdd/baselines/compact_graph.py",
+      "source_sha256": "70d97b461c0a577557eeef4061913b40eda2018f5195efa42dbce4c1728fdbef",
+      "extracted": null,
+      "target_sha256": "f240c1ffb913dc399e8799cdbdcc43911848efc005f04dd9b5885bdc0c0666d9"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/resume/synthesis.py",
+      "target": "src/privtdd/baselines/synthesis.py",
+      "source_sha256": "708d913483add8529ff8eae6bf7b43e7429b6b965d623868aeba41b80c6beb89",
+      "extracted": null,
+      "target_sha256": "43f7addd08eee0682a72f7f51605fed877c5a4fcd7b6639772632b855624c82d"
+    },
+    {
+      "source": "reconstruct_overall/joint/paper_experiments/baselines.py",
+      "target": "src/privtdd/baselines/__init__.py",
+      "source_sha256": "29460588585e6285086db90d99895fac1700b38907dcfe69ac439212e89a7f6b",
+      "extracted": null,
+      "target_sha256": "f20a7e93433f56d6fda8554a4b70e78ff9da9f7821e36df5880c9b49d84d2b6a"
+    },
+    {
+      "source": "reconstruct_overall/baselines/opencode_reference/LICENSE",
+      "target": "LICENSES/TriTR-reference-MIT.txt",
+      "source_sha256": "4f5e157834a3f590b00df05d99a3a3bc22dd629be9aa4befe334325f7080ab90",
+      "extracted": null,
+      "target_sha256": "18b5cb20c73045be8935fcbcfe9a67a0ce1051f87c40abbdca640eeaaf35bbcc"
+    }
+  ],
+  "new_files": [
+    {
+      "target": "src/privtdd/data/families.py",
+      "sha256": "234849d84471adc66252245b8e37a9ee5ecad377c3b233b654e73dd14623d739"
+    },
+    {
+      "target": "src/privtdd/data/prepare.py",
+      "sha256": "d0fc3386fab771051c5955325e7e206668cfbffe6b5ca72e019b8240384abe62"
+    },
+    {
+      "target": "src/privtdd/data/__init__.py",
+      "sha256": "aa76351eddb0daf2f79561dfe112db13216cff64d552744ffc586c66cfcd9fca"
+    }
+  ]
+}

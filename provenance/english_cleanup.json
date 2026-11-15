@@ -1,0 +1,893 @@
+{
+  "date": "2026-11-15",
+  "scope": "Public files only; original research code and manuscript are unchanged",
+  "core_python_files_changed": 46,
+  "core_comment_or_docstring_tokens_translated": 267,
+  "data_sampling_files_changed": 11,
+  "runtime_messages_translated": 28,
+  "paper_and_test_files_changed": 18,
+  "paper_actions": {
+    "translate technical or reproduction comment": 58,
+    "remove Chinese companion draft or historical editorial comment": 331,
+    "remove inline historical editorial reminder; preserve percent and newline semantics": 1,
+    "translate module docstring": 2
+  },
+  "algorithm_changes": false,
+  "active_latex_content_changed": false,
+  "historical_numeric_evidence_changed": false,
+  "pdf_checks": [
+    {
+      "path": "paper/manuscript/icdever.pdf",
+      "extracted_characters": 72651,
+      "han_characters": 0,
+      "byte_identical_to_initial": true
+    },
+    {
+      "path": "paper/supplement/supplementary.pdf",
+      "extracted_characters": 112362,
+      "han_characters": 0,
+      "byte_identical_to_initial": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/figures/e3_sensitivity_means.pdf",
+      "extracted_characters": 516,
+      "han_characters": 0,
+      "byte_identical_to_initial": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/figures/gdd_ablation_bio_dmela.pdf",
+      "extracted_characters": 144,
+      "han_characters": 0,
+      "byte_identical_to_initial": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/figures/gdd_ablation_dblp.pdf",
+      "extracted_characters": 135,
+      "han_characters": 0,
+      "byte_identical_to_initial": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/figures/gdd_ablation_higgs.pdf",
+      "extracted_characters": 148,
+      "han_characters": 0,
+      "byte_identical_to_initial": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/figures/gdd_ablation_key.pdf",
+      "extracted_characters": 63,
+      "han_characters": 0,
+      "byte_identical_to_initial": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/figures/gdd_ablation_orkut.pdf",
+      "extracted_characters": 149,
+      "han_characters": 0,
+      "byte_identical_to_initial": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "path": "paper/figures/published/limitation.png",
+      "visible_text": "English only",
+      "modified": false
+    },
+    {
+      "path": "paper/figures/published/basic idea.png",
+      "visible_text": "English only",
+      "modified": false
+    },
+    {
+      "path": "paper/figures/published/overview.png",
+      "visible_text": "English only",
+      "modified": false
+    }
+  ],
+  "files": [
+    {
+      "path": "src/privtdd/base_distribution/cells.py",
+      "before_sha256": "336c8671910a6f116352aac03f9161f861401df0abb65eeba33cbb97f84aea24",
+      "after_sha256": "9d912ae0cea00fb2b5abd9243b7753b9298baa7ce4d7b97712d75c572bfba2ca",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/channel.py",
+      "before_sha256": "8f03feb2ee7e40dbb34aa0a3aa66a63c498f714ddf4682f0c63500a839152671",
+      "after_sha256": "c964db8c330c635c1de8234a6257a6cab0967239b0d4a4275574c740eae749da",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/construction.py",
+      "before_sha256": "11fbc1ca841aa9e65da562ee8ee504ce9be8327ef13417885f88d4fdf6e71423",
+      "after_sha256": "69079d93984bf1f2f65efdd9487534f8c397e4995b5b147700c20c108f38332a",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/count_channel.py",
+      "before_sha256": "df515140b730535f26ac31fd4ba4163c1795b3a574b1d974d4faa7e4e4f00aa1",
+      "after_sha256": "24a842327f07aaed061f8f42aefd0d8132003c09e0fd274527d456eaee4fa238",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/degree_posterior.py",
+      "before_sha256": "50e21c269b9918597ec01476262ffd3e3460f0c49c7e49abe8a5b6f8c87b52e4",
+      "after_sha256": "6a01755a6bd54c9ea0839da10bd69aef5d283224bc51c96771abe6eb0115f3dd",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/integral.py",
+      "before_sha256": "55b53369c68fb6b3dd9b03b0a00ce58555bd8ea7258a619affe3d1a1730fc14a",
+      "after_sha256": "3f2ec4c5977539fc3afb5985e6893b151e9291405b32b60c0154759dbc1334a3",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/integrated.py",
+      "before_sha256": "7d4c10a761b7ea7eda15bbe0b07405312246b51d6e0fb0b664b3a3b321c9eff8",
+      "after_sha256": "ff4a3cb1532e72902bb5cec2b332dbadf50c458b8cdd0753dd675f646e35cfb1",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/optimizer.py",
+      "before_sha256": "20dfd49b03ad354cbacce3579eee30a58733561e279f80d2af95f46d59b37772",
+      "after_sha256": "f16b900d761438b94ccdd5981db758f5a8b756b034486b905faa7aa6008b57b2",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/config.py",
+      "before_sha256": "cb7bbec950c809843c9b1562374b22ec72e829c554e024c6a44cdbdc8386469f",
+      "after_sha256": "e27c28b779a2005fbd0bf5a1161d8329ee6281322725802b8c7d05401a400fae",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/basis.py",
+      "before_sha256": "cb80470d20fc5a0198fab6bd592482be69216667b29fa07121e2b4684cf15844",
+      "after_sha256": "b3df0280cb7634323f95b034cfd554536e4df516ab20b88f93c12ab8c0f40ede",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/feasible_domain.py",
+      "before_sha256": "4f87695da974913eefcf35a1385798a61cd9f504faa484e52359fb15069c44b8",
+      "after_sha256": "81fcf82f6907855dd0200e3121212492296b6ca95e01e1fef8fac5223be5409f",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/forward.py",
+      "before_sha256": "57ef85015a39986591a3649e40cdb88c8ff35ec591cf378df0189f3b28c8d6ec",
+      "after_sha256": "b1076bd71fe5397cb437b3c3f12a3281cdc13e4017779e79351e17b55d2afe1f",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/optimizer.py",
+      "before_sha256": "9f86a54f46c9eff39a8ad321dbd0209882b60ac848427f805d7ad67b83af80c0",
+      "after_sha256": "20ead4be26f9a565cd80e653be4bb4cc9d9012c93661ed6ba76217c721610319",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/optimizer_bridge.py",
+      "before_sha256": "fa5571b14804296a9593373d1fe2dd6890d3a3bdf2599528b4f4be1cf7e85ffe",
+      "after_sha256": "f514f87624da5d7ecf0057def04d34f4a077bae32dd7b29c2aa55c1a23fcfb79",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/regions.py",
+      "before_sha256": "500c8780d170e10f5dcdd82649e891cfad188bf14b8392287886ead71470e8fa",
+      "after_sha256": "3ec3dce52a36f00dac6f400dd5d1c532989f44e212af7b388b545bd4208facc2",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/roundoff.py",
+      "before_sha256": "4662e639ba873c40401ddd07544b13e8c6affd4c028c93fc3efa03887d46cd21",
+      "after_sha256": "3ffaaa1e5e8728661ecd8eb5deab4fd995f969381debef7c9f18354c09bbdb19",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/source_mapping.py",
+      "before_sha256": "35d049f2a59d97b84245ef2e8e4e8523f41fbe614a4dc5e57943e27a5a469ab4",
+      "after_sha256": "51f3b84d0ac38404885d7742c3e763ce14e6bf6b337d5d8aecd720dd89ca5aa7",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/sparse_channel.py",
+      "before_sha256": "ca55d0f39c23a83130100330cc034fe15de9db3a48f392d32fb23237b51f41ad",
+      "after_sha256": "059cc05275274d716e1316a0078eb555244519c44bc92c32a7a516e3824541c8",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/stopping.py",
+      "before_sha256": "8355de25fb3c36cd5c60ed83f783a2e2867c01c661de105e2a9ca978b5fcb082",
+      "after_sha256": "a0ae4513f7ea7547bf7c5890939551acf0e315e20e7c89f6938d4cd6594abc82",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/canonical.py",
+      "before_sha256": "1a40e99dca35720e2af8de19d76270825f719bb346d224ebc19b5c8e3271a57e",
+      "after_sha256": "f5ce0c6429278a6a8f346a3c0d03506e182dc18fab72b0043d80e8900f03e841",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/channel.py",
+      "before_sha256": "97c0e75039f228c5006a2853ee1d90998bbf3d9cb0caef179858fc7d027a67c9",
+      "after_sha256": "db6607c9ed58840ad3928e3605a5edd682490538d77ffb3eacdb2faec168698a",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/fit.py",
+      "before_sha256": "85f7a6f2e3f775ac140431647ffe1d36346cc64f80989ff5ab7b1f3d6dd8ee89",
+      "after_sha256": "42168a7a619f68dfc3fbd27f3312350283c743cfb5e8c338eeae261057a9a563",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/groups.py",
+      "before_sha256": "81ae31b247922e542f9695264a1300ef442c58bff1402df481e25c91c2cfb35c",
+      "after_sha256": "13f76e82174f7d77ea1b48128ef24b0de851682aa87595afe534db033abebb7a",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/newton.py",
+      "before_sha256": "4de7e90fde60f748410dee3ce4b131fb928f930ad24fa6605a72f38c8da4734f",
+      "after_sha256": "9120589f0fdaa9f697f78dcf02192eeb80d92d98b48741b7e84c5fd1dbecf54e",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/operator.py",
+      "before_sha256": "aae18428551dd69cd590fa925d0a79a6932447ba89524e8ae64f64282d2a46f7",
+      "after_sha256": "65be8b6ea6377acdc8a1feeca534fc8e5abb314a0312e7e186b3a76eeb4baf29",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/phases.py",
+      "before_sha256": "dcb3c3787316e29baed38d379b0cd7122a46de37f2371e320b0367249bef161e",
+      "after_sha256": "4eed9203cc4d920cd12477f437d686fd1eb689a1f870253cfd3bf807236a6e7d",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/reduced.py",
+      "before_sha256": "1a15986d249f989763e9b2314a42d23bb3b3384be0c3223900b958ed39bb2fa4",
+      "after_sha256": "6519e215eb140f4151f4bf5c4865f9633a2e6fb2b5142b35c168a518794713d5",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/working_set.py",
+      "before_sha256": "70b48acd8ee45e4e45135027843381e75893b87e2dbca8c5d449a8ce364b7fe6",
+      "after_sha256": "3cc211c6eea6de7b67a9bac142b0e837214cd5b8e40bd76ee50e82d5d41368d1",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/io/memory.py",
+      "before_sha256": "307536fff6e9c9f1c14d018a56ac19225bfa6f839ee8b8e1c91569fdc0511fbb",
+      "after_sha256": "4c71bb225d0686d75fd773f1e79de9edd19417a1192114d4107f296cb0d3c9d3",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/io/runner.py",
+      "before_sha256": "10040b509bf8a054403e19271df17128f0865578c3b04ce73f534bec26781911",
+      "after_sha256": "e88134369b750a89cb9e086a3a6060346af54325f685cd309f2f1064417452f3",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/io/storage.py",
+      "before_sha256": "09ccab70320ccc14c8a358214b5028526331837bfbae66815fbdabd586d95bb6",
+      "after_sha256": "6bbfb13a0e81e7f7655191abc1df033291334de9b2e5572fd0d93cbb6e53a360",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/numerics/likelihood.py",
+      "before_sha256": "2b604923997fa05c070cddc0f2fd2d1522ba27cae86c60bb4b38a36f2fdc5742",
+      "after_sha256": "01597e308efd915782c200a357f33bad19904987f7f962d4b46fb8657b3050a5",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/numerics/probability.py",
+      "before_sha256": "5f28dbda80ec12bce76e057e6662a4f7f5d5f585515ce29680dc2788537592a2",
+      "after_sha256": "ac97532a913b88b70e979a0f237564ee3aa39abc5f27a4a51e06ebe74206c2af",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/numerics/quantization.py",
+      "before_sha256": "2b1f6c1d8bce60f849e5bdee8de951707de82db815f9de6f8858a4ef892f6652",
+      "after_sha256": "da2c0ca0d24c81d4c069d35d99859dc1f5dcbcbd10e5ae3b25faf52ee3427b39",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/posterior/rows.py",
+      "before_sha256": "752f502e90b9711f4981dcb0b7293a855787d44fcb84ac83cbfdcd63351daba6",
+      "after_sha256": "6f7aece10e34fd79dffd331695ab9d96f5abe0e19d69b3ea7b5c8b6284776964",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/posterior/update.py",
+      "before_sha256": "14fc714cf43e73e802f3d42144088cf234feed8b1b9263ad0c8880eaaa95f9d1",
+      "after_sha256": "99ae49df15d548101ea023301f985bd39b337ae97d9a8a1fd8ac52464c6ddb50",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/clustering.py",
+      "before_sha256": "7eb5a471368827b496d2c56857f0dc9b85464455b0261c3d8f6d65a3923be9d1",
+      "after_sha256": "41903fd55761f65fff66f30d147bfc9099eeac7ea06bf067f40c0b402b0cd2d5",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/construction.py",
+      "before_sha256": "4f506ed99d359a0b4b95e348069e68f10160f68a34e12f9d0c8cfb651099c5e9",
+      "after_sha256": "c071c66ca596fa98fd876f6fd2b1cdd700d9bbf4c6e33ebb1bcebc658eb60fce",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/context.py",
+      "before_sha256": "a6688241414d380a01f1b27f858f9b36056dcb270b2822cd4f8b372943f44978",
+      "after_sha256": "500899786c86e0957172e155ef590293855d932e68971e755ccb6a053ab04a51",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/geometry_model.py",
+      "before_sha256": "ec4a5c47d249fe6cb897b610dbcce82aca38f5817da26cee0e9ac610c9cb50ab",
+      "after_sha256": "25b129e61e4217dc251e8c22908b7c1f4bd49fd4393aba6ff0805a4cd92220c7",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/independent_edge.py",
+      "before_sha256": "3820a322628aa19a4e7f8fe56a3edde28e6258a56929317b4837891ba0577aac",
+      "after_sha256": "75ac2959cc2ff20da47ac8798209ff0c7f75812dc9bff1c7cc65ecdf2155a950",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/kernels.py",
+      "before_sha256": "f454982643f53855da2f272850a4877a3fa749b509fcf64fae85b9108414898e",
+      "after_sha256": "5b4505dba5a57e6e8199518d0d453a6bb2f4de6ef1791881b45e5293184a254f",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/primitives.py",
+      "before_sha256": "015b30149d1c9c33eef5f0d57921e82df069c80f9395d275aaad1d7051cdd251",
+      "after_sha256": "9d7dae771d3a84926ce0081e91858d88a21bc9aae9e17611f3945448054ad61d",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/release/pipeline.py",
+      "before_sha256": "648b937533c4462ec854b6edff6a1008b25f1a5c53257349092dd2d85884782f",
+      "after_sha256": "df8ed59003752121ee45407d3b6d619a15ade0ba27d5e38096285e2ffcc73626",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/reporting/collection.py",
+      "before_sha256": "897e3db3da132f039ec087a90969477e2e0bfc26cfbe7fb2c6e0f0413082a306",
+      "after_sha256": "a3cd6649312c0d54b6050e203883b3034f970b69f357ed944b0051098ed7e173",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/reporting/primitives.py",
+      "before_sha256": "19a6803aeeeb3bc756a4f44d8f0fa2986ef7b0ff3bc2d4e59b063ff488b674f2",
+      "after_sha256": "ca7d85941dfe10a2cc72ad343e9a84c20484e317c200b330239ad0ba953fb74f",
+      "ast_without_docstrings_unchanged": true
+    },
+    {
+      "path": "src/privtdd/sampling/__init__.py",
+      "before_sha256": "43a9b64f960fd64ad961b2e88b1a01dceec2f0b4d658faacea99b77e9138ff8b",
+      "after_sha256": "68a1fd855c7d58ff602116117673fc28c5337b635b1f33fcd8a7398e1852b4ea",
+      "docstring_stripped_ast_equal": true,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/collect_rotate.py",
+      "before_sha256": "9e3f85d2f53d03fb56a1d9c62e4e60dc5dde6ad76c665c2591af7792f19035dc",
+      "after_sha256": "575127f7d67d474dc0e0035a2741b8b80747e7857b9ac05f41442ae9b116bcb3",
+      "docstring_stripped_ast_equal": false,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/historical.py",
+      "before_sha256": "d72878c69d596077c2c5f0618af6f587ee16de676b6aff3d09cd639c488984ce",
+      "after_sha256": "5d702643c0054d38d4f19bbfa41cb4f2822f5b08a219b7c0a7f4a6c054b196b2",
+      "docstring_stripped_ast_equal": true,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/recover.py",
+      "before_sha256": "7e6d30ace69b4be398731267d3a789288fd8cb38498303d4415f27e748caa1e4",
+      "after_sha256": "94029999554d555218a58b59dc00f3a43d230a0f84a144226d87b49ed82c4f7a",
+      "docstring_stripped_ast_equal": true,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/run.py",
+      "before_sha256": "54ddfbe73f30c87684ba029b3386aaf21f6bd835d74f0229d76dd1a01662c365",
+      "after_sha256": "d8e7bff0d66aadb9854bba231026822615db0310517bc8eebcc87b6948151a07",
+      "docstring_stripped_ast_equal": false,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/sampled_channel.py",
+      "before_sha256": "634aee0f9208c8c1ecf9a33c27faaa15d283610025e0a5ef7f6db88478bdc5d9",
+      "after_sha256": "580e670080bf537094ac3a419485adfdc7f87bb907f2801b9ecd1eb742018e27",
+      "docstring_stripped_ast_equal": true,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/summarize.py",
+      "before_sha256": "fecf8a23d039d15d196cc96743bf9f48d9886e4581df4717b0322a58908325e6",
+      "after_sha256": "2a86ed939cd9c7030dd5ff6b6be1de252a578413c4bde493f4013b66204d34a8",
+      "docstring_stripped_ast_equal": true,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/test_channel.py",
+      "before_sha256": "b72053b357eee34f6964c6f3b5253325c5b9bf7e28a9d57cbfee221db6573d2b",
+      "after_sha256": "a863dc72934a8f61ea140dffef8b646faee2724a58da2df31197155843cb13bb",
+      "docstring_stripped_ast_equal": true,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/test_collect_rotate.py",
+      "before_sha256": "f83d3330fe0af34318c816b25936195a22e153448bb302b5c312c71d4b51b872",
+      "after_sha256": "745e73e98427b5950e3fffd2648d75ef4d13fa30955c4a35c04e1b6ed4754b75",
+      "docstring_stripped_ast_equal": true,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/test_recover.py",
+      "before_sha256": "76b43fe3c7c9fb7e62b92c7c1d9bd8c681496c7826f278ea18fd3eb43baa6e67",
+      "after_sha256": "d864ba5779c9cc37ac56778a65ac73573a668c9964c65c5dd53f12735c605269",
+      "docstring_stripped_ast_equal": true,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "src/privtdd/sampling/test_summary.py",
+      "before_sha256": "c616dbd4e6b069c686179bcc7074931f95c385c53dd6a3425d60c668f244a563",
+      "after_sha256": "5ae9dfc171feaf2c051ddbcdffb66da4b8674db84879761f0891b04cdefb6492",
+      "docstring_stripped_ast_equal": true,
+      "semantic_ast_equal_except_recorded_runtime_strings": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/analysis_budget.tex",
+      "before_sha256": "1ed7e8f5afa8c16b62e12333b42fecdb739f7b0998821006a358bbf60a7a87ad",
+      "after_sha256": "06f39cc49d23456e3515f41e1448b8a022c20cfd231ff5804d4fb67c68640aaa",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/authors.tex",
+      "before_sha256": "e286951c065e62cf74158e566c94b27702799fc0580626929fc9b16f71dc60a9",
+      "after_sha256": "a477fc40e3c032735d5ba1f6e9994640c76e3e60dd697dc13c944fb5b09e7047",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/conclusion.tex",
+      "before_sha256": "aaf648b0e36a7c2b9c81b301b7e31c70ff146271e062f6227699cefa9b2db020",
+      "after_sha256": "809b3ca99d9966b606846ad8ac0c910c78bccb1b7ac2937200fdb090272961af",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/e3_results.tex",
+      "before_sha256": "2cebd8b952dabae17c9c34eee1d1dc5c6a9c6322cb05b34ca9e477d0ef8ed6c3",
+      "after_sha256": "ceea1a7ea3fe92ccc2ef4bdfa6df74f9216f870efbf663a14d5bcb9b9d2fe5ff",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/experiment_values.tex",
+      "before_sha256": "d1d16d599eca283de4aa888bc90ab0b3abb32f8f9155b066c19a0e34cf6b89cf",
+      "after_sha256": "3a318efb3ce5960a0abafce3d88af0c6748c04f47d1df6cc68109bff6c1dbe55",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/experiments.tex",
+      "before_sha256": "490e57c8b640e11f122a147122c7755c3bee44087c13ac576b725f0977514f1d",
+      "after_sha256": "83e61cd963a3347a9f18528e45b76ca68247a0a6265573cc4b78ce5602cfdbcb",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/figures/privtdd_overview.tex",
+      "before_sha256": "06d6a9ff66d54a3815b4ead103fbd9f4d8c547d8c25a50ae863e268cfcf50afa",
+      "after_sha256": "57afae6de5f33d69e2fe8a4df5096b68f11c06ad0c3dbda5aab9508d6f8d8ab4",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/introduction.tex",
+      "before_sha256": "4ef7780a15536108f670e76e260c1203fe7984ab03d1c46fe2359b74edde3cfd",
+      "after_sha256": "a7d570277f9eb7fdca684ffb26f9b63d934ed8f9794bb211074c01737b380c78",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/method_devide.tex",
+      "before_sha256": "d2df2ca0709acf5e2605b5abb8050bd15ba67b572f765ddb56e017a58505e252",
+      "after_sha256": "81c26023e9022bf5715edbb206eab9ad76eae77c5cde262c9d7915ed763447e8",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/preliminaries.tex",
+      "before_sha256": "d449238b3648f707a24dc73853bb61ad950b5bb5be161d0a71b107c2b44c41d0",
+      "after_sha256": "412614c5aa49827c5a0d5d053f7f32a798e2effd32a68c29664af3fd7bdf8825",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/problem.tex",
+      "before_sha256": "3280acba2b4c5831703e9979ae5dccf80f85cb2154c8de5f70b05346c8e79985",
+      "after_sha256": "244ec9355b7defef8c34d915f5f53cd0c11f4d9a0c5ff5a53c90ea9185e837c7",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/references.bib",
+      "before_sha256": "3d264f66a67150524bca915ed92ee9280cfcc9c4aa0b9b7789fc952caa9fa3a9",
+      "after_sha256": "25a184bbf225c11ef790c1f8e86f31d1c3cc99fae94c44c14e9b93d79bebed77",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/related_work.tex",
+      "before_sha256": "41d21872014387917eb4bf058538d16f0951a743b1eda3ecb90298a64adbfc60",
+      "after_sha256": "bc765a45ef4221c99c4bcd56c5180aa596b24b175d2159b60f4c333f4dfdd465",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icde_sections/tables/e4_sampling.tex",
+      "before_sha256": "18cb81caca7134274a5aa9247cffb5dd57f7377b58044d4beeef0d68f05ce96e",
+      "after_sha256": "917478e0acfaf822eadc3158cb17f8909ab4931e0060d81354fa8d64777b53f4",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/manuscript/icdever.tex",
+      "before_sha256": "546530b29e66e9f0ac50ff2a696fd0527116c4e518234c4a6a2b00fc3c31dec3",
+      "after_sha256": "51986147e15d76fd3792bae7273ab8ca228387608b726084051d99683ff4e06e",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/supplement/published_e1_e3.tex",
+      "before_sha256": "7bfb7b526e7af3e52722b83b487b5dc786a9a7c99a3dfb78d6137f098241d611",
+      "after_sha256": "ddee675e49600a912c4e53fd5f9bcfb9721269863626610bd26f1f669f29b5fb",
+      "presentation_only": true
+    },
+    {
+      "path": "paper/supplement/supplementary.tex",
+      "before_sha256": "c5c2fd7b88daccdda22180e310420bb0ac45723ca0401d8b9910279fd6a211de",
+      "after_sha256": "b675dccb6898c3751f63978056ab12d1d59dd22c60a9f74689cd35bc2f9306ad",
+      "presentation_only": true
+    },
+    {
+      "path": "tests/core/test_quantization.py",
+      "before_sha256": "456d634e6663b786b07524c0ccc0715fd5bd2ef8ba5fb8cf81f7e6a0342aa058",
+      "after_sha256": "68c7ab541d86143fe13ae2e185911abdd8ccab5279375e7f414e898942bce0cd",
+      "presentation_only": true
+    }
+  ],
+  "target_hash_updates": [
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/config.py",
+      "previous_target_sha256": "cb7bbec950c809843c9b1562374b22ec72e829c554e024c6a44cdbdc8386469f",
+      "current_target_sha256": "e27c28b779a2005fbd0bf5a1161d8329ee6281322725802b8c7d05401a400fae"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/release/pipeline.py",
+      "previous_target_sha256": "648b937533c4462ec854b6edff6a1008b25f1a5c53257349092dd2d85884782f",
+      "current_target_sha256": "df8ed59003752121ee45407d3b6d619a15ade0ba27d5e38096285e2ffcc73626"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/reporting/collection.py",
+      "previous_target_sha256": "897e3db3da132f039ec087a90969477e2e0bfc26cfbe7fb2c6e0f0413082a306",
+      "current_target_sha256": "a3cd6649312c0d54b6050e203883b3034f970b69f357ed944b0051098ed7e173"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/reporting/primitives.py",
+      "previous_target_sha256": "19a6803aeeeb3bc756a4f44d8f0fa2986ef7b0ff3bc2d4e59b063ff488b674f2",
+      "current_target_sha256": "ca7d85941dfe10a2cc72ad343e9a84c20484e317c200b330239ad0ba953fb74f"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/degree/canonical.py",
+      "previous_target_sha256": "1a40e99dca35720e2af8de19d76270825f719bb346d224ebc19b5c8e3271a57e",
+      "current_target_sha256": "f5ce0c6429278a6a8f346a3c0d03506e182dc18fab72b0043d80e8900f03e841"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/degree/channel.py",
+      "previous_target_sha256": "97c0e75039f228c5006a2853ee1d90998bbf3d9cb0caef179858fc7d027a67c9",
+      "current_target_sha256": "db6607c9ed58840ad3928e3605a5edd682490538d77ffb3eacdb2faec168698a"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/degree/fit.py",
+      "previous_target_sha256": "85f7a6f2e3f775ac140431647ffe1d36346cc64f80989ff5ab7b1f3d6dd8ee89",
+      "current_target_sha256": "42168a7a619f68dfc3fbd27f3312350283c743cfb5e8c338eeae261057a9a563"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/degree/groups.py",
+      "previous_target_sha256": "81ae31b247922e542f9695264a1300ef442c58bff1402df481e25c91c2cfb35c",
+      "current_target_sha256": "13f76e82174f7d77ea1b48128ef24b0de851682aa87595afe534db033abebb7a"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/degree/newton.py",
+      "previous_target_sha256": "4de7e90fde60f748410dee3ce4b131fb928f930ad24fa6605a72f38c8da4734f",
+      "current_target_sha256": "9120589f0fdaa9f697f78dcf02192eeb80d92d98b48741b7e84c5fd1dbecf54e"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/degree/operator.py",
+      "previous_target_sha256": "aae18428551dd69cd590fa925d0a79a6932447ba89524e8ae64f64282d2a46f7",
+      "current_target_sha256": "65be8b6ea6377acdc8a1feeca534fc8e5abb314a0312e7e186b3a76eeb4baf29"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/degree/phases.py",
+      "previous_target_sha256": "dcb3c3787316e29baed38d379b0cd7122a46de37f2371e320b0367249bef161e",
+      "current_target_sha256": "4eed9203cc4d920cd12477f437d686fd1eb689a1f870253cfd3bf807236a6e7d"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/degree/reduced.py",
+      "previous_target_sha256": "1a15986d249f989763e9b2314a42d23bb3b3384be0c3223900b958ed39bb2fa4",
+      "current_target_sha256": "6519e215eb140f4151f4bf5c4865f9633a2e6fb2b5142b35c168a518794713d5"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/degree/working_set.py",
+      "previous_target_sha256": "70b48acd8ee45e4e45135027843381e75893b87e2dbca8c5d449a8ce364b7fe6",
+      "current_target_sha256": "3cc211c6eea6de7b67a9bac142b0e837214cd5b8e40bd76ee50e82d5d41368d1"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/base_distribution/cells.py",
+      "previous_target_sha256": "336c8671910a6f116352aac03f9161f861401df0abb65eeba33cbb97f84aea24",
+      "current_target_sha256": "9d912ae0cea00fb2b5abd9243b7753b9298baa7ce4d7b97712d75c572bfba2ca"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/base_distribution/optimizer.py",
+      "previous_target_sha256": "20dfd49b03ad354cbacce3579eee30a58733561e279f80d2af95f46d59b37772",
+      "current_target_sha256": "f16b900d761438b94ccdd5981db758f5a8b756b034486b905faa7aa6008b57b2"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/base_distribution/construction.py",
+      "previous_target_sha256": "11fbc1ca841aa9e65da562ee8ee504ce9be8327ef13417885f88d4fdf6e71423",
+      "current_target_sha256": "69079d93984bf1f2f65efdd9487534f8c397e4995b5b147700c20c108f38332a"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/base_distribution/channel.py",
+      "previous_target_sha256": "8f03feb2ee7e40dbb34aa0a3aa66a63c498f714ddf4682f0c63500a839152671",
+      "current_target_sha256": "c964db8c330c635c1de8234a6257a6cab0967239b0d4a4275574c740eae749da"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/base_distribution/integral.py",
+      "previous_target_sha256": "55b53369c68fb6b3dd9b03b0a00ce58555bd8ea7258a619affe3d1a1730fc14a",
+      "current_target_sha256": "3f2ec4c5977539fc3afb5985e6893b151e9291405b32b60c0154759dbc1334a3"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/base_distribution/integrated.py",
+      "previous_target_sha256": "7d4c10a761b7ea7eda15bbe0b07405312246b51d6e0fb0b664b3a3b321c9eff8",
+      "current_target_sha256": "ff4a3cb1532e72902bb5cec2b332dbadf50c458b8cdd0753dd675f646e35cfb1"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/base_distribution/degree_posterior.py",
+      "previous_target_sha256": "50e21c269b9918597ec01476262ffd3e3460f0c49c7e49abe8a5b6f8c87b52e4",
+      "current_target_sha256": "6a01755a6bd54c9ea0839da10bd69aef5d283224bc51c96771abe6eb0115f3dd"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/base_distribution/count_channel.py",
+      "previous_target_sha256": "df515140b730535f26ac31fd4ba4163c1795b3a574b1d974d4faa7e4e4f00aa1",
+      "current_target_sha256": "24a842327f07aaed061f8f42aefd0d8132003c09e0fd274527d456eaee4fa238"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/references/clustering.py",
+      "previous_target_sha256": "7eb5a471368827b496d2c56857f0dc9b85464455b0261c3d8f6d65a3923be9d1",
+      "current_target_sha256": "41903fd55761f65fff66f30d147bfc9099eeac7ea06bf067f40c0b402b0cd2d5"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/references/geometry_model.py",
+      "previous_target_sha256": "ec4a5c47d249fe6cb897b610dbcce82aca38f5817da26cee0e9ac610c9cb50ab",
+      "current_target_sha256": "25b129e61e4217dc251e8c22908b7c1f4bd49fd4393aba6ff0805a4cd92220c7"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/references/construction.py",
+      "previous_target_sha256": "4f506ed99d359a0b4b95e348069e68f10160f68a34e12f9d0c8cfb651099c5e9",
+      "current_target_sha256": "c071c66ca596fa98fd876f6fd2b1cdd700d9bbf4c6e33ebb1bcebc658eb60fce"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/references/context.py",
+      "previous_target_sha256": "a6688241414d380a01f1b27f858f9b36056dcb270b2822cd4f8b372943f44978",
+      "current_target_sha256": "500899786c86e0957172e155ef590293855d932e68971e755ccb6a053ab04a51"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/references/independent_edge.py",
+      "previous_target_sha256": "3820a322628aa19a4e7f8fe56a3edde28e6258a56929317b4837891ba0577aac",
+      "current_target_sha256": "75ac2959cc2ff20da47ac8798209ff0c7f75812dc9bff1c7cc65ecdf2155a950"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/references/kernels.py",
+      "previous_target_sha256": "f454982643f53855da2f272850a4877a3fa749b509fcf64fae85b9108414898e",
+      "current_target_sha256": "5b4505dba5a57e6e8199518d0d453a6bb2f4de6ef1791881b45e5293184a254f"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/references/primitives.py",
+      "previous_target_sha256": "015b30149d1c9c33eef5f0d57921e82df069c80f9395d275aaad1d7051cdd251",
+      "current_target_sha256": "9d7dae771d3a84926ce0081e91858d88a21bc9aae9e17611f3945448054ad61d"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/feasible_domain.py",
+      "previous_target_sha256": "4f87695da974913eefcf35a1385798a61cd9f504faa484e52359fb15069c44b8",
+      "current_target_sha256": "81fcf82f6907855dd0200e3121212492296b6ca95e01e1fef8fac5223be5409f"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/forward.py",
+      "previous_target_sha256": "57ef85015a39986591a3649e40cdb88c8ff35ec591cf378df0189f3b28c8d6ec",
+      "current_target_sha256": "b1076bd71fe5397cb437b3c3f12a3281cdc13e4017779e79351e17b55d2afe1f"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/optimizer_bridge.py",
+      "previous_target_sha256": "fa5571b14804296a9593373d1fe2dd6890d3a3bdf2599528b4f4be1cf7e85ffe",
+      "current_target_sha256": "f514f87624da5d7ecf0057def04d34f4a077bae32dd7b29c2aa55c1a23fcfb79"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/optimizer.py",
+      "previous_target_sha256": "9f86a54f46c9eff39a8ad321dbd0209882b60ac848427f805d7ad67b83af80c0",
+      "current_target_sha256": "20ead4be26f9a565cd80e653be4bb4cc9d9012c93661ed6ba76217c721610319"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/roundoff.py",
+      "previous_target_sha256": "4662e639ba873c40401ddd07544b13e8c6affd4c028c93fc3efa03887d46cd21",
+      "current_target_sha256": "3ffaaa1e5e8728661ecd8eb5deab4fd995f969381debef7c9f18354c09bbdb19"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/stopping.py",
+      "previous_target_sha256": "8355de25fb3c36cd5c60ed83f783a2e2867c01c661de105e2a9ca978b5fcb082",
+      "current_target_sha256": "a0ae4513f7ea7547bf7c5890939551acf0e315e20e7c89f6938d4cd6594abc82"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/regions.py",
+      "previous_target_sha256": "500c8780d170e10f5dcdd82649e891cfad188bf14b8392287886ead71470e8fa",
+      "current_target_sha256": "3ec3dce52a36f00dac6f400dd5d1c532989f44e212af7b388b545bd4208facc2"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/source_mapping.py",
+      "previous_target_sha256": "35d049f2a59d97b84245ef2e8e4e8523f41fbe614a4dc5e57943e27a5a469ab4",
+      "current_target_sha256": "51f3b84d0ac38404885d7742c3e763ce14e6bf6b337d5d8aecd720dd89ca5aa7"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/basis.py",
+      "previous_target_sha256": "cb80470d20fc5a0198fab6bd592482be69216667b29fa07121e2b4684cf15844",
+      "current_target_sha256": "b3df0280cb7634323f95b034cfd554536e4df516ab20b88f93c12ab8c0f40ede"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/correction/sparse_channel.py",
+      "previous_target_sha256": "ca55d0f39c23a83130100330cc034fe15de9db3a48f392d32fb23237b51f41ad",
+      "current_target_sha256": "059cc05275274d716e1316a0078eb555244519c44bc92c32a7a516e3824541c8"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/posterior/update.py",
+      "previous_target_sha256": "14fc714cf43e73e802f3d42144088cf234feed8b1b9263ad0c8880eaaa95f9d1",
+      "current_target_sha256": "99ae49df15d548101ea023301f985bd39b337ae97d9a8a1fd8ac52464c6ddb50"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/posterior/rows.py",
+      "previous_target_sha256": "752f502e90b9711f4981dcb0b7293a855787d44fcb84ac83cbfdcd63351daba6",
+      "current_target_sha256": "6f7aece10e34fd79dffd331695ab9d96f5abe0e19d69b3ea7b5c8b6284776964"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/numerics/likelihood.py",
+      "previous_target_sha256": "2b604923997fa05c070cddc0f2fd2d1522ba27cae86c60bb4b38a36f2fdc5742",
+      "current_target_sha256": "01597e308efd915782c200a357f33bad19904987f7f962d4b46fb8657b3050a5"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/numerics/probability.py",
+      "previous_target_sha256": "5f28dbda80ec12bce76e057e6662a4f7f5d5f585515ce29680dc2788537592a2",
+      "current_target_sha256": "ac97532a913b88b70e979a0f237564ee3aa39abc5f27a4a51e06ebe74206c2af"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/numerics/quantization.py",
+      "previous_target_sha256": "2b1f6c1d8bce60f849e5bdee8de951707de82db815f9de6f8858a4ef892f6652",
+      "current_target_sha256": "da2c0ca0d24c81d4c069d35d99859dc1f5dcbcbd10e5ae3b25faf52ee3427b39"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/io/memory.py",
+      "previous_target_sha256": "307536fff6e9c9f1c14d018a56ac19225bfa6f839ee8b8e1c91569fdc0511fbb",
+      "current_target_sha256": "4c71bb225d0686d75fd773f1e79de9edd19417a1192114d4107f296cb0d3c9d3"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/io/storage.py",
+      "previous_target_sha256": "09ccab70320ccc14c8a358214b5028526331837bfbae66815fbdabd586d95bb6",
+      "current_target_sha256": "6bbfb13a0e81e7f7655191abc1df033291334de9b2e5572fd0d93cbb6e53a360"
+    },
+    {
+      "manifest": "module_mapping.json",
+      "path": "src/privtdd/io/runner.py",
+      "previous_target_sha256": "10040b509bf8a054403e19271df17128f0865578c3b04ce73f534bec26781911",
+      "current_target_sha256": "e88134369b750a89cb9e086a3a6060346af54325f685cd309f2f1064417452f3"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/__init__.py",
+      "previous_target_sha256": "43a9b64f960fd64ad961b2e88b1a01dceec2f0b4d658faacea99b77e9138ff8b",
+      "current_target_sha256": "68a1fd855c7d58ff602116117673fc28c5337b635b1f33fcd8a7398e1852b4ea"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/collect_rotate.py",
+      "previous_target_sha256": "9e3f85d2f53d03fb56a1d9c62e4e60dc5dde6ad76c665c2591af7792f19035dc",
+      "current_target_sha256": "575127f7d67d474dc0e0035a2741b8b80747e7857b9ac05f41442ae9b116bcb3"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/historical.py",
+      "previous_target_sha256": "d72878c69d596077c2c5f0618af6f587ee16de676b6aff3d09cd639c488984ce",
+      "current_target_sha256": "5d702643c0054d38d4f19bbfa41cb4f2822f5b08a219b7c0a7f4a6c054b196b2"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/recover.py",
+      "previous_target_sha256": "7e6d30ace69b4be398731267d3a789288fd8cb38498303d4415f27e748caa1e4",
+      "current_target_sha256": "94029999554d555218a58b59dc00f3a43d230a0f84a144226d87b49ed82c4f7a"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/run.py",
+      "previous_target_sha256": "54ddfbe73f30c87684ba029b3386aaf21f6bd835d74f0229d76dd1a01662c365",
+      "current_target_sha256": "d8e7bff0d66aadb9854bba231026822615db0310517bc8eebcc87b6948151a07"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/sampled_channel.py",
+      "previous_target_sha256": "634aee0f9208c8c1ecf9a33c27faaa15d283610025e0a5ef7f6db88478bdc5d9",
+      "current_target_sha256": "580e670080bf537094ac3a419485adfdc7f87bb907f2801b9ecd1eb742018e27"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/summarize.py",
+      "previous_target_sha256": "fecf8a23d039d15d196cc96743bf9f48d9886e4581df4717b0322a58908325e6",
+      "current_target_sha256": "2a86ed939cd9c7030dd5ff6b6be1de252a578413c4bde493f4013b66204d34a8"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/test_channel.py",
+      "previous_target_sha256": "b72053b357eee34f6964c6f3b5253325c5b9bf7e28a9d57cbfee221db6573d2b",
+      "current_target_sha256": "a863dc72934a8f61ea140dffef8b646faee2724a58da2df31197155843cb13bb"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/test_collect_rotate.py",
+      "previous_target_sha256": "f83d3330fe0af34318c816b25936195a22e153448bb302b5c312c71d4b51b872",
+      "current_target_sha256": "745e73e98427b5950e3fffd2648d75ef4d13fa30955c4a35c04e1b6ed4754b75"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/test_recover.py",
+      "previous_target_sha256": "76b43fe3c7c9fb7e62b92c7c1d9bd8c681496c7826f278ea18fd3eb43baa6e67",
+      "current_target_sha256": "d864ba5779c9cc37ac56778a65ac73573a668c9964c65c5dd53f12735c605269"
+    },
+    {
+      "manifest": "data_baseline_module_mapping.json",
+      "path": "src/privtdd/sampling/test_summary.py",
+      "previous_target_sha256": "c616dbd4e6b069c686179bcc7074931f95c385c53dd6a3425d60c668f244a563",
+      "current_target_sha256": "5ae9dfc171feaf2c051ddbcdffb66da4b8674db84879761f0891b04cdefb6492"
+    }
+  ],
+  "source_identity_note": "English comment and message changes create a new package digest. Historical run identities remain unchanged; fresh runs use a separate output root."
+}

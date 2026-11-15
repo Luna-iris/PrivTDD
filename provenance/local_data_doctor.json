@@ -1,0 +1,299 @@
+{
+  "root": "D:\\codesandProjects\\PrivTDD",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "numba": "0.60.0",
+    "threadpoolctl": "3.5.0",
+    "pandas": "2.2.2",
+    "matplotlib": "3.9.2",
+    "psutil": "5.9.0",
+    "filelock": "3.13.1",
+    "networkx": "3.3"
+  },
+  "data": {
+    "bio-dmela": {
+      "present": true,
+      "verification": {
+        "dataset": "bio-dmela",
+        "path": "D:\\codesandProjects\\PrivTDD\\datasets\\processed\\bio-dmela",
+        "ok": true,
+        "issues": [],
+        "checked_files": [
+          "indptr.npy",
+          "indices.npy",
+          "triangles.npy",
+          "new_to_original.npy"
+        ],
+        "full_hash": true,
+        "public_degree_cap": 7392
+      }
+    },
+    "dblp": {
+      "present": true,
+      "verification": {
+        "dataset": "dblp",
+        "path": "D:\\codesandProjects\\PrivTDD\\datasets\\processed\\dblp",
+        "ok": true,
+        "issues": [],
+        "checked_files": [
+          "indptr.npy",
+          "indices.npy",
+          "triangles.npy",
+          "new_to_original.npy"
+        ],
+        "full_hash": true,
+        "public_degree_cap": 317079
+      }
+    },
+    "higgs": {
+      "present": true,
+      "verification": {
+        "dataset": "higgs",
+        "path": "D:\\codesandProjects\\PrivTDD\\datasets\\processed\\higgs",
+        "ok": true,
+        "issues": [],
+        "checked_files": [
+          "indptr.npy",
+          "indices.npy",
+          "triangles.npy",
+          "new_to_original.npy"
+        ],
+        "full_hash": true,
+        "public_degree_cap": 456625
+      }
+    },
+    "orkut": {
+      "present": true,
+      "verification": {
+        "dataset": "orkut",
+        "path": "D:\\codesandProjects\\PrivTDD\\datasets\\processed\\orkut",
+        "ok": true,
+        "issues": [],
+        "checked_files": [
+          "indptr.npy",
+          "indices.npy",
+          "triangles.npy",
+          "new_to_original.npy"
+        ],
+        "full_hash": true,
+        "public_degree_cap": 3072440
+      }
+    }
+  },
+  "baseline": {
+    "provided": false,
+    "required_for": "fresh LDPGraph-T/S execution only"
+  },
+  "snapshot": {
+    "snapshot": "paper-v1",
+    "verified_files": 42,
+    "e1_complete": 1916,
+    "e1_planned": 1920,
+    "e2_matched": 476,
+    "e3_complete": 234,
+    "e3_planned": 240,
+    "e4_sampled": 40,
+    "unresolved": []
+  },
+  "budgets": {
+    "rows": 32,
+    "tolerance": 1e-07,
+    "max_absolute_difference": 2.220446049250313e-15,
+    "details": [
+      {
+        "dataset": "bio-dmela",
+        "epsilon": 0.5,
+        "max_absolute_difference": 1.3877787807814457e-17,
+        "stationarity_residual": 2.7113902025555353e-14
+      },
+      {
+        "dataset": "bio-dmela",
+        "epsilon": 1.0,
+        "max_absolute_difference": 5.551115123125783e-17,
+        "stationarity_residual": 1.0266056045924374e-14
+      },
+      {
+        "dataset": "bio-dmela",
+        "epsilon": 1.5,
+        "max_absolute_difference": 1.1102230246251565e-16,
+        "stationarity_residual": 3.598800122725403e-15
+      },
+      {
+        "dataset": "bio-dmela",
+        "epsilon": 2.0,
+        "max_absolute_difference": 1.1102230246251565e-16,
+        "stationarity_residual": 3.1977563059180945e-15
+      },
+      {
+        "dataset": "bio-dmela",
+        "epsilon": 2.5,
+        "max_absolute_difference": 1.1102230246251565e-16,
+        "stationarity_residual": 1.0087117784755942e-15
+      },
+      {
+        "dataset": "bio-dmela",
+        "epsilon": 3.0,
+        "max_absolute_difference": 1.6653345369377348e-16,
+        "stationarity_residual": 1.3276074322078982e-15
+      },
+      {
+        "dataset": "bio-dmela",
+        "epsilon": 3.5,
+        "max_absolute_difference": 2.220446049250313e-16,
+        "stationarity_residual": 3.149969810196219e-15
+      },
+      {
+        "dataset": "bio-dmela",
+        "epsilon": 4.0,
+        "max_absolute_difference": 2.220446049250313e-16,
+        "stationarity_residual": 1.5420871070714773e-15
+      },
+      {
+        "dataset": "dblp",
+        "epsilon": 0.5,
+        "max_absolute_difference": 2.7755575615628914e-17,
+        "stationarity_residual": 1.9611697663817662e-14
+      },
+      {
+        "dataset": "dblp",
+        "epsilon": 1.0,
+        "max_absolute_difference": 5.551115123125783e-17,
+        "stationarity_residual": 4.771753576730381e-15
+      },
+      {
+        "dataset": "dblp",
+        "epsilon": 1.5,
+        "max_absolute_difference": 2.7755575615628914e-17,
+        "stationarity_residual": 5.185364458331885e-15
+      },
+      {
+        "dataset": "dblp",
+        "epsilon": 2.0,
+        "max_absolute_difference": 1.1102230246251565e-16,
+        "stationarity_residual": 2.3983183938879213e-15
+      },
+      {
+        "dataset": "dblp",
+        "epsilon": 2.5,
+        "max_absolute_difference": 0.0,
+        "stationarity_residual": 7.607338568781297e-16
+      },
+      {
+        "dataset": "dblp",
+        "epsilon": 3.0,
+        "max_absolute_difference": 1.1102230246251565e-16,
+        "stationarity_residual": 2.1396745488216263e-15
+      },
+      {
+        "dataset": "dblp",
+        "epsilon": 3.5,
+        "max_absolute_difference": 2.220446049250313e-16,
+        "stationarity_residual": 7.112646677486777e-16
+      },
+      {
+        "dataset": "dblp",
+        "epsilon": 4.0,
+        "max_absolute_difference": 2.220446049250313e-15,
+        "stationarity_residual": 7.860506412522969e-15
+      },
+      {
+        "dataset": "higgs",
+        "epsilon": 0.5,
+        "max_absolute_difference": 2.7755575615628914e-17,
+        "stationarity_residual": 8.553692888216791e-15
+      },
+      {
+        "dataset": "higgs",
+        "epsilon": 1.0,
+        "max_absolute_difference": 5.551115123125783e-17,
+        "stationarity_residual": 5.8688416996883e-15
+      },
+      {
+        "dataset": "higgs",
+        "epsilon": 1.5,
+        "max_absolute_difference": 5.551115123125783e-17,
+        "stationarity_residual": 4.02081601646553e-15
+      },
+      {
+        "dataset": "higgs",
+        "epsilon": 2.0,
+        "max_absolute_difference": 0.0,
+        "stationarity_residual": 3.1684797814036796e-15
+      },
+      {
+        "dataset": "higgs",
+        "epsilon": 2.5,
+        "max_absolute_difference": 0.0,
+        "stationarity_residual": 5.127516326718367e-16
+      },
+      {
+        "dataset": "higgs",
+        "epsilon": 3.0,
+        "max_absolute_difference": 0.0,
+        "stationarity_residual": 6.264094086738869e-16
+      },
+      {
+        "dataset": "higgs",
+        "epsilon": 3.5,
+        "max_absolute_difference": 2.220446049250313e-16,
+        "stationarity_residual": 1.0413633178905871e-15
+      },
+      {
+        "dataset": "higgs",
+        "epsilon": 4.0,
+        "max_absolute_difference": 1.1102230246251565e-15,
+        "stationarity_residual": 3.875881027331269e-15
+      },
+      {
+        "dataset": "orkut",
+        "epsilon": 0.5,
+        "max_absolute_difference": 2.7755575615628914e-17,
+        "stationarity_residual": 2.965157416743081e-14
+      },
+      {
+        "dataset": "orkut",
+        "epsilon": 1.0,
+        "max_absolute_difference": 5.551115123125783e-17,
+        "stationarity_residual": 9.353670799083665e-15
+      },
+      {
+        "dataset": "orkut",
+        "epsilon": 1.5,
+        "max_absolute_difference": 5.551115123125783e-17,
+        "stationarity_residual": 4.255604494279405e-15
+      },
+      {
+        "dataset": "orkut",
+        "epsilon": 2.0,
+        "max_absolute_difference": 5.551115123125783e-17,
+        "stationarity_residual": 1.5829747228233676e-15
+      },
+      {
+        "dataset": "orkut",
+        "epsilon": 2.5,
+        "max_absolute_difference": 2.220446049250313e-16,
+        "stationarity_residual": 2.6587393302783776e-15
+      },
+      {
+        "dataset": "orkut",
+        "epsilon": 3.0,
+        "max_absolute_difference": 2.220446049250313e-16,
+        "stationarity_residual": 1.6443489109410314e-15
+      },
+      {
+        "dataset": "orkut",
+        "epsilon": 3.5,
+        "max_absolute_difference": 4.440892098500626e-16,
+        "stationarity_residual": 1.4834027992135316e-15
+      },
+      {
+        "dataset": "orkut",
+        "epsilon": 4.0,
+        "max_absolute_difference": 4.440892098500626e-16,
+        "stationarity_residual": 4.590773928230209e-15
+      }
+    ]
+  }
+}

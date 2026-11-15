@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-15",
+  "source_digest": "a760e2b5460558c4ef88e89f332db6c036b71502c1f8e744b88d2438e5f41248",
+  "tests": {
+    "passed": 81,
+    "log_sha256": "f3cd2de17a8fc8eccf9ade0201989fb01b2f0c49d851e2d13182b6e43b7e9f4d"
+  },
+  "target_smoke": {
+    "exit_code": 0,
+    "E1_E3_jobs": 3,
+    "E1_E3_outputs": 9,
+    "E4_jobs": 3
+  },
+  "target_resume": {
+    "exit_code": 0,
+    "npz_files": 70,
+    "all_hashes_and_mtimes_unchanged": true
+  },
+  "figure_and_supplement_command": {
+    "exit_code": 0,
+    "supplement_pdf_pages": 28,
+    "new_pages_visually_checked": [
+      27,
+      28
+    ]
+  },
+  "current_manuscript_pdf": {
+    "compiled": true,
+    "pages": 14
+  },
+  "wheel": {
+    "file": "privtdd-0.1.0-py3-none-any.whl",
+    "bytes": 291329,
+    "sha256": "f87cd433029dfe74ced97aff964cd73475614cc49e1d878a44ad1a110945f2b5",
+    "entries": 128,
+    "resources_and_notices_present": true,
+    "noneditable_isolated_import": true,
+    "snapshot_verified_files": 42,
+    "source_digest": "a760e2b5460558c4ef88e89f332db6c036b71502c1f8e744b88d2438e5f41248"
+  },
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "numba": "0.60.0",
+      "threadpoolctl": "3.5.0",
+      "pandas": "2.2.2",
+      "matplotlib": "3.9.2",
+      "psutil": "5.9.0",
+      "filelock": "3.13.1",
+      "networkx": "3.3"
+    },
+    "local_venv": "system-site-packages, installed offline with --no-deps",
+    "fresh_dependency_download_tested": false,
+    "hosted_linux_ci_run": false
+  },
+  "full_real_network_matrix_rerun": false
+}

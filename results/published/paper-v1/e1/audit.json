@@ -1,0 +1,12 @@
+{
+  "plan_sha256": "697281757a74082c9dcac74fb947d92fc891bb548f57d232517203fe70c2c182",
+  "science_sha256": "ed0b488821f6951e0eb0c2b6c40b4ebcc16419efd6150e84d6b0b0a3860f6518",
+  "planned": 1920,
+  "complete": 1916,
+  "max_absolute_recalculation_difference": {
+    "MSE": 7.771561172376096e-16,
+    "EMD": 1.0913936421275139e-11,
+    "KS": 0.0
+  },
+  "all_external_hashes_checked": true
+}

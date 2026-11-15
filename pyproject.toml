@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "privtdd"
+version = "0.1.0"
+description = "Triangle-degree distribution estimation under edge-local differential privacy"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = {file = "LICENSE"}
+authors = [{name = "PrivTDD authors"}]
+dependencies = [
+  "numpy>=1.26,<3", "scipy>=1.13,<2", "numba>=0.60,<0.65",
+  "threadpoolctl>=3.5,<4"
+]
+
+[project.optional-dependencies]
+reproduce = ["pandas>=2.2,<3", "matplotlib>=3.9,<4", "psutil>=5.9,<8", "filelock>=3.13,<4", "networkx>=3.3,<4"]
+dev = ["pytest>=7.4,<9", "build>=1,<2"]
+
+[project.scripts]
+privtdd = "privtdd.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Luna-iris/PrivTDD"
+
+[tool.setuptools]
+license-files = ["LICENSE", "LICENSES/*.txt", "THIRD_PARTY.md"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"privtdd.data" = ["registry.json"]
+"privtdd.experiments" = ["allocations.json", "extra_cells.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

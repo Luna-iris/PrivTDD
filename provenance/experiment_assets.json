@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_artifact\\allocations_forpaper.json",
+      "path": "results/published/paper-v1/e1/allocations_forpaper.json",
+      "sha256": "f2fdc68e082807829a98a52f2b146d9875332235c8330b407ec535f24d5c8e57",
+      "bytes": 8314,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_artifact\\audit.json",
+      "path": "results/published/paper-v1/e1/audit.json",
+      "sha256": "2ab295997b2cc555a7bd8801b0557af0f2fa9ebe5c3bb7e250c8d250381cd4d5",
+      "bytes": 397,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_artifact\\jobs.csv",
+      "path": "results/published/paper-v1/e1/jobs.csv",
+      "sha256": "fbbcc49f28ec35f081bef70ec5e96c24028556b152edd25327d760be1d0ebb17",
+      "bytes": 129756,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_artifact\\paired_releases.csv",
+      "path": "results/published/paper-v1/e1/paired_releases.csv",
+      "sha256": "9580b22897ba35dd1fa2e6d98b8950445590af5704f5c8b21f2a796f6feed0a6",
+      "bytes": 70792,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_artifact\\paired_summary.csv",
+      "path": "results/published/paper-v1/e1/paired_summary.csv",
+      "sha256": "cfa08806c697e7a65d8b546869e7e92604b5990f991b08e8f59181d3ac96726e",
+      "bytes": 9768,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_artifact\\ranks.csv",
+      "path": "results/published/paper-v1/e1/ranks.csv",
+      "sha256": "60474c12fb8a047dc75f2bffb004810da441fa62096082898d8efa2fcfb52fb8",
+      "bytes": 54735,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_artifact\\releases.csv",
+      "path": "results/published/paper-v1/e1/releases.csv",
+      "sha256": "29886acbc443940be3d25892295af0ad8ded5d82057c70a88a6dfad82df90c85",
+      "bytes": 688376,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_artifact\\summary.csv",
+      "path": "results/published/paper-v1/e1/summary.csv",
+      "sha256": "2a5fe4339ef0ae4cfd7bf5d9618f772e1d44a43c38189de9c18c2639ab2269d9",
+      "bytes": 43071,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\artifact\\additional_ablation_releases.csv",
+      "path": "results/published/paper-v1/e2/additional_ablation_releases.csv",
+      "sha256": "e9df6ce814e7211a6814d724c151083ea09b1fdba8cf17b7972b1bc0eab164d7",
+      "bytes": 951925,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\artifact\\coverage.csv",
+      "path": "results/published/paper-v1/e2/coverage.csv",
+      "sha256": "2f16590f4d6c7c5e5389d0a96db0d9b8a8239a9ee0ff43fec28ed6c4fe7f86ec",
+      "bytes": 114306,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\artifact\\e3_integer_cutpoints.csv",
+      "path": "results/published/paper-v1/e2/e3_integer_cutpoints.csv",
+      "sha256": "1caff9d43d721964f6b7efccd50a9ef7bc1093ea3ff41ba29ff34aca0c9c9e5e",
+      "bytes": 4056,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\artifact\\means.csv",
+      "path": "results/published/paper-v1/e2/means.csv",
+      "sha256": "203a526d0bc248451a5f9cefdc7fa9a3db023e41ec0a7989b0feb2c8f20ddcc6",
+      "bytes": 57867,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\artifact\\paired_differences.csv",
+      "path": "results/published/paper-v1/e2/paired_differences.csv",
+      "sha256": "98aa63cf1991a2a0872406c27f94e64b94329aeb1cad20f4a9e6096fb69013b2",
+      "bytes": 65718,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\artifact\\releases.csv",
+      "path": "results/published/paper-v1/e2/releases.csv",
+      "sha256": "79ce05ed814091c97f21c9d92876104dfcd46eba5230a7468c0da0a5d0e394d2",
+      "bytes": 819920,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\artifact\\safeguard_diagnostics.csv",
+      "path": "results/published/paper-v1/e2/safeguard_diagnostics.csv",
+      "sha256": "307fec697de7a291efa9ce8c8b39d56dc570cdf2aa9dd09d25da9bb41ae197ef",
+      "bytes": 58730,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\artifact\\verification.json",
+      "path": "results/published/paper-v1/e2/verification.json",
+      "sha256": "18aeccbaf56a06d4758cd1b1613895624be88b6d1265196b51c03b6b72f4bca2",
+      "bytes": 2538,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\baseline_rank_checks.csv",
+      "path": "results/published/paper-v1/e3/baseline_rank_checks.csv",
+      "sha256": "99764cfee63a26513f913ab0bf2f224fe3ba08b0eca50c8de30884a2ffed6152",
+      "bytes": 3808,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\coverage.csv",
+      "path": "results/published/paper-v1/e3/coverage.csv",
+      "sha256": "8232ed03cccd8490c11a6aef6ed9cb1186bfc47eae9341cfb91007e1bb027c19",
+      "bytes": 11765,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\e1_matched_releases.csv",
+      "path": "results/published/paper-v1/e3/e1_matched_releases.csv",
+      "sha256": "317b2f3dce3e1d9358e1485906d9fd765de7598eedf3ca0ca5690c4d9fb188aa",
+      "bytes": 112239,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\emd_by_region.csv",
+      "path": "results/published/paper-v1/e3/emd_by_region.csv",
+      "sha256": "88776636816148aba9abc7d39bdfa7544b4951f8f0122f6b4c9beedb9b4ac206",
+      "bytes": 46811,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\emd_region_contrasts.csv",
+      "path": "results/published/paper-v1/e3/emd_region_contrasts.csv",
+      "sha256": "b67cd6f39460d4b846bcbc82307075f2ba254a289acee55689a1f4a50df97e2a",
+      "bytes": 8196,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\endpoint_contrasts.csv",
+      "path": "results/published/paper-v1/e3/endpoint_contrasts.csv",
+      "sha256": "32ed33204a7c2af8a041d02e327f4804252c6f0b44950e9af3c31c4d68d5a9ce",
+      "bytes": 3693,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\means.csv",
+      "path": "results/published/paper-v1/e3/means.csv",
+      "sha256": "1ab31fd431e0bcb716776ab694886a59931e9d99c039821f296fb67a27d46fe5",
+      "bytes": 6723,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\paired_changes.csv",
+      "path": "results/published/paper-v1/e3/paired_changes.csv",
+      "sha256": "73eea2c74df5ebb00ce0a5e351e80aa8ed79e0c2c4a9164a49e8080dbebd19b8",
+      "bytes": 10134,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\releases.csv",
+      "path": "results/published/paper-v1/e3/releases.csv",
+      "sha256": "ec18df97530d91820f0b41528f77093a2aee96889b5b335ea2767be75c5d8cd6",
+      "bytes": 73640,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\data\\verification.json",
+      "path": "results/published/paper-v1/e3/verification.json",
+      "sha256": "fb55c7b8d836f8973f70fcbf8518917e11f8867db566883fd49d78644c5d01d9",
+      "bytes": 458,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\tables\\E2_component_pairs_all_available.csv",
+      "path": "results/published/paper-v1/e2/additional/E2_component_pairs_all_available.csv",
+      "sha256": "bc4e8be686c5f3265a040b43c8849596b8d8a7ea82ea9a5b6bf1a6c09002c8c6",
+      "bytes": 75605,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\tables\\E2_ratio_intervals_eps2.csv",
+      "path": "results/published/paper-v1/e2/additional/E2_ratio_intervals_eps2.csv",
+      "sha256": "629ed028fb4c7239a9956afbf77813862e55a5947ce9c6a1ac677f680d3f8b17",
+      "bytes": 4591,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\tables\\E3_all_120_releases.csv",
+      "path": "results/published/paper-v1/e2/additional/E3_all_120_releases.csv",
+      "sha256": "a6acb4312aec02db03cf90756ac2a3a9bc9586760253b934aee5d8240825d7ad",
+      "bytes": 29447,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\tables\\E3_all_12_settings.csv",
+      "path": "results/published/paper-v1/e2/additional/E3_all_12_settings.csv",
+      "sha256": "6b17717dc8aabb2217ead0ff15fbd2b192cac09097cfd5ccf4601af618d316c3",
+      "bytes": 2501,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\tables\\E3_all_8_paired_contrasts.csv",
+      "path": "results/published/paper-v1/e2/additional/E3_all_8_paired_contrasts.csv",
+      "sha256": "a7dbec80b08cbe52969c79b37d80f2ec59ee17e692669575c0a300c74b9edaaf",
+      "bytes": 1758,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\tables\\E3_ratio_intervals.csv",
+      "path": "results/published/paper-v1/e2/additional/E3_ratio_intervals.csv",
+      "sha256": "b59a9d1452ac72b72eaab862ff70db06c1e4b7d15300547c96ccd48698db7132",
+      "bytes": 2556,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_E2_IEEE\\data\\e2_summary.csv",
+      "path": "results/published/paper-v1/e2/expected_core_summary.csv",
+      "sha256": "d4ab151b20b52d54b7103af86672e600aad13c99e5a3a6dad6e49bb4d345b070",
+      "bytes": 53784,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "D:\\codesandProjects\\graph-analysis-main\\reconstruct_overall\\joint\\paper_experiments\\paper_results_frontend_scalability\\summary\\large40_runs.csv",
+      "path": "results/published/paper-v1/e4/large40_runs.csv",
+      "sha256": "faf50032bd871c9847ed0f31f667c8d2776655c1e79d09cb994d29d58bcd35ed",
+      "bytes": 56889,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "D:\\codesandProjects\\graph-analysis-main\\reconstruct_overall\\joint\\paper_experiments\\paper_results_frontend_scalability\\plan.json",
+      "path": "results/published/paper-v1/e4/plan.json",
+      "sha256": "1a622a5ae466d83ac56ad75b4e6b86656b1757ad78756333746ccecca8f40cd9",
+      "bytes": 240625,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "D:\\codesandProjects\\graph-analysis-main\\reconstruct_overall\\joint\\paper_experiments\\paper_results_frontend_scalability\\controls.json",
+      "path": "results/published/paper-v1/e4/controls.json",
+      "sha256": "1351d992898e18d89c1b5d1cdf4caa2d3e897cdf8b1a316b94b35e5e532748ed",
+      "bytes": 429268,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "D:\\codesandProjects\\graph-analysis-main\\reconstruct_overall\\joint\\paper_experiments\\paper_results_L0_main\\forpaper\\plan.json",
+      "path": "results/published/paper-v1/historical/e1_e2_plan.json",
+      "sha256": "697281757a74082c9dcac74fb947d92fc891bb548f57d232517203fe70c2c182",
+      "bytes": 5574382,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "D:\\codesandProjects\\graph-analysis-main\\reconstruct_overall\\joint\\paper_experiments\\paper_results_L0_main\\paper_required\\contract.json",
+      "path": "results/published/paper-v1/historical/paper_required_contract.json",
+      "sha256": "38ffb317fbd0adabc0019c8cc4218749f16876f1c85117f21b0b7c9a3eee3e75",
+      "bytes": 185,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "D:\\codesandProjects\\graph-analysis-main\\reconstruct_overall\\joint\\paper_experiments\\paper_results_L0_main\\paper_required_E3_large\\contract.json",
+      "path": "results/published/paper-v1/historical/paper_required_E3_large_contract.json",
+      "sha256": "7f9bba3b321eec6defbe4c924db8b1af8d3b2a24795bbe92a1de6cd6bf764611",
+      "bytes": 1609,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "D:\\codesandProjects\\graph-analysis-main\\reconstruct_overall\\joint\\paper_experiments\\allocations_forpaper.json",
+      "path": "configs/paper/allocations.json",
+      "sha256": "f2fdc68e082807829a98a52f2b146d9875332235c8330b407ec535f24d5c8e57",
+      "bytes": 8314,
+      "transformation": "byte-preserving copy"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_artifact\\summarize.py",
+      "source_sha256": "c5c3062a012381ffeb7214f20011ad14efee3b2a10caed2b4f37818d14ffd6a6",
+      "path": "src/privtdd/experiments/render/e1_statistics.py",
+      "sha256": "bd928fb4d623fe56339988f9f81b536dcde7c2815b9411c559552aa6e2fa409d",
+      "transformation": "portable imports and explicit input/output paths; statistical/plotting logic preserved"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E2_E3_ICDE_20261109\\artifact\\summarize_releases.py",
+      "source_sha256": "32c270fc10a3c41086077e71e3d3b3b2bb225762ce327ab2b749890def6eefda",
+      "path": "src/privtdd/experiments/render/e2_statistics.py",
+      "sha256": "1d79cd0a509819de9977905e2d11fcce3141437a76a9f6fe343cceb20b0427fe",
+      "transformation": "portable imports and explicit input/output paths; statistical/plotting logic preserved"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\summarize_e3.py",
+      "source_sha256": "a9a114227db1b227439d1624a4710e5ab8b74cfb7247b118bf4d1aaf9822beff",
+      "path": "src/privtdd/experiments/render/e3_statistics.py",
+      "sha256": "67eacd749d6129cf2dca2e775bba3d1fba1440b70c1426bb5c787fb2359ad32f",
+      "transformation": "portable imports and explicit input/output paths; statistical/plotting logic preserved"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_E2_IEEE\\make_e1_tables.py",
+      "source_sha256": "83c51e7eb5a08fb5c2dc1366bd48262af11222d291561f5128164697adb2e094",
+      "path": "src/privtdd/experiments/render/e1_tables.py",
+      "sha256": "995cfaee58f4d8b5ac44c88e7dafa5202d84d652eb2ffc75c84032a66d97c7a8",
+      "transformation": "portable imports and explicit input/output paths; statistical/plotting logic preserved"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E1_E2_IEEE\\plot_e2.py",
+      "source_sha256": "817acc24315237a961d36e5bb7d7526b8ea29d6e7fdcc3e4f8d8f6129e1b9868",
+      "path": "src/privtdd/experiments/render/e2_plot.py",
+      "sha256": "36636f9916a5c1ac3249d456f9065ce961a26776a463eb7cf64e921a20142f3a",
+      "transformation": "portable imports and explicit input/output paths; statistical/plotting logic preserved"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\plot_e3.py",
+      "source_sha256": "43d3caba454234d5dbaf0f7f5f0575b7ce8d92cb94f39ed6ed7b059ad5879e4a",
+      "path": "src/privtdd/experiments/render/e3_plot.py",
+      "sha256": "083e7bffae664761ba7d27e0c6cc319dd833e09ae0c0938d1e0737629ae5d105",
+      "transformation": "portable imports and explicit input/output paths; statistical/plotting logic preserved"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\boundary_effects.py",
+      "source_sha256": "b23f495bd052a5ed2bb2706f59c17a997e5dc8e0e577faf9c21ee77e8bd3d662",
+      "path": "src/privtdd/experiments/render/e3_boundary_effects.py",
+      "sha256": "7f03c761d1182eb8abaa68b948b1c9497d4199fad8de1f798b78c00dc3a30375",
+      "transformation": "portable imports and explicit input/output paths; statistical/plotting logic preserved"
+    },
+    {
+      "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-11-08\\zon\\outputs\\E3_four_networks\\localize_emd.py",
+      "source_sha256": "2fddf5656f50fe69d4969928e928cf7a41b77ef16f3ddd0b4d323cc3d15eb63e",
+      "path": "src/privtdd/experiments/render/e3_localize_emd.py",
+      "sha256": "5fb29e93bfbca8a5048aee83fc069fa9ffc49dab75be9c0c471e5c702e4ad17d",
+      "transformation": "portable imports and explicit input/output paths; statistical/plotting logic preserved"
+    },
+    {
+      "source": "D:\\codesandProjects\\graph-analysis-main\\reconstruct_overall\\joint\\paper_experiments\\metrics.py",
+      "path": "src/privtdd/evaluation/metrics.py",
+      "sha256": "75542417529b6aa09aba433c6d288c7621e27adeb7679c78f8f398c0ee98b012",
+      "bytes": 4354,
+      "transformation": "byte-preserving copy"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "tests_run": 56,
+  "command": "python -B -m unittest discover -s tests/core -v",
+  "seconds": 9.93,
+  "source_digest": "e6c20c9874e9f747654204dd0cab23889a1d246b55af4d36659bde8ac79c00b8",
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "numba": "0.60.0",
+  "threadpoolctl": "3.5.0",
+  "isolation": "Only src added to PYTHONPATH; no original research repository; TEMP and Numba cache in writable workspace",
+  "scope": "bounded synthetic/unit tests; not a full paper rerun"
+}

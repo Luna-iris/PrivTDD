@@ -1,0 +1,22 @@
+{
+  "higgs": {
+    "matched_runs": 8,
+    "top_one_percent_share": 0.47582670497120844,
+    "changes_upper_minus_lower": {
+      "above90_through99": 12.081587166692595,
+      "above999": -37.05953731454775,
+      "EMD": -24.704947323322436
+    },
+    "tail_decreases_every_run": true
+  },
+  "orkut": {
+    "matched_runs": 10,
+    "top_one_percent_share": 0.3203737513156555,
+    "changes_upper_minus_lower": {
+      "above90_through99": 43.845759264226864,
+      "above999": 7.404828610692542,
+      "EMD": 45.04003971937323
+    },
+    "tail_decreases_every_run": false
+  }
+}

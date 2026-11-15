@@ -1,0 +1,5751 @@
+[
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 0.5,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.0,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 1.5,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.0,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 2.5,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.0,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 3.5,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "bio-dmela",
+    "epsilon": 4.0,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 0.5,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.0,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 1.5,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.0,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 2.5,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.0,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 3.5,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261038,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261039,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261040,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261041,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261042,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261043,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261044,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261045,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261046,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "dblp",
+    "epsilon": 4.0,
+    "seed": 20261047,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 0.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 0.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 0.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 0.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 0.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 0.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 0.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 0.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 1.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 2.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 3.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "higgs",
+    "epsilon": 4.0,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261031,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261032,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261033,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261034,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261035,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261036,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 0.5,
+    "seed": 20261037,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 1.0,
+    "seed": 20261028,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 1.0,
+    "seed": 20261029,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference",
+      "Mass-only correction",
+      "Shape-only correction",
+      "GlobalMix",
+      "w/o Post",
+      "w/o safeguard"
+    ]
+  },
+  {
+    "dataset": "orkut",
+    "epsilon": 1.0,
+    "seed": 20261030,
+    "variants": [
+      "w/o Beta reference",
+      "w/o Geo reference"
+    ]
+  }
+]

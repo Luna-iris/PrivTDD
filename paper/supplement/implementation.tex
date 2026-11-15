@@ -1,0 +1,64 @@
+\clearpage
+\section{Implementation and reproduction details}
+The artifact separates the reporting simulator, inference, evaluation, and
+experiment orchestration. The simulator has access to the graph to simulate
+the local protocol. Subsequent estimation consumes private reports; exact
+triangle degrees are used only for evaluation and the explicitly identified
+post-hoc diagnostics.
+
+\subsection*{Paper configuration}
+The paper uses the fast numerical configuration: a 512-point degree grid,
+report and triangle bin widths of $1/16$, 65 closure-mixture components,
+structural integration budgets of $65{,}536$ draws with four replicates,
+positive-region quantiles $(0.90,0.95)$, and one final posterior update.
+The reporting offset is $L=0$ and the transport safeguard uses $\tau=1$.
+The public degree domain is $0,\ldots,n-1$; cached observed maximum degrees
+are not substituted for this public bound. The artifact preserves the
+published 32-row allocation table. A separate public-input optimizer derives
+the allocations from the manuscript objective and checks this table.
+The generic API defaults do not select the paper's numerical configuration;
+the paper runner does so explicitly.
+
+\subsection*{Baseline adaptations}
+TriTR-Hist adjusts triangle-counting multiplicities, then clips, rounds, and
+bins node estimates. Its conservative relationship-level accounting is
+$2\varepsilon_0+3\varepsilon_1+2\varepsilon_2=\varepsilon$.
+LDPGraph uses $2\varepsilon_1+\varepsilon_2+2\varepsilon_3=\varepsilon$.
+The target and synthetic outputs share private reports. The synthetic
+histogram is recomputed on the graph actually produced, rather than being
+replaced by the consistency-corrected targets. The artifact documents the
+shared-RR correction, consistency weights, and compact synthesis backend.
+The upstream LDPGraph source is an explicitly configured external dependency;
+it is not redistributed with this artifact.
+
+\subsection*{Data and numerical boundaries}
+All inputs are simple undirected graphs after removal of self-loops and
+duplicate edges. The source graph's declared nodes and components are retained.
+Dataset-specific node-ID mappings are fixed because public priorities and
+pseudorandom streams can depend on node indices. Likelihood approximations,
+grid and binning choices, and solver stopping criteria are exposed separately
+from thread and cache controls. Failed fits are retained as failed records.
+The final released prediction includes the safeguard even when its fitted
+mixing coefficient is one in a recorded run.
+
+\subsection*{Environment and reproduction levels}
+The manuscript reports Python 3.12.9 on Windows 11 Pro with an Intel Core
+i7-12700 and 32 GiB memory. Artifact migration was independently tested with
+Python 3.12.7 and the package versions recorded in the accompanying environment
+file; this file is not represented as a recovered historical environment lock.
+Rebuilding statistics and figures from frozen records, executing the small
+synthetic smoke case, and rerunning the full experiment matrix are distinct
+reproduction modes. Per-run resource records and failures should be consulted
+for the full experiments; the reported machine is not a claimed minimum
+resource specification.
+
+\subsection*{E3 explanatory diagnostics}
+The artifact provides an additional reconstruction of the explanatory
+statistics in E3. Top-one-percent shares use the largest $\lceil0.01n\rceil$
+triangle degrees. Percentiles use linear quantiles of positive true triangle
+degrees. Since EMD sums over integer CDF cutoffs, the range above percentile
+value $q$ starts at $\lfloor q\rfloor+1$. These fixed evaluation ranges are
+shared across the lower and upper region configurations within a network.
+All prediction and truth checksums are verified. The reconstructed script
+reproduces the stated shares and mean changes; it is identified as an artifact
+reconstruction, rather than as the original historical generator.

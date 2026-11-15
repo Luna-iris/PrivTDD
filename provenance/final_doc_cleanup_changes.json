@@ -1,0 +1,540 @@
+{
+  "scope": "staging source documentation and explicit target hash fields only",
+  "source_files": [
+    {
+      "path": "src/privtdd/posterior/rows.py",
+      "before_sha256": "b8d2389bef1e4f90afc61cd81f85d2ef6df399c0f58b05e227db2b4c178bd081",
+      "after_sha256": "752f502e90b9711f4981dcb0b7293a855787d44fcb84ac83cbfdcd63351daba6",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/channel.py",
+      "before_sha256": "d37f7727e6a6b98efde04542af4b74fba8e4ebf411787a61508c97fd524d488f",
+      "after_sha256": "8f03feb2ee7e40dbb34aa0a3aa66a63c498f714ddf4682f0c63500a839152671",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/cells.py",
+      "before_sha256": "92f5332dcd68d537fe1fc01d50c53ccf25eee33074e6c8cd0f9e83cd202f7486",
+      "after_sha256": "336c8671910a6f116352aac03f9161f861401df0abb65eeba33cbb97f84aea24",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/count_channel.py",
+      "before_sha256": "ddf33ce9d0e4a23d879a2070d4fbd07212113b245badcd4959e2c9e8303672c8",
+      "after_sha256": "df515140b730535f26ac31fd4ba4163c1795b3a574b1d974d4faa7e4e4f00aa1",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/integrated.py",
+      "before_sha256": "59b30cca265249a6cc9cf08d275388538d12a3fde727ef218323be369c83cba2",
+      "after_sha256": "7d4c10a761b7ea7eda15bbe0b07405312246b51d6e0fb0b664b3a3b321c9eff8",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/integral.py",
+      "before_sha256": "b8c37c0657f1e17fe228e30ed899662f2113e7d14f757c42ae96ae78f057e920",
+      "after_sha256": "55b53369c68fb6b3dd9b03b0a00ce58555bd8ea7258a619affe3d1a1730fc14a",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/degree_posterior.py",
+      "before_sha256": "8ea9c9aa93bcc092e860bcd096e22e79d21d431e19dee915cf5f1a59af6d36a8",
+      "after_sha256": "50e21c269b9918597ec01476262ffd3e3460f0c49c7e49abe8a5b6f8c87b52e4",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/base_distribution/optimizer.py",
+      "before_sha256": "732752761d2e3ceb6ae73f5e84ac3bcbcf7545b65cc09ec45b4479864254f1a1",
+      "after_sha256": "20dfd49b03ad354cbacce3579eee30a58733561e279f80d2af95f46d59b37772",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/numerics/probability.py",
+      "before_sha256": "09fba1d2def1c1f0b97853e42a6607df45b4b46dd5602ac4b917975bbe5915f7",
+      "after_sha256": "5f28dbda80ec12bce76e057e6662a4f7f5d5f585515ce29680dc2788537592a2",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/numerics/likelihood.py",
+      "before_sha256": "a496f658325fe99cfd63e2f834c8b7fc0af074fd25408529cb4af59d6375ef6a",
+      "after_sha256": "2b604923997fa05c070cddc0f2fd2d1522ba27cae86c60bb4b38a36f2fdc5742",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/forward.py",
+      "before_sha256": "cc07988bd357b6d1e85612bef75cd72f658efe0e388df4d4bd5f93fc2f3b1e1d",
+      "after_sha256": "57ef85015a39986591a3649e40cdb88c8ff35ec591cf378df0189f3b28c8d6ec",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/feasible_domain.py",
+      "before_sha256": "4a7da72250e44853e1cad02d91cbfc935adbd9fd16e54a58f8e75078e2e1bc92",
+      "after_sha256": "4f87695da974913eefcf35a1385798a61cd9f504faa484e52359fb15069c44b8",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/basis.py",
+      "before_sha256": "45a67cbe019747b7c73efbfbe52c5d98c0761ae7616059b6c83538349d18abbb",
+      "after_sha256": "cb80470d20fc5a0198fab6bd592482be69216667b29fa07121e2b4684cf15844",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/optimizer_bridge.py",
+      "before_sha256": "fe9a817233581dca5943da8ecdde3c32df5775a7cbc736a437405692faec5338",
+      "after_sha256": "fa5571b14804296a9593373d1fe2dd6890d3a3bdf2599528b4f4be1cf7e85ffe",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/optimizer.py",
+      "before_sha256": "66a16a3391be43e5b87d3e2971142feb22f101da5f2e9d7da02c2a6ff74b5899",
+      "after_sha256": "9f86a54f46c9eff39a8ad321dbd0209882b60ac848427f805d7ad67b83af80c0",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/regions.py",
+      "before_sha256": "d1476010debcfd904b7c27e84d11c00cd4416d7b112831ee3a7617f9322f4efe",
+      "after_sha256": "500c8780d170e10f5dcdd82649e891cfad188bf14b8392287886ead71470e8fa",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/source_mapping.py",
+      "before_sha256": "9bdef38fdc16792c4ca93a0168deb1b89f3185bdda6f020fc0124fdbbcbbc489",
+      "after_sha256": "35d049f2a59d97b84245ef2e8e4e8523f41fbe614a4dc5e57943e27a5a469ab4",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/stopping.py",
+      "before_sha256": "745989dac505a0079d9811204e308929349d51ea4fb6c8a78478a6dbd8b309aa",
+      "after_sha256": "8355de25fb3c36cd5c60ed83f783a2e2867c01c661de105e2a9ca978b5fcb082",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/correction/sparse_channel.py",
+      "before_sha256": "409f320a8a84eb9f2f8291fc6d536c1dea2130535706df7f4ff6cc81080b40d0",
+      "after_sha256": "ca55d0f39c23a83130100330cc034fe15de9db3a48f392d32fb23237b51f41ad",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/reporting/primitives.py",
+      "before_sha256": "4341c3f19dcfb1b55ed680080d36434c4ef06b9ed3b3a7ff13ba776962cb3d91",
+      "after_sha256": "19a6803aeeeb3bc756a4f44d8f0fa2986ef7b0ff3bc2d4e59b063ff488b674f2",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/io/memory.py",
+      "before_sha256": "0a5a0036c21fde38062cb4e44c27e7525fd06afd676b7dbfcc80087eeccda6c7",
+      "after_sha256": "307536fff6e9c9f1c14d018a56ac19225bfa6f839ee8b8e1c91569fdc0511fbb",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/canonical.py",
+      "before_sha256": "3747a36c03ac42ac89bf4bbdd9875903eb90aa48423d99610ad1b0d1c943c3aa",
+      "after_sha256": "1a40e99dca35720e2af8de19d76270825f719bb346d224ebc19b5c8e3271a57e",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/channel.py",
+      "before_sha256": "1c8375d10894b9268736a3633cffe0790378a6b78cd12071032f691a1fa145fd",
+      "after_sha256": "97c0e75039f228c5006a2853ee1d90998bbf3d9cb0caef179858fc7d027a67c9",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/fit.py",
+      "before_sha256": "dd151234c1a266d4ec03e8cd0b73d42c5d77e676413e1421bfb4441b4fb337e3",
+      "after_sha256": "85f7a6f2e3f775ac140431647ffe1d36346cc64f80989ff5ab7b1f3d6dd8ee89",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/groups.py",
+      "before_sha256": "421c138f2ea7eb481c055d100ca2f2991d61d1d4a6a6cbb2245896d15ffaf996",
+      "after_sha256": "81ae31b247922e542f9695264a1300ef442c58bff1402df481e25c91c2cfb35c",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/newton.py",
+      "before_sha256": "79847ac9538764b056907e0c287c3b672723215cf3c05fa2b22047e5a0614acc",
+      "after_sha256": "4de7e90fde60f748410dee3ce4b131fb928f930ad24fa6605a72f38c8da4734f",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/operator.py",
+      "before_sha256": "ce07d4d23274e2ece7e33fedd631133437cd3fac875dc22819b627b6a403e00b",
+      "after_sha256": "aae18428551dd69cd590fa925d0a79a6932447ba89524e8ae64f64282d2a46f7",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/phases.py",
+      "before_sha256": "f309648099b89c24b892ab1118f95487ded4d8d8943caf3c9dae88ca84cb944c",
+      "after_sha256": "dcb3c3787316e29baed38d379b0cd7122a46de37f2371e320b0367249bef161e",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/reduced.py",
+      "before_sha256": "83ccb12c83972b58461d728cf54ee291d8d59232932b6fa876058f7ee3e8096c",
+      "after_sha256": "1a15986d249f989763e9b2314a42d23bb3b3384be0c3223900b958ed39bb2fa4",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/degree/working_set.py",
+      "before_sha256": "13a5df2177e2989e72f6591b08b0cdeadf2c8f7f5c0e1122f8043b376a02df43",
+      "after_sha256": "70b48acd8ee45e4e45135027843381e75893b87e2dbca8c5d449a8ce364b7fe6",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/clustering.py",
+      "before_sha256": "2058d2d148f5436b655a8945854b92e89f60e5064c5510b657260659c06d59a9",
+      "after_sha256": "7eb5a471368827b496d2c56857f0dc9b85464455b0261c3d8f6d65a3923be9d1",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/context.py",
+      "before_sha256": "aba1249aea186ed634caf16271b7f680126060de4c4234c4d465f6d6f872a8f3",
+      "after_sha256": "a6688241414d380a01f1b27f858f9b36056dcb270b2822cd4f8b372943f44978",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/independent_edge.py",
+      "before_sha256": "3dd77af1ba5afa93fdc56be1c3dd572056bb8b51b0ab05b50e4e1c4faa2f2763",
+      "after_sha256": "3820a322628aa19a4e7f8fe56a3edde28e6258a56929317b4837891ba0577aac",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/primitives.py",
+      "before_sha256": "0610295c54327650cadb352dfd18805dc54cd17ef9cc07362e70a07c7c4d48d7",
+      "after_sha256": "015b30149d1c9c33eef5f0d57921e82df069c80f9395d275aaad1d7051cdd251",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/references/geometry_model.py",
+      "before_sha256": "06f3f06e8b1cc1af626e691c4b4a9e90916a8c9ce5c0afffed7fbf2ed3f91ae1",
+      "after_sha256": "ec4a5c47d249fe6cb897b610dbcce82aca38f5817da26cee0e9ac610c9cb50ab",
+      "change": "module docstring only; current method and source navigation",
+      "executable_ast_unchanged": true
+    },
+    {
+      "path": "src/privtdd/reporting/collection.py",
+      "before_sha256": "166ef1b5241146bf7c78b587ae2998a97f23457aab5b8f94d70d1158482eaadd",
+      "after_sha256": "897e3db3da132f039ec087a90969477e2e0bfc26cfbe7fb2c6e0f0413082a306",
+      "change": "correct public configuration name in parameter docstring",
+      "executable_ast_unchanged": true
+    }
+  ],
+  "provenance_files": [
+    {
+      "path": "provenance/module_mapping.json",
+      "before_sha256": "9c5058aaf6407770035946abd50d63c813dd468a995e95a4c9cb9ec6483417cb",
+      "after_sha256": "80ea215012a017a8126793cc8065cc92fb7c3dec0e3214e6e6b5399f31fbb25c",
+      "target_hash_updates": [
+        {
+          "path": "src/privtdd/reporting/collection.py",
+          "field": "target_sha256",
+          "before": "166ef1b5241146bf7c78b587ae2998a97f23457aab5b8f94d70d1158482eaadd",
+          "after": "897e3db3da132f039ec087a90969477e2e0bfc26cfbe7fb2c6e0f0413082a306"
+        },
+        {
+          "path": "src/privtdd/reporting/primitives.py",
+          "field": "target_sha256",
+          "before": "4341c3f19dcfb1b55ed680080d36434c4ef06b9ed3b3a7ff13ba776962cb3d91",
+          "after": "19a6803aeeeb3bc756a4f44d8f0fa2986ef7b0ff3bc2d4e59b063ff488b674f2"
+        },
+        {
+          "path": "src/privtdd/degree/canonical.py",
+          "field": "target_sha256",
+          "before": "3747a36c03ac42ac89bf4bbdd9875903eb90aa48423d99610ad1b0d1c943c3aa",
+          "after": "1a40e99dca35720e2af8de19d76270825f719bb346d224ebc19b5c8e3271a57e"
+        },
+        {
+          "path": "src/privtdd/degree/channel.py",
+          "field": "target_sha256",
+          "before": "1c8375d10894b9268736a3633cffe0790378a6b78cd12071032f691a1fa145fd",
+          "after": "97c0e75039f228c5006a2853ee1d90998bbf3d9cb0caef179858fc7d027a67c9"
+        },
+        {
+          "path": "src/privtdd/degree/fit.py",
+          "field": "target_sha256",
+          "before": "dd151234c1a266d4ec03e8cd0b73d42c5d77e676413e1421bfb4441b4fb337e3",
+          "after": "85f7a6f2e3f775ac140431647ffe1d36346cc64f80989ff5ab7b1f3d6dd8ee89"
+        },
+        {
+          "path": "src/privtdd/degree/groups.py",
+          "field": "target_sha256",
+          "before": "421c138f2ea7eb481c055d100ca2f2991d61d1d4a6a6cbb2245896d15ffaf996",
+          "after": "81ae31b247922e542f9695264a1300ef442c58bff1402df481e25c91c2cfb35c"
+        },
+        {
+          "path": "src/privtdd/degree/newton.py",
+          "field": "target_sha256",
+          "before": "79847ac9538764b056907e0c287c3b672723215cf3c05fa2b22047e5a0614acc",
+          "after": "4de7e90fde60f748410dee3ce4b131fb928f930ad24fa6605a72f38c8da4734f"
+        },
+        {
+          "path": "src/privtdd/degree/operator.py",
+          "field": "target_sha256",
+          "before": "ce07d4d23274e2ece7e33fedd631133437cd3fac875dc22819b627b6a403e00b",
+          "after": "aae18428551dd69cd590fa925d0a79a6932447ba89524e8ae64f64282d2a46f7"
+        },
+        {
+          "path": "src/privtdd/degree/phases.py",
+          "field": "target_sha256",
+          "before": "f309648099b89c24b892ab1118f95487ded4d8d8943caf3c9dae88ca84cb944c",
+          "after": "dcb3c3787316e29baed38d379b0cd7122a46de37f2371e320b0367249bef161e"
+        },
+        {
+          "path": "src/privtdd/degree/reduced.py",
+          "field": "target_sha256",
+          "before": "83ccb12c83972b58461d728cf54ee291d8d59232932b6fa876058f7ee3e8096c",
+          "after": "1a15986d249f989763e9b2314a42d23bb3b3384be0c3223900b958ed39bb2fa4"
+        },
+        {
+          "path": "src/privtdd/degree/working_set.py",
+          "field": "target_sha256",
+          "before": "13a5df2177e2989e72f6591b08b0cdeadf2c8f7f5c0e1122f8043b376a02df43",
+          "after": "70b48acd8ee45e4e45135027843381e75893b87e2dbca8c5d449a8ce364b7fe6"
+        },
+        {
+          "path": "src/privtdd/base_distribution/cells.py",
+          "field": "target_sha256",
+          "before": "92f5332dcd68d537fe1fc01d50c53ccf25eee33074e6c8cd0f9e83cd202f7486",
+          "after": "336c8671910a6f116352aac03f9161f861401df0abb65eeba33cbb97f84aea24"
+        },
+        {
+          "path": "src/privtdd/base_distribution/optimizer.py",
+          "field": "target_sha256",
+          "before": "732752761d2e3ceb6ae73f5e84ac3bcbcf7545b65cc09ec45b4479864254f1a1",
+          "after": "20dfd49b03ad354cbacce3579eee30a58733561e279f80d2af95f46d59b37772"
+        },
+        {
+          "path": "src/privtdd/base_distribution/channel.py",
+          "field": "target_sha256",
+          "before": "d37f7727e6a6b98efde04542af4b74fba8e4ebf411787a61508c97fd524d488f",
+          "after": "8f03feb2ee7e40dbb34aa0a3aa66a63c498f714ddf4682f0c63500a839152671"
+        },
+        {
+          "path": "src/privtdd/base_distribution/integral.py",
+          "field": "target_sha256",
+          "before": "b8c37c0657f1e17fe228e30ed899662f2113e7d14f757c42ae96ae78f057e920",
+          "after": "55b53369c68fb6b3dd9b03b0a00ce58555bd8ea7258a619affe3d1a1730fc14a"
+        },
+        {
+          "path": "src/privtdd/base_distribution/integrated.py",
+          "field": "target_sha256",
+          "before": "59b30cca265249a6cc9cf08d275388538d12a3fde727ef218323be369c83cba2",
+          "after": "7d4c10a761b7ea7eda15bbe0b07405312246b51d6e0fb0b664b3a3b321c9eff8"
+        },
+        {
+          "path": "src/privtdd/base_distribution/degree_posterior.py",
+          "field": "target_sha256",
+          "before": "8ea9c9aa93bcc092e860bcd096e22e79d21d431e19dee915cf5f1a59af6d36a8",
+          "after": "50e21c269b9918597ec01476262ffd3e3460f0c49c7e49abe8a5b6f8c87b52e4"
+        },
+        {
+          "path": "src/privtdd/base_distribution/count_channel.py",
+          "field": "target_sha256",
+          "before": "ddf33ce9d0e4a23d879a2070d4fbd07212113b245badcd4959e2c9e8303672c8",
+          "after": "df515140b730535f26ac31fd4ba4163c1795b3a574b1d974d4faa7e4e4f00aa1"
+        },
+        {
+          "path": "src/privtdd/references/clustering.py",
+          "field": "target_sha256",
+          "before": "2058d2d148f5436b655a8945854b92e89f60e5064c5510b657260659c06d59a9",
+          "after": "7eb5a471368827b496d2c56857f0dc9b85464455b0261c3d8f6d65a3923be9d1"
+        },
+        {
+          "path": "src/privtdd/references/geometry_model.py",
+          "field": "target_sha256",
+          "before": "06f3f06e8b1cc1af626e691c4b4a9e90916a8c9ce5c0afffed7fbf2ed3f91ae1",
+          "after": "ec4a5c47d249fe6cb897b610dbcce82aca38f5817da26cee0e9ac610c9cb50ab"
+        },
+        {
+          "path": "src/privtdd/references/context.py",
+          "field": "target_sha256",
+          "before": "aba1249aea186ed634caf16271b7f680126060de4c4234c4d465f6d6f872a8f3",
+          "after": "a6688241414d380a01f1b27f858f9b36056dcb270b2822cd4f8b372943f44978"
+        },
+        {
+          "path": "src/privtdd/references/independent_edge.py",
+          "field": "target_sha256",
+          "before": "3dd77af1ba5afa93fdc56be1c3dd572056bb8b51b0ab05b50e4e1c4faa2f2763",
+          "after": "3820a322628aa19a4e7f8fe56a3edde28e6258a56929317b4837891ba0577aac"
+        },
+        {
+          "path": "src/privtdd/references/primitives.py",
+          "field": "target_sha256",
+          "before": "0610295c54327650cadb352dfd18805dc54cd17ef9cc07362e70a07c7c4d48d7",
+          "after": "015b30149d1c9c33eef5f0d57921e82df069c80f9395d275aaad1d7051cdd251"
+        },
+        {
+          "path": "src/privtdd/correction/feasible_domain.py",
+          "field": "target_sha256",
+          "before": "4a7da72250e44853e1cad02d91cbfc935adbd9fd16e54a58f8e75078e2e1bc92",
+          "after": "4f87695da974913eefcf35a1385798a61cd9f504faa484e52359fb15069c44b8"
+        },
+        {
+          "path": "src/privtdd/correction/forward.py",
+          "field": "target_sha256",
+          "before": "cc07988bd357b6d1e85612bef75cd72f658efe0e388df4d4bd5f93fc2f3b1e1d",
+          "after": "57ef85015a39986591a3649e40cdb88c8ff35ec591cf378df0189f3b28c8d6ec"
+        },
+        {
+          "path": "src/privtdd/correction/optimizer_bridge.py",
+          "field": "target_sha256",
+          "before": "fe9a817233581dca5943da8ecdde3c32df5775a7cbc736a437405692faec5338",
+          "after": "fa5571b14804296a9593373d1fe2dd6890d3a3bdf2599528b4f4be1cf7e85ffe"
+        },
+        {
+          "path": "src/privtdd/correction/optimizer.py",
+          "field": "target_sha256",
+          "before": "66a16a3391be43e5b87d3e2971142feb22f101da5f2e9d7da02c2a6ff74b5899",
+          "after": "9f86a54f46c9eff39a8ad321dbd0209882b60ac848427f805d7ad67b83af80c0"
+        },
+        {
+          "path": "src/privtdd/correction/stopping.py",
+          "field": "target_sha256",
+          "before": "745989dac505a0079d9811204e308929349d51ea4fb6c8a78478a6dbd8b309aa",
+          "after": "8355de25fb3c36cd5c60ed83f783a2e2867c01c661de105e2a9ca978b5fcb082"
+        },
+        {
+          "path": "src/privtdd/correction/regions.py",
+          "field": "target_sha256",
+          "before": "d1476010debcfd904b7c27e84d11c00cd4416d7b112831ee3a7617f9322f4efe",
+          "after": "500c8780d170e10f5dcdd82649e891cfad188bf14b8392287886ead71470e8fa"
+        },
+        {
+          "path": "src/privtdd/correction/source_mapping.py",
+          "field": "target_sha256",
+          "before": "9bdef38fdc16792c4ca93a0168deb1b89f3185bdda6f020fc0124fdbbcbbc489",
+          "after": "35d049f2a59d97b84245ef2e8e4e8523f41fbe614a4dc5e57943e27a5a469ab4"
+        },
+        {
+          "path": "src/privtdd/correction/basis.py",
+          "field": "target_sha256",
+          "before": "45a67cbe019747b7c73efbfbe52c5d98c0761ae7616059b6c83538349d18abbb",
+          "after": "cb80470d20fc5a0198fab6bd592482be69216667b29fa07121e2b4684cf15844"
+        },
+        {
+          "path": "src/privtdd/correction/sparse_channel.py",
+          "field": "target_sha256",
+          "before": "409f320a8a84eb9f2f8291fc6d536c1dea2130535706df7f4ff6cc81080b40d0",
+          "after": "ca55d0f39c23a83130100330cc034fe15de9db3a48f392d32fb23237b51f41ad"
+        },
+        {
+          "path": "src/privtdd/posterior/rows.py",
+          "field": "target_sha256",
+          "before": "b8d2389bef1e4f90afc61cd81f85d2ef6df399c0f58b05e227db2b4c178bd081",
+          "after": "752f502e90b9711f4981dcb0b7293a855787d44fcb84ac83cbfdcd63351daba6"
+        },
+        {
+          "path": "src/privtdd/numerics/likelihood.py",
+          "field": "target_sha256",
+          "before": "a496f658325fe99cfd63e2f834c8b7fc0af074fd25408529cb4af59d6375ef6a",
+          "after": "2b604923997fa05c070cddc0f2fd2d1522ba27cae86c60bb4b38a36f2fdc5742"
+        },
+        {
+          "path": "src/privtdd/numerics/probability.py",
+          "field": "target_sha256",
+          "before": "09fba1d2def1c1f0b97853e42a6607df45b4b46dd5602ac4b917975bbe5915f7",
+          "after": "5f28dbda80ec12bce76e057e6662a4f7f5d5f585515ce29680dc2788537592a2"
+        },
+        {
+          "path": "src/privtdd/io/memory.py",
+          "field": "target_sha256",
+          "before": "0a5a0036c21fde38062cb4e44c27e7525fd06afd676b7dbfcc80087eeccda6c7",
+          "after": "307536fff6e9c9f1c14d018a56ac19225bfa6f839ee8b8e1c91569fdc0511fbb"
+        },
+        {
+          "path": "src/privtdd/experiments/ablation.py",
+          "field": "target_sha256",
+          "before": null,
+          "after": "55b44584f38eef9e3abbb935c5e1c30461624c7c04fc644ed5a02347a23cfdb0"
+        }
+      ],
+      "source_fields_unchanged": true,
+      "historical_entries_unchanged": true
+    },
+    {
+      "path": "provenance/data_baseline_module_mapping.json",
+      "before_sha256": "1a713a6e1369172afb62c9e84c87aac96a3606b8c3e257e036819cd17cb0130d",
+      "after_sha256": "c8afaa10f3cb105ad557d94e943ea7a2ad4679b6be2b86321b91042ca0cc8b66",
+      "target_hash_updates": [
+        {
+          "path": "src/privtdd/sampling/run.py",
+          "field": "target_sha256",
+          "before": "6dd6caf0fce28e572c6523061b18abf054c1f1d734727d58ce9375a911909667",
+          "after": "54ddfbe73f30c87684ba029b3386aaf21f6bd835d74f0229d76dd1a01662c365"
+        }
+      ],
+      "source_fields_unchanged": true,
+      "historical_entries_unchanged": true
+    },
+    {
+      "path": "provenance/experiment_assets.json",
+      "before_sha256": "1551b86aea9ff4a6dca8ee93a60bbdc18ad94a6a210bf5a117a4cab51cdd2a7d",
+      "after_sha256": "89aebb3251e3f02154c9deaed29b375f96ef8d472d9bddeff1f2abceeecf3f48",
+      "target_hash_updates": [
+        {
+          "path": "src/privtdd/experiments/render/e3_statistics.py",
+          "field": "sha256",
+          "before": "a9a114227db1b227439d1624a4710e5ab8b74cfb7247b118bf4d1aaf9822beff",
+          "after": "67eacd749d6129cf2dca2e775bba3d1fba1440b70c1426bb5c787fb2359ad32f"
+        },
+        {
+          "path": "src/privtdd/experiments/render/e3_boundary_effects.py",
+          "field": "sha256",
+          "before": "c3064c6d53e83316672dcea1fc15eeb8944cbd2dc6de327f483cbefdcdbf9bc8",
+          "after": "7f03c761d1182eb8abaa68b948b1c9497d4199fad8de1f798b78c00dc3a30375"
+        },
+        {
+          "path": "src/privtdd/experiments/render/e3_localize_emd.py",
+          "field": "sha256",
+          "before": "69a2ff5cf6938e50dce24f51f1086fe218c12e3b2ee07a4839eae87fe2e28ba2",
+          "after": "5fb29e93bfbca8a5048aee83fc069fa9ffc49dab75be9c0c471e5c702e4ad17d"
+        }
+      ],
+      "source_fields_unchanged": true,
+      "historical_entries_unchanged": true
+    }
+  ],
+  "source_files_changed": 36,
+  "tests_rerun": false,
+  "numerical_code_unchanged": true,
+  "excluded_from_source_edits": [
+    "src/privtdd/baselines/external.py",
+    "src/privtdd/sampling/run.py",
+    "THIRD_PARTY.md"
+  ]
+}

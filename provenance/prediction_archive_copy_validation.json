@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "objects": 27509,
+  "copied": 27509,
+  "reused": 0,
+  "bytes": 1037755766,
+  "predictions": 5775,
+  "metadata_files": 21734,
+  "scope": "local-only final predictions and immutable metadata",
+  "source_plan_sha256": "840625361d0054877c0b1c5debf20f996f27f0c6674b3779d2e1fad5caa5adf4"
+}

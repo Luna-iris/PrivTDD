@@ -1,0 +1,82 @@
+\section{Problem}
+\label{sec:problem}
+
+\subsection{Problem Definition}
+\label{subsec:problem-formulation}
+
+% Under the graph setting in Section~\ref{sec:pre}, user $v$ holds $N_v$ and can compute $d_v,w_v$, but generally not $t_v$ because edges among its neighbors are not locally visible. An honest-but-curious server follows the protocol but may use the transcript to infer private edges. It coordinates interactions and estimates the GDD from locally randomized reports, without collecting raw adjacency lists or unperturbed degrees.
+ User $v$ holds its neighborhood $N_v$ and can compute $d_v$ and $w_v$, but generally not $t_v$, because edges among its neighbors are not locally visible. An honest-but-curious server coordinates interactions and estimates the TDD from locally randomized reports, without collecting raw adjacency lists or unperturbed degrees.
+
+
+% We estimate the triangle GDD $\mathbf H=(H(t))_{t\in\mathcal T}$, where $H(t)=h_G^\triangle(t)$ counts nodes participating in exactly $t$ triangles. Since $t_v\le W_{\max}=\binom{n-1}{2}$, the bin domain is $\mathcal T=\{0,\ldots,W_{\max}\}$, including zero participation and all possible counts without an overflow bin.
+% \begin{definition}[LDP GDD Estimation]
+% \label{def:ldp-gdd-estimation}
+% Given total budget $\varepsilon$, design an interactive collection protocol $\Psi_{\mathrm{collect}}$ and server aggregation algorithm $\Phi$ to output an estimate $\widehat{\mathbf H}$ of $\mathbf H$. Local randomizers satisfy Definition~\ref{def:edge-ldp} under their allocated budgets, and the complete protocol $\Pi$ satisfies Definition~\ref{def:edge-transcript-privacy} under $\varepsilon$, protecting the presence or absence of one undirected edge. Using only privatized reports and public parameters, the output obeys $\widehat H(t)\ge0$ and $\sum_{t\in\mathcal T}\widehat H(t)=n$; estimated bin counts may be real-valued. The objective is to reduce GDD estimation error under this budget, measured by MSE, EMD, and KS in Section~\ref{sec:gdd:en:setup}.
+% \end{definition}
+% Each triangle contributes to three nodes, so its global count is $T_\triangle=\frac13\sum_{t\in\mathcal T}tH(t)$. Thus the GDD determines the global count, while the reverse is not true.
+
+The target is the count histogram $\mathbf H=(H(t))_{t\in\mathcal T}$ defined in Section~\ref{sec:pre}, with $\mathcal T=\{0,\ldots,W_{\max}\}$. Here $W_{\max}=w(D_{\max})=\binom{n-1}{2}$ is the public upper bound on a node's triangle degree. Triangle degree zero is included.
+\begin{definition}[Edge-LDP TDD Estimation]
+\label{def:ldp-gdd-estimation}
+Given total budget $\varepsilon$, design an interactive collection protocol $\Psi_{\mathrm{collect}}$ and server estimator $\Phi$ that output $\widehat{H}$. The local randomizers satisfy Definition~\ref{def:edge-ldp} under their allocated budgets, and the complete interactive protocol protects any single undirected-edge change under $\varepsilon$. Using only private reports and public parameters, the output satisfies $\widehat H(t)\ge0$ and $\sum_t\widehat H(t)=n$, with real-valued estimated bin counts allowed. We seek low histogram error, evaluated by MSE, EMD, and KS in Section~\ref{sec:gdd:en:setup}.
+\end{definition}
+Each triangle contributes to three nodes, so $T_\triangle=\frac13\sum_t tH(t)$. Thus the TDD determines the global triangle count, but the converse does not hold.
+
+
+\subsection{Baseline Composed by Existing Operators}
+\label{subsec:direct-composition}
+Standard LDP frequency estimators assume that users know their contributed categories~\cite{LDPGDDWang2017,kairouz2016discrete,bassily2015succinct}, but the category $t_v$ is not locally known here. 
+This composed baseline first estimates each node's triangle degree $\widetilde t_v$ using a private counting procedure, then bins the estimates.
+Such procedures release noisy information about edges and local statistics~\cite{he2025robust,dong2026ldpgraph}. 
+For TDD estimation, the node-level target must include all triangles containing that node, not only the contributions assigned to it for deduplicated global counting.
+
+%Standard LDP frequency oracles require users to know their contributed categories~\cite{LDPGDDWang2017}; here the category $t_v$ is not locally known. A direct alternative first obtains privatized participation estimates $\widetilde t_v$ through an interactive counting procedure $\Pi_{\mathrm{cnt}}$, then bins them. Such procedures provide perturbed auxiliary edges and collect noisy local statistics~\cite{LDPGDDImola2022Corrected}. Procedures that assign each triangle to a single node for global counting must instead target all triangles containing each node when adapted to GDD estimation: an assigned contribution cannot directly serve as $t_v$.
+
+% For nearest-integer rounding with a fixed tie rule, define
+With nearest-integer rounding and a fixed tie rule, this composed baseline outputs
+\begin{equation}
+\begin{aligned}
+&\mathsf b_{W_{\max}}(x)=\operatorname{round}(\operatorname{clip}_{[0,W_{\max}]}(x)),\\
+&\widehat H^{\mathrm{dir}}(t)=\sum_{v\in V}\mathbf1\{\mathsf b_{W_{\max}}(\widetilde t_v)=t\}.
+\end{aligned}
+\label{eq:direct-gdd}
+\end{equation}
+Here $\operatorname{clip}_{[a,b]}(x)=\min\{b,\max\{a,x\}\}$.
+Each estimate contributes one node to a single bin. 
+Binning is post-processing and requires no additional privacy budget.
+%each privatized estimate contributes one count to its clipped and rounded bin.
+
+\subsection{Limitations}
+\label{subsec:direct-limitations}
+
+\noindent\textbf{Estimating locally unknown triangle degrees.}
+Because $t_v$ is not directly available, estimating it from sampled, filtered, or randomized relations and noisy local statistics can introduce error before binning. Let $\eta_v=\widetilde t_v-t_v$ denote this error.
+
+\noindent\textbf{Binning distortion.}
+Positive and negative errors may cancel in a global sum, but binning changes a node's assigned category whenever its estimate crosses a boundary. 
+For a fixed graph,
+%In global summation, positive and negative errors in $\sum_v\eta_v$ may cancel. Binning instead moves a node's count from its true bin to another whenever its estimate crosses a boundary. For a fixed graph,
+\begin{equation}
+\mathbb E[\widehat H^{\mathrm{dir}}(t)\mid G]
+=\sum_v\Pr[\mathsf b_{W_{\max}}(t_v+\eta_v)=t\mid G].
+\label{eq:expected-direct-gdd}
+\end{equation}
+Even unbiased node estimates need not make this equal $H(t)$: zero-mean numerical error does not ensure balanced expected mass entering and leaving each bin.
+
+
+To illustrate this limitation,
+consider the six-node triangular-prism example in Fig.~\ref{fig:tdd-motivation}\subref{fig:tdd-limitation}. Every node has degree $3$, wedge count $3$, and triangle degree $1$, so $H(1)=6$. Estimates $(0,0,0,2,2,2)$ stay within these capacities and preserve both the sum of triangle degrees and the global triangle count, yet empty the true bin. This example shows that total-count accuracy alone does not imply histogram accuracy, even without capacity violations.
+%To illustrate the distinction between total-count and distribution accuracy, consider disjoint triangles with $n$ a positive multiple of six. Every node has $t_v=1$, so $H(1)=n$. An illustrative estimate assigning half the nodes to bin zero and half to bin two preserves the participation sum $n$ and global triangle count $n/3$, yet empties the true bin. Binning costs no additional privacy budget, but its distribution distortion cannot be judged from global counting error alone.
+
+%%\noindent\textbf{Motivation for Distribution Estimation.}
+The \textbf{difficulty} lies in converting noisy node estimates into definite bin assignments. 
+Unbiasedness and total-count accuracy alone do not control the resulting histogram error.
+This motivates estimating the population histogram from private reports without first choosing a single triangle degree per node.
+Such estimation can also use locally observable information, such as degrees, even when triangle degrees are unknown.
+We therefore consider combining this information with noisy relational evidence to develop an operator tailored to the characteristics of TDD.
+% These limitations motivate using $t_v=w_v\rho_v$ to separate scale from closure. Degrees are known locally, so the server can recover the scale distribution from privatized degree reports; closure still requires inference from relational reports. Aggregating participation probabilities retains uncertainty instead of reducing each node to one bin. At the population level,
+% \begin{equation}
+% H(t)=n\sum_{d=0}^{D_{\max}}\pi(d)R(t\mid d).
+% \label{eq:problem-conditional-factorization}
+% \end{equation}
+% Here $n\pi(d)$ weights the participation distribution conditional on degree $d$, retaining dependence between scale and closure. Section~\ref{sec:method} develops the recovery procedure.

@@ -1,0 +1,99 @@
+{
+  "contract": {
+    "parent_plan_sha256": "697281757a74082c9dcac74fb947d92fc891bb548f57d232517203fe70c2c182",
+    "implementation": "9082d69777f77fa54f2473352b65e1ebd4d6f21e7959e176e9ec3ba447003c0d"
+  },
+  "unique_reports": 476,
+  "means": 516,
+  "paired_comparisons": 408,
+  "origin_counts": [
+    {
+      "method": "fixed25",
+      "origin": "new_postprocessing",
+      "count": 476,
+      "suite": "E2"
+    },
+    {
+      "method": "fixed50",
+      "origin": "new_postprocessing",
+      "count": 476,
+      "suite": "E2"
+    },
+    {
+      "method": "fixed75",
+      "origin": "new_postprocessing",
+      "count": 476,
+      "suite": "E2"
+    },
+    {
+      "method": "full",
+      "origin": "frozen_E1",
+      "count": 476,
+      "suite": "E2"
+    },
+    {
+      "method": "screc",
+      "origin": "frozen_E2_variant",
+      "count": 411,
+      "suite": "E2"
+    },
+    {
+      "method": "screc",
+      "origin": "new_postprocessing",
+      "count": 65,
+      "suite": "E2"
+    },
+    {
+      "method": "q80_90",
+      "origin": "identical_integer_boundaries",
+      "count": 1,
+      "suite": "E3"
+    },
+    {
+      "method": "q80_90",
+      "origin": "new_postprocessing",
+      "count": 39,
+      "suite": "E3"
+    },
+    {
+      "method": "q90_95",
+      "origin": "frozen_E1",
+      "count": 40,
+      "suite": "E3"
+    },
+    {
+      "method": "q95_99",
+      "origin": "identical_integer_boundaries",
+      "count": 1,
+      "suite": "E3"
+    },
+    {
+      "method": "q95_99",
+      "origin": "new_postprocessing",
+      "count": 39,
+      "suite": "E3"
+    }
+  ],
+  "bootstrap": {
+    "draws": 2000,
+    "rng_seed": 731,
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "unit": "one matched release"
+  },
+  "maximum_metric_recomputation_difference": {
+    "MSE": 9.992007221626409e-16,
+    "EMD": 3.410605131648481e-13,
+    "KS": 9.71445146547012e-17
+  },
+  "sources": {
+    "E2/releases.csv": "9ce160edcfb99553770684d614215529d60b145dc75f6c14daa87ad81b338d67",
+    "E2/coverage.csv": "e12e9735f94f0d678b6324a84ecdf61e00d60a3d57f5d3a3c6fe6e6fe63a7ce8",
+    "E2/summary.csv": "dd13b3a0cc4214a184f761f5d6770ea9c06ae05eef98a0403f8408956f46e698",
+    "E3/releases.csv": "3bfdb75ab75507d2437418ab53aa2784a665aa6147b1b147a1a5f534132a05c9",
+    "E3/coverage.csv": "eeeefc90a63656dd893ccaae0cec46ceb93962f3479a8e0a76d88075b28825ac",
+    "E3/summary.csv": "d7d2fff23042380700fab6f59f46d659bab276cc4fed33c2685fc97de662eabf"
+  }
+}

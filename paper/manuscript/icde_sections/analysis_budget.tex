@@ -1,0 +1,145 @@
+\section{Privacy Analysis and Budget Allocation}
+\label{sec:analysis}
+We first prove the privacy guarantee for the PrivTDD protocol and then derive an allocation of its reporting budgets.
+% First establish privacy for the complete protocol, then derive report-budget shares from the expected error bound for the released histogram.
+
+\subsection{Privacy}
+\begin{theorem}[Privacy of the complete protocol]\label{thm:pg-private}
+The complete PrivTDD transcript satisfies pure $\varepsilon$-edge privacy when
+\[
+  2\varepsilon_d+\varepsilon_r+2\varepsilon_\ell\leq\varepsilon.
+\]
+Here $\varepsilon_d=\varepsilon_{\mathrm{deg}}$, $\varepsilon_r=\varepsilon_{\mathrm{rr}}$, and $\varepsilon_\ell=\varepsilon_{\mathrm{rel}}$ are the degree, RR, and relational-report budgets in Eq.~\eqref{eq:privacy_allocation}.
+\end{theorem}
+
+\begin{proof}
+Changing an undirected edge incurs $2\varepsilon_d$ for its endpoint degree reports and $\varepsilon_r$ for its assigned RR report.
+Fix the graph-independent public neighbor order and the first-round transcript, including the caps and shared RR table.
+For an endpoint with cap $c>1$, growth of its retained set adds at most $c-1$ centered terms of magnitude at most one.
+Replacing one retained neighbor preserves the pair count, so the centered-count difference is a sum of at most $c-1$ differences between RR bits, each of magnitude at most one.
+Deletion is symmetric, and the centered count $B_v-p_0\widetilde{W}_v$ is zero for $c\leq1$.
+Thus the conditional sensitivity is at most $(c-1)_+$.
+At Laplace scale $(c-1)_+/\varepsilon_\ell$, the second round costs at most $\varepsilon_\ell$ per endpoint.
+Other nodes' conditional report laws are unchanged.
+Composition gives the stated budget, and estimation and the safeguard are post-processing.
+\end{proof}
+
+\subsection{Budget Allocation}
+\label{sec:analysis:allocation}
+\label{sec:analysis:utility}
+
+A practical challenge is deciding how to allocate a fixed privacy budget among PrivTDD's three reporting mechanisms before data collection.
+The degree budget controls noise in $C_v$, which affects both neighbor truncation and the estimated wedge-count distribution.
+The relational-report budget controls the Laplace noise added to the centered count.
+The RR budget affects how well randomized adjacency bits distinguish edges from nonedges and how much that same Laplace noise is amplified during debiasing.
+Theorem~\ref{thm:pg-private} limits the weighted sum of these budgets. Giving more to one report leaves less for the others, and the server lacks the true TDD needed to compare the resulting errors.
+% Budgets are chosen before collection. The degree budget affects truncation and wedge counts; the relational budget controls Laplace noise.
+% The RR budget affects edge distinguishability and noise amplification during debiasing. The true histogram is unavailable for choosing shares.
+
+
+Our idea is to derive an upper bound on the expected EMD of the released histogram and minimize it before collection.
+Let $h=H/n$, $h_A=H_A/n$, and $\widehat h=\widehat H/n$ denote the normalized true, reference, and released histograms. Thus $\operatorname{EMD}(\widehat H,H)=W_1(\widehat h,h)$.
+Phase~4 forms $H_A$ from binned relational reports and estimated wedge counts. For any graph on $n$ nodes, the reporting mechanisms give an error bound for each input in terms of the candidate budgets.
+The release rule in Eq.~\eqref{eq:pg-guard} keeps $W_1(\widehat h,h_A)\leq\tau D$, with $D=D_{\max}=n-1$ and fixed public $\tau>0$.
+Consequently, an expected error bound $B_A$ for $h_A$ gives $B_A+\tau D$ for $\widehat h$. $B_A$ varies across allocations.
+% Direct binning and wedge-count estimation contribute two reference-histogram errors; Phase 4 relates both to the released histogram.
+% Histograms have total count n and are normalized only for distances. The fixed radius means allocation compares only B_A.
+
+\begin{lemma}[Error of the reference histogram]\label{lem:pg-reference}
+Suppose Phase~1 uses all retained neighbor pairs and fits the degree proportions $\widehat\pi$ by exact maximum likelihood on $\{0,\ldots,D\}$.
+Let $p=e^{\varepsilon_r}/(1+e^{\varepsilon_r})$ and $p_0=1-p$ be the RR probabilities of reporting one for an edge and a nonedge, as in Section~\ref{sec:private_collection}. Set $\gamma=p-p_0$ and $W_{\max}=\binom D2$.
+Averaging over protocol randomness for any fixed $G$ gives $\mathbb E_G W_1(h_A,h)\leq B_A$, where
+\begin{equation}
+\begin{aligned}
+B_A={}&\frac{\sqrt{pp_0 W_{\max}}}{\gamma}
+       +\frac{D-1}{\gamma\varepsilon_\ell}
+       +\frac{D-1}{2(1-e^{-\varepsilon_d})}+\frac12\\
+     &+(D-1)\bigl[\coth(\varepsilon_d/2)+1/\varepsilon_d+1\bigr].
+\end{aligned}
+\label{eq:pg-anchor-bound}
+\end{equation}
+\end{lemma}
+% This bound assumes full reporting and exact full-degree-domain maximum likelihood. The first line accounts for RR noise, Laplace noise, truncation, and rounding; the second accounts for wedge-count error.
+\begin{proof}
+Pair each binned relational report with its true triangle degree $t_v$. Given $C_v$ and the fixed graph, the RR count has standard deviation at most $\sqrt{pp_0W_{\max}}$ and the expected absolute Laplace noise is at most $(D-1)/\varepsilon_\ell$. Debiasing divides both by $\gamma$.
+Each omitted neighbor costs at most $D-1$ triangles. With $a=\varepsilon_d$, Eq.~\eqref{eq:private_degree} gives $\mathbb E_G(d_v-C_v)_+=\tfrac12\sum_{k=0}^{d_v-1}e^{-ak}\leq[2(1-e^{-a})]^{-1}$.
+Clipping cannot increase error and rounding adds at most $1/2$. This nodewise coupling allows shared RR bits.
+% Pair each report with its true triangle degree to accumulate error; independence across nodes' RR reports is not required.
+
+For the wedge counts, write $K=\mathcal K_{\mathrm{deg}}$ for the degree-report channel in Eq.~\eqref{eq:degree_distribution}. Set $f(c)=\sum_d\widehat\pi(d)K(c\mid d)$ and $g_j=n^{-1}\sum_v K(C_v\mid j)/f(C_v)$.
+At the maximum, the log-likelihood derivative toward unit mass at $j$ is $n(g_j-1)\leq0$. Since $\sum_j\widehat\pi(j)g_j=1$, the mean degree posterior is $\bar q(d):=n^{-1}\sum_v q_v(d)=\widehat\pi(d)g_d=\widehat\pi(d)$.
+For the floored and clipped Laplace channel,
+\[
+ |d-c|K(c\mid d)\leq\sum_{j=0}^D e^{-a|j-d|}K(c\mid j).
+\]
+For each integer $j$ from $d$ toward $c$, excluding $c$, the Laplace channel gives $K(c\mid j)=e^{a|j-d|}K(c\mid d)$.
+Set $c=C_v$, multiply by $\widehat\pi(d)/(n f(C_v))$, and sum over $v,d$.
+Using $g_j\leq1$ gives $n^{-1}\sum_{v,d}q_v(d)|d-C_v|\leq\sum_{k\in\mathbb Z} e^{-a|k|}=\coth(a/2)$.
+Coupling each cap to its true degree adds expected cost at most $1/a+1$. The map $w(d)=\binom d2$ is $(D-1)$-Lipschitz, giving the last term of $B_A$.
+% Full-domain first-order conditions equate the mean degree posterior and fitted degree law. Two couplings bound posterior-to-cap and cap-to-true-degree distances.
+% The wedge-count map amplifies this distance by at most D-1.
+
+Let $F_G$ and $F_{\mathrm{cap},G}$ be the true triangle-degree and wedge-count CDFs. Since $t_v\leq w(d_v)$, we have $F_G\geq F_{\mathrm{cap},G}$ pointwise.
+The maximum in Eq.~\eqref{eq:pg-reference-cdf} gives
+$|F_A-F_G|\leq|F_{\mathrm{dir}}-F_G|+|F_{\mathrm{cap}}-F_{\mathrm{cap},G}|$.
+Integrating proves the claim~\cite{vallender1974distance}.
+\end{proof}
+
+\begin{theorem}[Minimax EMD for TDD]\label{thm:pg-risk}
+Under the assumptions of Lemma~\ref{lem:pg-reference}, the first inequality holds for every feasible positive budget allocation. The second line gives the minimax order for fixed $\varepsilon>0$.
+\begin{equation}
+\begin{aligned}
+ \sup_G\mathbb E_G\operatorname{EMD}(\widehat H,H)
+     &\leq B_A+\tau D,\\
+ \inf_\Pi\sup_G\mathbb E_G\operatorname{EMD}(\Pi(G),H)
+     &=\Theta_{\varepsilon}(n).
+\end{aligned}
+\label{eq:pg-minimax}
+\end{equation}
+Here $G$ ranges over simple graphs on the public vertex set and $\Pi$ over local protocols with the same edge privacy budget that release a histogram $\Pi(G)$ of total count $n$.
+For fixed $\varepsilon,\tau>0$ and budget shares bounded away from 0, $B_A+\tau D=O(n)$. Unnormalized transport cost is $n\operatorname{EMD}$ with minimax order $\Theta_\varepsilon(n^2)$.
+\end{theorem}
+% The finite-sample upper bound holds for every feasible positive split; the lower bound gives worst-case growth in n at fixed total budget.
+\begin{proof}
+By the mixture in Eq.~\eqref{eq:pg-guard}, the one-dimensional CDF formula gives $W_1(\widehat h,h_A)=\alpha\Delta\leq\tau D$. The triangle inequality and Lemma~\ref{lem:pg-reference} give the upper bound. For the lower bound, set $m=\lfloor(n-2)/4\rfloor$ for $n\geq6$ and form a clique on $2m+2$ vertices. Join each new vertex pair $i$, $1\leq i\leq m$, to the first $2i$ clique vertices. An independent fair bit $X_i$ determines the edge within pair $i$. Leave the remaining vertices isolated.
+Each vertex of pair $i$ has triangle degree $a_i=\binom{2i}{2}$ or $a_i+2i$. The intervals $[a_i,a_i+2i)$ are disjoint and all clique vertices have at least $a_m+2m$ triangles.
+At each of the $2i$ integer cutoffs in interval $i$, the cumulative count therefore takes two values differing by two according to $X_i$.
+Edge privacy bounds the posterior odds of $X_i$ given the transcript between $e^{-\varepsilon}$ and $e^\varepsilon$, giving expected absolute count error at least $2/(1+e^\varepsilon)$ per cutoff.
+Summing over cutoffs and dividing by $n$ gives average risk at least $2m(m+1)/[n(1+e^\varepsilon)]=\Omega_\varepsilon(n)$. Worst-case risk is at least as large.
+\end{proof}
+
+\emph{Approximate degree fits.}
+For an approximate fit, let $r_{\mathrm{opt}}=\max_{0\leq j\leq D}g_j-1$ with the scores defined above.
+The total variation distance between $\bar q$ and $\widehat\pi$ is at most $r_{\mathrm{opt}}$ since $\bar q(d)=\widehat\pi(d)g_d$. The posterior-to-cap coupling now costs at most $(1+r_{\mathrm{opt}})\coth(\varepsilon_d/2)$.
+Thus the upper bound increases by at most $(D-1)[D+\coth(\varepsilon_d/2)]\mathbb E_G r_{\mathrm{opt}}$, using degree-domain diameter $D$.
+For fixed $\varepsilon,\tau>0$ and budget shares bounded away from zero, the $O(n)$ rate holds if $\sup_G\mathbb E_G r_{\mathrm{opt}}=O(1/D)$. Even for a restricted grid, this residual uses scores at every degree.
+% Restricted-grid or early-stopped fits require a full-domain residual check. The allocation below optimizes the public exact-fit bound before collection.
+
+\noindent\textbf{Allocation scheme.}
+We choose the budgets using the explicit full-domain, exact-fit bound $B_A+\tau D$ in Eq.~\eqref{eq:pg-minimax}. Its dependence on each budget distinguishes splits with the same $O(n)$ rate.
+With the radius fixed, $B_A$ decreases in each of the three budgets. The minimizing split therefore exhausts the budget.
+Writing $x=\varepsilon_d$ and $y=\varepsilon_r$ gives $\varepsilon_\ell=(\varepsilon-2x-y)/2$.
+% Fix public inputs before collection and exhaust the privacy budget. Eliminating the relational-report budget leaves two optimization variables.
+
+\begin{proposition}[Bound-optimal allocation]\label{prop:pg-allocation}
+The allocation minimizing $B_A+\tau D$ is determined by the unique solution $(x^\star,y^\star)$ of
+\begin{equation}
+\begin{aligned}
+\min_{\substack{x,y>0\\2x+y<\varepsilon}}\quad
+ &\frac{\sqrt{D/[2(D-1)]}}{2\sinh(y/2)}
+  +\frac{2\coth(y/2)}{\varepsilon-2x-y}\\[-1pt]
+ &{}+\frac54\coth(x/2)+\frac1x .
+\end{aligned}
+\label{eq:pg-allocation}
+\end{equation}
+\end{proposition}
+\begin{proof}
+Substituting $\gamma=\tanh(y/2)$ and $\varepsilon_\ell=(\varepsilon-2x-y)/2$ into $B_A+\tau D$, removing constants, and dividing by $D-1$ gives Eq.~\eqref{eq:pg-allocation}.
+The first and last terms are strictly convex in $y$ and $x$, respectively. The third term is convex.
+The second term is log-convex because $[\log\coth(y/2)]''=\cosh(y)/\sinh^2(y)>0$ and $-\log(\varepsilon-2x-y)$ is convex.
+Strict convexity and divergence at the boundary of the  domain give a unique interior minimizer. Its upper bound is at most that of the feasible split $\varepsilon_d=\varepsilon_r=\varepsilon_\ell=\varepsilon/5$, hence is $O(n)$ for fixed $\varepsilon,\tau$.
+\end{proof}
+Before Round~1, numerically minimize the two-variable objective in Eq.~\eqref{eq:pg-allocation} using only the public $n$ and $\varepsilon$.
+Use $\varepsilon_d=x^\star$ per degree report, $\varepsilon_r=y^\star$ per assigned RR report, and $\varepsilon_\ell=(\varepsilon-2x^\star-y^\star)/2$ per relational report.
+% The optimal bound is no larger than for epsilon/5 per mechanism and therefore attains the established minimax order.
+% Fix all budgets before Round 1. Both endpoints consume degree and relational budgets; each edge has one RR report from its assigned endpoint.

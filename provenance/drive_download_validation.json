@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-15",
+  "folder_url": "https://drive.google.com/drive/folders/1xuxagBfpbpQYqq7mOQy0kVtiY15FG-zW?usp=sharing",
+  "files": [
+    {
+      "dataset": "bio-dmela",
+      "share_url": "https://drive.google.com/file/d/18NIUJ7ldZTTOpRFy2ZXowQYfxVz90EHb/view",
+      "file_id": "18NIUJ7ldZTTOpRFy2ZXowQYfxVz90EHb",
+      "bytes": 138299,
+      "sha256": "7c75cde6cb29ad7ffb19c3d588d5df598a51095b149015d147b68fa46b3fe5d8",
+      "matches_prepared_bundle": true,
+      "anonymous_download": true,
+      "seconds": 2.8
+    },
+    {
+      "dataset": "dblp",
+      "share_url": "https://drive.google.com/file/d/1rxCaAdnn7VrC_dBIPakaO-sptJEdGSKl/view",
+      "file_id": "1rxCaAdnn7VrC_dBIPakaO-sptJEdGSKl",
+      "bytes": 6340341,
+      "sha256": "156c0099ed5ed98606c85a5e2db99091e7519cf4377f8330ede7562c73907e55",
+      "matches_prepared_bundle": true,
+      "anonymous_download": true,
+      "seconds": 3.67
+    },
+    {
+      "dataset": "higgs",
+      "share_url": "https://drive.google.com/file/d/1L2k4Kzvca-MxaYMvDre9hdkutVD2qIYe/view",
+      "file_id": "1L2k4Kzvca-MxaYMvDre9hdkutVD2qIYe",
+      "bytes": 57564273,
+      "sha256": "efa571bb114b7dccb881a65b41eb584466e4a36f19e3590fdab4acc5305f8388",
+      "matches_prepared_bundle": true,
+      "anonymous_download": true,
+      "seconds": 32.78
+    },
+    {
+      "dataset": "orkut",
+      "share_url": "https://drive.google.com/file/d/1QsHv_N1JR1V6v0By2nwhr9JO4MWrm-XW/view",
+      "file_id": "1QsHv_N1JR1V6v0By2nwhr9JO4MWrm-XW",
+      "bytes": 634663820,
+      "sha256": "ff68a41045c3593650447311b79c26c03d932733c5a4dd2a77e41962c631c20c",
+      "matches_prepared_bundle": true,
+      "anonymous_download": true,
+      "seconds": 206.41
+    }
+  ],
+  "client_e2e": {
+    "dataset": "bio-dmela",
+    "fetch_command_exit_code": 0,
+    "processed_data_hashes_verified": true,
+    "uses_anonymous_access": true
+  }
+}

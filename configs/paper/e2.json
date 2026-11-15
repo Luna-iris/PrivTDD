@@ -1,0 +1,37 @@
+{
+  "datasets": [
+    "bio-dmela",
+    "dblp",
+    "higgs",
+    "orkut"
+  ],
+  "epsilons": [
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5,
+    3,
+    3.5,
+    4
+  ],
+  "methods": [
+    "PrivTDD",
+    "SCRec",
+    "Fixed-0.25",
+    "Fixed-0.50",
+    "Fixed-0.75"
+  ],
+  "planned_report_sets": 480,
+  "published_matched_report_sets": 476,
+  "additional_variants": [
+    "without_beta",
+    "without_geometry",
+    "mass_only",
+    "shape_only",
+    "global_mix",
+    "without_posterior",
+    "without_safeguard"
+  ],
+  "note": "Additional variants retain their own available matched subsets; do not force all to 480."
+}

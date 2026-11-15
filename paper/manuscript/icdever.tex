@@ -1,0 +1,85 @@
+% ICDE preview assembled from the supplied IEEE conference template.
+% Independent English section copies; the NDSS manuscript is unchanged.
+% Compile from this directory: latexmk -pdf icdever.tex
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+\usepackage{booktabs,multirow,tabularx}
+\usepackage{pifont}
+\usepackage{tikz}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\vsvar}{1mm}
+\newcommand{\draftplaceholder}{\textcolor{blue}{xxx}}
+\newcommand{\gddmissing}{\draftplaceholder}
+\newcommand{\gddvaluesfile}{icde_sections/experiment_values.tex}
+\Crefname{equation}{Eq.}{Eqs.}
+\crefname{algorithm}{algorithm}{algorithms}
+\Crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{algocf}{algorithm}{algorithms}
+\Crefname{algocf}{Algorithm}{Algorithms}
+
+
+\usepackage{graphicx}
+\usepackage[caption=false,font=footnotesize]{subfig}
+
+\begin{document}
+\title{PrivTDD: Triangle-Degree Distribution Estimation under Edge-Local Differential Privacy}
+\input{icde_sections/authors.tex}
+\maketitle
+\begin{abstract}
+
+% The \textbf{triangle degree distribution (TDD)} records how many nodes have each triangle participation count, revealing participation heterogeneity.
+% Under edge-local differential privacy, users generally cannot observe edges among their neighbors, making participation counts locally unavailable.
+% Directly binning noisy estimates can distort the histogram even when the global triangle count is accurate.
+% We introduce PrivTDD, which decomposes TDD recovery into a \textbf{wedge-count distribution} (neighbor-pair counts) and \textbf{degree-conditioned closure-rate distributions} (fractions of neighbor pairs that are connected).
+% Wedge counts depend only on locally known degrees and can be estimated from privatized degree reports without inferring triangle counts.
+% Modeling closure-rate distributions instead pools noisy relational evidence across nodes.
+% PrivTDD constructs complementary structural references capturing degree heterogeneity and local clustering, then learns regional mass and within-region shape corrections from private reports using the known reporting mechanism.
+% Posterior reweighting and probabilistic aggregation yield a candidate TDD estimate.
+% We establish privacy and utility guarantees and derive a budget allocation minimizing the resulting error bound.
+% Across four real networks and eight privacy budgets, PrivTDD achieved the lowest mean earth mover's distance in 30 of 32 settings, including a 90.6\% reduction on DBLP at $\varepsilon=2$ (2.65 versus 28.24 for the best baseline).
+% Artifacts are available at \url{https://github.com/Luna-iris/PrivTDD}.
+The \textbf{triangle-degree distribution (TDD)} counts nodes by triangle degree, the number of triangles containing a node. Under edge-local differential privacy, users generally cannot observe edges between their neighbors. Binning noisy triangle-degree estimates can distort the TDD despite accurate global triangle counts.
+PrivTDD decomposes TDD estimation into a \textbf{wedge-count distribution} (neighbor-pair counts) and \textbf{degree-conditioned closure-rate distributions} (fractions of connected neighbor pairs). It estimates the former from privatized degree reports and models the latter by pooling noisy reports across nodes.
+Two structural models predict reference distributions reflecting degree heterogeneity and local clustering. Private reports guide adjustments to probabilities across and within count ranges. PrivTDD then updates count probabilities using each node's reports and aggregates across node degrees into a candidate TDD estimate.
+We prove privacy guarantees and derive a budget allocation minimizing the bound. Across four real networks and eight privacy budgets, PrivTDD achieves the lowest mean earth mover's distance (EMD) in 30 of 32 settings, including a 90.6\% reduction on DBLP at $\varepsilon=2$ (2.65 versus 28.24 for the best baseline).
+Artifacts are available at https://github.com/Luna-iris/PrivTDD.
+
+\end{abstract}
+\begin{IEEEkeywords}
+Local differential privacy, triangle-degree distribution, graph analytics.
+\end{IEEEkeywords}
+\input{icde_sections/introduction.tex}
+\input{icde_sections/preliminaries.tex}
+% Queue the two-column overview early enough for the next page top.
+\input{icde_sections/figures/privtdd_overview.tex}
+\input{icde_sections/problem.tex}
+%\input{icde_sections/method_reorganize.tex}
+\input{icde_sections/method_devide.tex}
+\input{icde_sections/analysis_budget.tex}
+\input{icde_sections/experiments.tex}
+\input{icde_sections/related_work.tex}
+\input{icde_sections/conclusion.tex}
+% Explicit relative path ensures the uploaded ICDE BST is used.
+\bibliographystyle{icde_sections/IEEEtran}
+% IEEEtran's native last-page column balancing; revisit after content changes.
+% \IEEEtriggeratref{20}
+\bibliography{icde_sections/references}
+% Compile supplementary.tex separately for the extended E1--E3 results.
+\end{document}

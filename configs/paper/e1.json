@@ -1,0 +1,26 @@
+{
+  "datasets": [
+    "bio-dmela",
+    "dblp",
+    "higgs",
+    "orkut"
+  ],
+  "epsilons": [
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5,
+    3,
+    3.5,
+    4
+  ],
+  "methods": [
+    "PrivTDD",
+    "TriTR-Hist",
+    "LDPGraph-T",
+    "LDPGraph-S"
+  ],
+  "planned_outputs": 1920,
+  "published_outputs": 1916
+}

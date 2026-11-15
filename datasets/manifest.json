@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "scope": "four current-paper networks",
+  "datasets": {
+    "bio-dmela": {
+      "dataset_id": "bio-dmela",
+      "display_name": "Bio-DMELA",
+      "nodes": 7393,
+      "edges": 25569,
+      "triangles": 2899,
+      "source_page": "https://networkrepository.com/bio-dmela.php",
+      "source_url": "https://nrvis.com/download/data/bio/bio-dmela.zip",
+      "citation": "Singh et al. (2008); Rossi and Ahmed (2015), Network Repository",
+      "license_status": "redistribution not established; fetch from official source; no dataset license grant by this project",
+      "node_mapping": "matrix_market_declared",
+      "index_dtype": "<i8",
+      "public_degree_cap": 7392,
+      "source_snapshot": "audited local paper inputs, 2026-11-15",
+      "raw": {
+        "download_filename": "bio-dmela.zip",
+        "local_audited_bytes": 86681,
+        "sha256": "c761dd9d93da37f83cc520ea35f6d4cd7caabd8aa5cf2dc6a5a8db977f2442fc"
+      },
+      "processed_files": {
+        "indptr.npy": {
+          "bytes": 59280,
+          "sha256": "e13c6eafd0b106ab05bfa72b6c63f4d442dfaf02c51b8d53c904d400844af5e9",
+          "dtype": "<i8",
+          "shape": [
+            7394
+          ]
+        },
+        "indices.npy": {
+          "bytes": 409232,
+          "sha256": "f7fde670f2cabf84f6b085caf106fb64ae023716b17b9e39e0447adc8329f8aa",
+          "dtype": "<i8",
+          "shape": [
+            51138
+          ]
+        },
+        "triangles.npy": {
+          "bytes": 59272,
+          "sha256": "70664fa58748307172d2c4747c772b0d10dfeda0f85a04f3f68f8e8409c7b21e",
+          "dtype": "<i8",
+          "shape": [
+            7393
+          ]
+        },
+        "new_to_original.npy": {
+          "bytes": 59272,
+          "sha256": "091dc908a81b8b63a8af1fe3c4af24676f2bb772670a9d35185ff04ed88507a9",
+          "dtype": "<i8",
+          "shape": [
+            7393
+          ]
+        }
+      },
+      "preprocessing": [
+        "retain all declared or observed nodes",
+        "undirected union",
+        "remove self-loops",
+        "deduplicate edges",
+        "sort adjacency rows"
+      ]
+    },
+    "dblp": {
+      "dataset_id": "dblp",
+      "display_name": "DBLP",
+      "nodes": 317080,
+      "edges": 1049866,
+      "triangles": 2224385,
+      "source_page": "https://snap.stanford.edu/data/com-DBLP.html",
+      "source_url": "https://snap.stanford.edu/data/bigdata/communities/com-dblp.ungraph.txt.gz",
+      "citation": "Yang and Leskovec (2012), SNAP",
+      "license_status": "redistribution not established; fetch from official source; no dataset license grant by this project",
+      "node_mapping": "sorted_observed_ids",
+      "index_dtype": "<i4",
+      "public_degree_cap": 317079,
+      "source_snapshot": "audited local paper inputs, 2026-11-15",
+      "raw": {
+        "download_filename": "com-dblp.ungraph.txt.gz",
+        "local_audited_bytes": 4138463,
+        "sha256": "9eb0bd30312ddd04e2624f7c36c0983a2e99b116f0385be5a7fce6d6170f4cb3"
+      },
+      "processed_files": {
+        "indptr.npy": {
+          "bytes": 2536776,
+          "sha256": "e1bde6c4a76f439146d2e38aaf0c579418ec3f3fcbfc4f5abaff13f154d1d305",
+          "dtype": "<i8",
+          "shape": [
+            317081
+          ]
+        },
+        "indices.npy": {
+          "bytes": 8399056,
+          "sha256": "0384be794eb964b199f1277032174ceba5bc405c5862754bc0e59c82a072db06",
+          "dtype": "<i4",
+          "shape": [
+            2099732
+          ]
+        },
+        "triangles.npy": {
+          "bytes": 2536768,
+          "sha256": "2e1a73d27fc3ae862df0ffd413dba604f50895f33604eae412128d90837f3c07",
+          "dtype": "<i8",
+          "shape": [
+            317080
+          ]
+        },
+        "new_to_original.npy": {
+          "bytes": 2536768,
+          "sha256": "a7e5a6b2aa031553d044c01ace60a8a75d32c5eb18ba5d3c42c4c11f096e5b1f",
+          "dtype": "<i8",
+          "shape": [
+            317080
+          ]
+        }
+      },
+      "preprocessing": [
+        "retain all declared or observed nodes",
+        "undirected union",
+        "remove self-loops",
+        "deduplicate edges",
+        "sort adjacency rows"
+      ]
+    },
+    "higgs": {
+      "dataset_id": "higgs",
+      "display_name": "Higgs social",
+      "nodes": 456626,
+      "edges": 12508413,
+      "triangles": 83023401,
+      "source_page": "https://snap.stanford.edu/data/higgs-twitter.html",
+      "source_url": "https://snap.stanford.edu/data/higgs-social_network.edgelist.gz",
+      "citation": "De Domenico et al. (2013), SNAP",
+      "license_status": "redistribution not established; fetch from official source; no dataset license grant by this project",
+      "node_mapping": "first_seen",
+      "index_dtype": "<i4",
+      "public_degree_cap": 456625,
+      "source_snapshot": "audited local paper inputs, 2026-11-15",
+      "raw": {
+        "download_filename": "higgs-social_network.edgelist.gz",
+        "local_audited_bytes": 180426543,
+        "decompressed_sha256": "750140b26a566551b9144f744a0342b3e12b9a3bac3e483ccb11883f9950e64d"
+      },
+      "processed_files": {
+        "indptr.npy": {
+          "bytes": 3653144,
+          "sha256": "960a8711c429c2f08de3a3d002ba8dfe35f39cf76f0f1300886f8d533405af5c",
+          "dtype": "<i8",
+          "shape": [
+            456627
+          ]
+        },
+        "indices.npy": {
+          "bytes": 100067432,
+          "sha256": "3081792ecf9c615f6964e3edeba088b7a7e26dfb0bbd105288c105301411e051",
+          "dtype": "<i4",
+          "shape": [
+            25016826
+          ]
+        },
+        "triangles.npy": {
+          "bytes": 3653136,
+          "sha256": "76d26cf87114e9dbd7f1b9afeb22837baaff82fe287b14388a1d6306c91fc47f",
+          "dtype": "<i8",
+          "shape": [
+            456626
+          ]
+        },
+        "new_to_original.npy": {
+          "bytes": 3653136,
+          "sha256": "474f260f5a2b8dca0e0607b7f120e86af84b36afeb46b7e7ce4c777369827417",
+          "dtype": "<i8",
+          "shape": [
+            456626
+          ]
+        }
+      },
+      "preprocessing": [
+        "retain all declared or observed nodes",
+        "undirected union",
+        "remove self-loops",
+        "deduplicate edges",
+        "sort adjacency rows"
+      ]
+    },
+    "orkut": {
+      "dataset_id": "orkut",
+      "display_name": "Orkut",
+      "nodes": 3072441,
+      "edges": 117185083,
+      "triangles": 627584181,
+      "source_page": "https://snap.stanford.edu/data/com-Orkut.html",
+      "source_url": "https://snap.stanford.edu/data/bigdata/communities/com-orkut.ungraph.txt.gz",
+      "citation": "Mislove et al. (2007); Yang and Leskovec (2012), SNAP",
+      "license_status": "redistribution not established; fetch from official source; no dataset license grant by this project",
+      "node_mapping": "sorted_observed_ids",
+      "index_dtype": "<i4",
+      "public_degree_cap": 3072440,
+      "source_snapshot": "audited local paper inputs, 2026-11-15",
+      "raw": {
+        "download_filename": "com-orkut.ungraph.txt.gz",
+        "local_audited_bytes": 447251958,
+        "sha256": "f73e33fb685f411a10c952f2ba3ea788380b91a17bc636e38da1a23f6c6b2bc6"
+      },
+      "processed_files": {
+        "indptr.npy": {
+          "bytes": 24579664,
+          "sha256": "c88d6f98061a8cd6f693f1797485cc124e10e3af6bcc6c7116f4226543382afa",
+          "dtype": "<i8",
+          "shape": [
+            3072442
+          ]
+        },
+        "indices.npy": {
+          "bytes": 937480792,
+          "sha256": "22afb83129fffcb2dc14c934f66770c2ffe465c4341df8253377d4c379c574c4",
+          "dtype": "<i4",
+          "shape": [
+            234370166
+          ]
+        },
+        "triangles.npy": {
+          "bytes": 24579656,
+          "sha256": "10bf38a6a191e39b01c484599a87a8dc0ff080916dc5b28187dad04bc272dd0b",
+          "dtype": "<i8",
+          "shape": [
+            3072441
+          ]
+        },
+        "new_to_original.npy": {
+          "bytes": 24579656,
+          "sha256": "faceeec8be41a9b81e0827e603272e7443c1c7c8679bb6d8d23f57d09183b34a",
+          "dtype": "<i8",
+          "shape": [
+            3072441
+          ]
+        }
+      },
+      "preprocessing": [
+        "retain all declared or observed nodes",
+        "undirected union",
+        "remove self-loops",
+        "deduplicate edges",
+        "sort adjacency rows"
+      ]
+    }
+  }
+}

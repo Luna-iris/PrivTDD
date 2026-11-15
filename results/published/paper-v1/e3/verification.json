@@ -1,0 +1,14 @@
+{
+  "parent_plan_sha256": "697281757a74082c9dcac74fb947d92fc891bb548f57d232517203fe70c2c182",
+  "implementation": "9082d69777f77fa54f2473352b65e1ebd4d6f21e7959e176e9ec3ba447003c0d",
+  "planned_outputs": 240,
+  "completed_outputs": 234,
+  "matched_reports": 78,
+  "draws": 2000,
+  "bootstrap_seed": 731,
+  "max_absolute_metric_recalculation_difference": {
+    "MSE": 7.771561172376096e-16,
+    "EMD": 2.2737367544323206e-13,
+    "KS": 0.0
+  }
+}

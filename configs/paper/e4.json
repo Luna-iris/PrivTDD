@@ -1,0 +1,38 @@
+{
+  "datasets": [
+    "higgs",
+    "orkut"
+  ],
+  "epsilons": [
+    2
+  ],
+  "rates": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "sampled_seeds": [
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032
+  ],
+  "published_full_control_seeds": [
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037
+  ],
+  "planned_sampled_outputs": 40,
+  "published_sampled_outputs": 40,
+  "control_source": "E1 PrivTDD epsilon=2, 10 releases per network",
+  "paired_control_source": "large40_runs.csv rate=1, only 5 releases per network"
+}
