@@ -33,8 +33,8 @@
       "source": "reconstruct_overall/joint/joint_tests/test_quantization.py",
       "source_sha256": "f11d4a0b78b07707f5b4cdc9bf1a5d48af73c685f062ca91c34a63670c238734",
       "target": "tests/core/test_quantization.py",
-      "transformation": "Import/API rename; tests preserved",
-      "target_sha256": "456d634e6663b786b07524c0ccc0715fd5bd2ef8ba5fb8cf81f7e6a0342aa058"
+      "transformation": "Import/API rename and English docstring/comment translation; executable test AST preserved",
+      "target_sha256": "68c7ab541d86143fe13ae2e185911abdd8ccab5279375e7f414e898942bce0cd"
     },
     {
       "source": "reconstruct_overall/joint/joint_tests/test_runner.py",
